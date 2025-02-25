@@ -6,15 +6,15 @@ Este site foi desenvolvido pela equipe responsável pela organização da SEMCOM
 
 A parte visual do site foi criada pelos talentosos designers:
 
-**Mauricio Matchal**
-**Rian Ribeiro**
+- **Mauricio Matchal**
+- **Rian Ribeiro**
 
 ## Desenvolvedores
 
 O site foi desenvolvido por membros da equipe de organização da SEMCOMP, que fazem parte da InfoJr UFBA. A equipe de desenvolvimento contou com:
 
-**Allan Cruz**
-**Bruno Emanuel**
-**David Moura**
-**Priscila Anjos**
-**Stefanny Oliveira**
+- **Allan Cruz**
+- **Bruno Emanuel**
+- **David Moura**
+- **Priscila Anjos**
+- **Stefanny Oliveira**
