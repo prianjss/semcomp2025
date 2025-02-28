@@ -1,0 +1,24 @@
+:root {
+
+  --grad-roxo-rosa: linear-gradient(270deg, #921689 0%, #54025B 100%);
+  --grad-roxo-azul: linear-gradient(90deg, #54025B 0%, #1D1540 100%);
+  --grad-preto-roxo: linear-gradient(90deg, #000000 19.96%, #1B051D 100%);
+
+  --roxo1: #54025B;
+  --roxo2: #7805A6;
+  --roxo3: #A60BBE;
+  --azul: #311167;
+  --rosa: #C31D8C;
+  --branco: #ffffff;
+  --preto: #000000;
+
+
+  --font-title: 'Bebas Neue', sans-serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
