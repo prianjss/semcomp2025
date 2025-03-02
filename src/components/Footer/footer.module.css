@@ -1,0 +1,68 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  height: 260px;
+  background-color: var(--preto);
+  color: var(--branco);
+  font-family: var(--font-body);
+  padding: 0 100px 0 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerEmpresas {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.footerEmpresas h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -3%;
+}
+
+.footerEmpresas div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footerTexto {
+  height: 115px;
+  width: 417px;
+}
+
+.footerTexto p {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 23.4px;
+}
+
+.footerProgramacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 257px;
+}
+
+.footerProgramacao ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 36px;
+}
+
+.footerProgramacao ul li {
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}

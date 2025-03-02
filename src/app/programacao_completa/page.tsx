@@ -6,6 +6,7 @@ import DiaUm from '@/components/DiaUm/DiaUm';
 import DiaDois from '@/components/DiaDois/DiaUm';
 import DiaTres from '@/components/DiaTres/DiaTres';
 import DiaQuatro from '@/components/DiaQuatro/DiaUm';
+import Footer from '@/components/Footer/Footer';
 
 type Dia = 1 | 2 | 3 | 4;
 
@@ -117,7 +118,6 @@ export default function ProgramacaoCompleta() {
           </div>
         )}
       </section>
-
     </main>
   );
 }

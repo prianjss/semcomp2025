@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
   title: "SEMCOMP 2025",
@@ -10,7 +11,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-br">
+    <html lang="en">
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;700&display=swap"
@@ -18,6 +19,7 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+      <Footer />
     </html>
   );
 }
