@@ -1,0 +1,71 @@
+.palestrantesContainer{
+    height: 1040px;
+    background: linear-gradient(180deg, rgba(118, 12, 225, 0) 0%, #760CE1 172.56%);
+}
+
+.palestrantesTitle{
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -3%;
+    color: white;
+    padding-top: 80px;
+    padding-left: 102px;
+    margin:0;
+}
+
+.palestrantesContent {
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 28px;
+    justify-content: center;
+    padding-left: 102px;
+    padding-right: 102px;
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+
+.palestrantesButton{
+    display: flex;
+    justify-content: center;
+}
+
+.formaBotao {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border: none; 
+    cursor: pointer;
+    padding-left: 102px;
+    padding-right: 102px;
+    margin: 0px;
+}
+
+.imagemBotao{
+    width: 391px;
+    height: 52px;
+    display: block;
+}
+  
+.textoBotao {
+    margin: 0px;
+    padding: 0px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #11004C;    ;
+    font-family: IBM Plex Sans;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: Auto;
+    text-decoration-thickness: Auto;
+    text-decoration-skip-ink: auto;
+}
