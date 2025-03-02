@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import styles from './card.module.css';
 
 interface CardProps {
   nome: string;
-  cargo:string;
+  cargo: string;
   descricao: string;
-  instagram:string;
+  instagram: string;
   imageUrl: string;
 }
 
@@ -17,7 +18,12 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
                 <h3 className={styles.cardCargo}>{cargo}</h3>
                 <div className={styles.animacao}> 
                     Conheça mais sobre
-                    <img src="./assets/conhecaMais.svg"/>
+                    <Image 
+                        src="./assets/conhecaMais.svg" 
+                        alt="Conheça mais" 
+                        width={12} 
+                        height={13} 
+                    />
                 </div>
             </div>
         </section>

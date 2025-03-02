@@ -1,4 +1,5 @@
 import styles from './diaquatro.module.css';
+import Image from 'next/image';
 
 export default function DiaQuatro() {
     return (
@@ -20,7 +21,13 @@ export default function DiaQuatro() {
                         Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.</p>
                     </div>
                     <div className={styles.cardImage}>
-                        <img src="./hackathon/hack1.png" alt="Hackathon SemComp 2024" className={styles.imagem} />
+                        <Image
+                            src="/hackathon/hack1.png"
+                            alt="Hackathon SemComp 2024"
+                            className={styles.imagem}
+                            width={396}
+                            height={300}
+                        />
                     </div>
                 </div>
 
@@ -35,7 +42,13 @@ export default function DiaQuatro() {
                         Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.</p>
                     </div>
                     <div className={styles.cardImage}>
-                        <img src="./hackathon/hack2.png" alt="Hackathon SemComp 2024" className={styles.imagem} />
+                        <Image
+                            src="/hackathon/hack2.png"
+                            alt="Hackathon SemComp 2024"
+                            className={styles.imagem}
+                            width={396} 
+                            height={300} 
+                        />
                     </div>
                 </div>
 
@@ -50,13 +63,18 @@ export default function DiaQuatro() {
             </section>
 
             <section className={styles.hackButton}>
-              <a href="/sua-pagina-faq" className={styles.formaBotao}>
-                  <img src="./botoes/botao_hackathon.svg" alt="Inscrições em breve" className={styles.imagemBotao} />
-                  <p className={styles.textoBotao}>INSCRIÇÕES EM BREVE!</p>
-              </a>
-          </section>
-        
+                <a href="/sua-pagina-faq" className={styles.formaBotao}>
+                    <Image
+                        src="/botoes/botao_hackathon.svg"
+                        alt="Inscrições em breve"
+                        className={styles.imagemBotao}
+                        width={410} 
+                        height={100} 
+                    />
+                    <p className={styles.textoBotao}>INSCRIÇÕES EM BREVE!</p>
+                </a>
+            </section>
+
         </main>
     );
-  }
-  
+}

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Card from '../CardPalestrante/CardPalestrante';
 import styles from './palestrantes.module.css';
 
@@ -86,10 +87,18 @@ export default function Palestrantes() {
         </article>
 
         <div className={styles.palestrantesButton}>
-            <a href="/programacao-completa" className={styles.formaBotao}>
-                <img src="./botoes/botao_palestrantes.svg" alt="Botão FAQ Completa" className={styles.imagemBotao} />
-                <p className={styles.textoBotao}>VEJA A PROGRAMAÇÃO COMPLETA</p>
-            </a>
+            <div className={styles.palestrantesButton}>
+                <a href="/programacao-completa" className={styles.formaBotao}>
+                    <Image 
+                        src="./botoes/botao_palestrantes.svg" 
+                        alt="Botão FAQ Completa" 
+                        className={styles.imagemBotao} 
+                        width={391} 
+                        height={52} 
+                    />
+                    <p className={styles.textoBotao}>VEJA A PROGRAMAÇÃO COMPLETA</p>
+                </a>
+            </div>
         </div>
 
     </main>
