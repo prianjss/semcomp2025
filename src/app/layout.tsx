@@ -11,15 +11,17 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="pt-br">
+    <html>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
-      <Footer />
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
