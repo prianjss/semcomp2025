@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
   title: "SEMCOMP 2025",
@@ -18,6 +19,7 @@ export default function RootLayout({
         />
       </head>
       <body>{children}</body>
+      <Footer />
     </html>
   );
 }
