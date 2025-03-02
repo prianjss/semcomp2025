@@ -1,5 +1,7 @@
-.container {
+.main{
   background: var(--grad-preto-roxo);
+}
+.container {
   height: 100vh;
   width: 100%;
   display: flex;
