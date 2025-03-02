@@ -86,7 +86,7 @@ export default function Palestrantes() {
         </article>
 
         <div className={styles.palestrantesButton}>
-            <a href="/sua-pagina-faq" className={styles.formaBotao}>
+            <a href="/programacao-completa" className={styles.formaBotao}>
                 <img src="./botoes/botao_palestrantes.svg" alt="Botão FAQ Completa" className={styles.imagemBotao} />
                 <p className={styles.textoBotao}>VEJA A PROGRAMAÇÃO COMPLETA</p>
             </a>
