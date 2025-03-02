@@ -5,12 +5,7 @@ import styles from "./page.module.css";
 import DiaUm from '@/components/DiaUm/DiaUm';
 import DiaDois from '@/components/DiaDois/DiaDois';
 import DiaTres from '@/components/DiaTres/DiaTres';
-<<<<<<< HEAD:src/app/programacao_completa/page.tsx
 import DiaQuatro from '@/components/DiaQuatro/DiaQuatro';
-import Footer from '@/components/Footer/Footer';
-=======
-import DiaQuatro from '@/components/DiaQuatro/DiaUm';
->>>>>>> f816f345b9389474380dbeeb57878edb93b77996:src/app/programacao-completa/page.tsx
 import Header from '@/components/Header/Header';
 
 type Dia = 1 | 2 | 3 | 4;

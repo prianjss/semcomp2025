@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-'use client'
-=======
->>>>>>> f816f345b9389474380dbeeb57878edb93b77996
 import styles from './faq.module.css';
 
 export default function Faq() {
