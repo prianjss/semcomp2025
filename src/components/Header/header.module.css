@@ -4,17 +4,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(
-    to left,
-    #000000 0%,
-    #000000 20%,
-    #220B46 30%, 
-    #3A013F 40%,  
-    #3A013F 55%,  
-    #220B46 60%,  
-    #000000 80%,
-    #000000 100%
-);
+  background: rgba(26, 26, 26, 0.4);
   color: var(--branco);
 }
 
