@@ -6,7 +6,6 @@ import DiaUm from '@/components/DiaUm/DiaUm';
 import DiaDois from '@/components/DiaDois/DiaUm';
 import DiaTres from '@/components/DiaTres/DiaTres';
 import DiaQuatro from '@/components/DiaQuatro/DiaUm';
-import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 
 type Dia = 1 | 2 | 3 | 4;
