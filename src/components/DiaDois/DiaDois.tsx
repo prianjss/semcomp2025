@@ -1,6 +1,6 @@
 import styles from '../DiaUm/diaum.module.css';
 
-export default function DiaTres() {
+export default function DiaDois() {
     return (
         <main className={styles.container}>
             <section className={styles.programacaoCard}>
