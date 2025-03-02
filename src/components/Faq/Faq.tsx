@@ -1,4 +1,4 @@
-'use Client'
+'use client'
 import styles from './faq.module.css';
 
 export default function Faq() {

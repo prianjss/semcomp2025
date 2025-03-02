@@ -3,9 +3,9 @@
 import { useState } from 'react';
 import styles from "./page.module.css";
 import DiaUm from '@/components/DiaUm/DiaUm';
-import DiaDois from '@/components/DiaDois/DiaUm';
+import DiaDois from '@/components/DiaDois/DiaDois';
 import DiaTres from '@/components/DiaTres/DiaTres';
-import DiaQuatro from '@/components/DiaQuatro/DiaUm';
+import DiaQuatro from '@/components/DiaQuatro/DiaQuatro';
 import Footer from '@/components/Footer/Footer';
 import Header from '@/components/Header/Header';
 
