@@ -1,9 +1,9 @@
 'use client'
 import styles from './footer.module.css';
 import Image from 'next/image';
-import LogoInfo from '../../../public/logos/logo info.png'
-import LogoIC from '../../../public/logos/logo ic.png'
-import LogoSemcomp from '../../../public/logos/logo semcomp.png'
+import LogoInfo from '../../../public/assets/logo info.png'
+import LogoIC from '../../../public/assets/logo ic.png'
+import LogoSemcomp from '../../../public/assets/logo semcomp.png'
 
 export default function Footer() {
     return (
@@ -30,12 +30,14 @@ export default function Footer() {
         <div className={styles.footerProgramacao}>
           <Image src={LogoSemcomp} alt={'Logo SEMCOMP 2025'} width={181}/>
 
-          <ul>
-            <li>Programação</li>
-            <li>FAQ</li>
-            <li>Hackathon</li>
-            <li>Contato</li>
-          </ul>
+          <nav>
+            <ul>
+              <li>Programação</li>
+              <li>FAQ</li>
+              <li>Hackathon</li>
+              <li>Contato</li>
+            </ul>
+          </nav>
         </div>
       </div>
     );
