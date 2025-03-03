@@ -16,71 +16,71 @@ export default function Palestrantes() {
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png" 
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             <Card 
                 nome="MARK ZUCKERBERG" 
                 cargo="FORMER CEO DA META" 
-                descricao= ""
-                instagram=""
+                descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                instagram="@fulanodasilva"
                 imageUrl="./palestrantes/marquinhos.png"  
             />
             
