@@ -45,7 +45,7 @@ export default function DiaQuatro() {
                         <Image
                             src="/hackathon/hack2.png"
                             alt="Hackathon SemComp 2024"
-                            className={styles.imagem}
+                            className={styles.imagemHack}
                             width={396} 
                             height={300} 
                         />

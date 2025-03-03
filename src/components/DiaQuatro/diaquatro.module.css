@@ -3,15 +3,15 @@
     flex-direction: column;
     gap:16px;
     padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
 }
 
 .programacaoCard{
     display: flex;
     gap:16px;
-}
-
-.conteudoCard{
-    width: 323px;
+    width: 80%;
+    justify-content: center;
 }
 
 .card{
@@ -25,6 +25,10 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 20px;
+}
+
+.conteudoCard{
+    width: 323px;
 }
 
 .titulo{
@@ -92,6 +96,11 @@
 
 .imagem {
     width: 396px;
+    height: auto;
+}
+
+.imagemHack {
+    width: 406px;
     height: auto;
 }
 
