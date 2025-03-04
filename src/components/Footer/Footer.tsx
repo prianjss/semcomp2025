@@ -10,12 +10,14 @@ export default function Footer() {
         <div className={styles.footerEmpresas}>
           <div>
             <h3>Realização:</h3>
-            <Image src={LogoInfo} alt={'Logo InfoJr'} width={131}/>
+            <Image src={LogoInfo} alt={'Logo InfoJr'} width={131} className={styles.logosNormal}/>
+            <Image src={LogoInfo} alt={'Logo InfoJr'} width={119} className={styles.logosResposivo}/>
           </div>
 
           <div>
             <h3>Apoio:</h3>
-            <Image src={LogoIC} alt={'Logo Instituto de Computação'} width={150}/>
+            <Image src={LogoIC} alt={'Logo Instituto de Computação'} width={150} className={styles.logosNormal}/>
+            <Image src={LogoIC} alt={'Logo Instituto de Computação'} width={136} className={styles.logosResposivo}/>
           </div>
         </div>
 
