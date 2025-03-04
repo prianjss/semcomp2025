@@ -7,7 +7,13 @@
   background: rgba(26, 26, 26, 0.4);
   color: var(--branco);
   position: relative;
+  isolation: isolate;
   z-index: 1000;
+  transition: background-color 0.2s ease-out;
+}
+
+.headerContent.open {
+  background-color: black;
 }
 
 .headerLogo {
@@ -81,8 +87,8 @@
   transform: translateX(-50%) translateY(-20px);
   opacity: 0;
   backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, opacity 0.5s ease, background-color 0.5s ease;
-  z-index: 2;
+  transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+  z-index: 999;
 }
 
 .mobileDropdown.open {
@@ -91,6 +97,7 @@
   background-color: black;
   opacity: 1;
   pointer-events: auto;
+  z-index: 999;
 }
 
 .mobileDropdown nav ul {

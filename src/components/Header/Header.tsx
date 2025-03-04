@@ -15,7 +15,7 @@ export default function Header() {
     };
 
     return (
-        <div className={styles.headerContent}>
+        <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''}`}>
             <Image
                 src={LogoSemcomp}
                 alt='Logo SEMCOMP 2025'
