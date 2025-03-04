@@ -4,12 +4,14 @@ import Header from '@/components/Header/Header';
 import Patrocinadores from '@/components/Patrocinadores/Patrocinadores';
 import Palestrantes from '@/components/Palestrantes/Palestrantes';
 import SobreSemcomp from '@/components/SobreSemcomp/sobreSemcomp';
+import SessaoImpacto from '@/components/SessaoImpacto/SessaoImpacto';
 
 
 export default function Home() {
   return (
     <main className={styles.main}>
     <Header />
+    <SessaoImpacto/>
     <SobreSemcomp/>
     <Palestrantes />
     <Patrocinadores/>
