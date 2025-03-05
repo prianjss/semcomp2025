@@ -12,10 +12,15 @@ import Home9 from '../../../public/background/home 9.png'
 import Home10 from '../../../public/background/home 10.png'
 import Home11 from '../../../public/background/home 11.png'
 import Home12 from '../../../public/background/home 12.png'
+import Elipse from '../../../public/assets/home elipse.png'
+import Luz from '../../../public/assets/bola 1.png'
 
 export default function Background() {
 	return (
 		<main className={styles.background}>
+			<Image src={Luz} alt='Luz' className={styles.backgroundLuz}/>
+			<Image src={Elipse} alt='Elipse' className={styles.backgroundElipse}/>
+
 			<section className={styles.backgroundContent}>
 				<div>
 					<Image src={Home1} alt={''} width={328} height={219} className={styles.backgroundFotos}/>

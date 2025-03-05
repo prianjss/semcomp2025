@@ -1,4 +1,29 @@
-.main{
-  background: black;
+.homeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.homeTop {
+  position: relative;
+  isolation: isolate;
+}
+
+.homeMid {
+  position: relative;
+  background: transparent;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+}
+
+.homeLuz {
+	position: absolute;
+	z-index: -1;
+  top: 45%;
+	right: -900px;
+	transform: translateY(-50%);
 }
