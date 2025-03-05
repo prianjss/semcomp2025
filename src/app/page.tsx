@@ -17,6 +17,7 @@ export default function Home() {
     <Palestrantes />
     <Patrocinadores/>
     <Faq />
+    <Realizations/>
     </main>
   );
 }

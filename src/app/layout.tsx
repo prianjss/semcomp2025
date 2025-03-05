@@ -13,7 +13,7 @@ export default function RootLayout({
     <html data-lt-installed="true">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>

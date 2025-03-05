@@ -12,11 +12,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 2rem 0;
+	font-weight: 500;
 }
 
 .realizationContainer_text_title {
 	margin: 0;
-	/*TODO: ajustar peso da fonte*/
 	font-family: var(--font-title);
 	font-weight: 400;
 	font-size: 60px;
@@ -45,9 +45,31 @@
 	gap: 1rem;
 }
 
-.realizationContainer_section_image img {
-	object-fit: fill;
-	width: 580px;
+.realizationContainer_section_image {
+	width: clamp(300px, 580px , 40vw);
+	overflow: hidden;
+}
+
+.firstContainer {
 	height: 242px;
-	mix-blend-mode: multiply;
+
+}
+
+.secondContainer {
+	height: 220px;
+}
+
+.realizationContainer_section_image img {
+	position: relative;
+	object-fit: fill;
+	max-width: 100%;
+	height: auto;
+}
+
+.firstImage {
+	bottom: 2.5rem;
+}
+
+.secondImage {
+	bottom: 6rem;
 }
