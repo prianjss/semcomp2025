@@ -1,5 +1,5 @@
 .main{
-  background: var(--grad-preto-roxo);
+  background: black;
   width: 100%;
 }
 
@@ -33,11 +33,16 @@
 
 .homeData {
   display: flex;
-  gap: 4px;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 20px;
-  line-height: 26px;}
+  line-height: 26px;
+  align-items: center;
+}
+
+.homeDataEstrela {
+  transform: rotate(10deg);
+}
 
 .homeTexto {
   font-family: var(--font-body);

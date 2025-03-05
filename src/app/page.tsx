@@ -8,6 +8,7 @@ import SessaoImpacto from '@/components/SessaoImpacto/SessaoImpacto';
 import Image from 'next/image';
 import Botao from '../../public/botoes/forma botao 1.png'
 import Star from '../../public/assets/star.png'
+import Background from '@/components/Background/Background';
 
 
 export default function Home() {
@@ -15,14 +16,14 @@ export default function Home() {
     <main className={styles.main}>
       <section>
         <Header />
-
+        <Background />
         <div className={styles.home}>
           <h1>SEMCOMP</h1>
           <h1 className={styles.homeTitle}>EM 2025</h1>
           
           <div className={styles.homeData}>
             <h4>09 A 12 DE SETEMBRO</h4>
-            <Image src={Star} alt='Estrela' width={55}/>
+            <Image src={Star} alt='Estrela' width={55} className={styles.homeDataEstrela}/>
             <h4> SALVADOR - BA</h4>
           </div>
 
