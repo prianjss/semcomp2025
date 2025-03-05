@@ -75,7 +75,6 @@
   background-color: #3d3d3d;
   border-radius: 50%;
   transition: all 400ms;
-  transition: all 200ms
 }
 
 .hackatonSectionOuterCircle {
@@ -90,25 +89,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 200ms
 }
 
 .hackatonSectionOuterCircle.active {
   border-color: #cd5cff;
   background-color: transparent;
-  box-shadow: 0 0 24px #cd5cff;
-  transition: all 200ms;
+  box-shadow: 0 0 100px 2px #a10ce1;
 }
 
 .hackatonSectionOuterCircle.active .hackatonSectionCircle {
   background-color: #cd5cff;
-  transition: all 200ms;
-}
-
-.hackatonSectionCircle {
   width: 18px;
   height: 18px;
-  transition: all 200ms
+  box-shadow: 0 0 17px 5px #a10ce1;
 }
 
 .hackatonSectionCircleContainer {
@@ -117,7 +110,6 @@
   flex-direction: column;
   top: 60px;
   gap: 120px;
-  transition: all 200ms
 }
 
 .hackatonSectionRoadmapTextRight {
