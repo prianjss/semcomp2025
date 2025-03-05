@@ -1,8 +1,12 @@
 "use client"
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, forwardRef } from "react";
 import styles from "./hackatonsection.module.css";
 
-export default function HackatonSection() {
+interface HackathonProps {
+  id: string;
+}
+
+const HackatonSection = forwardRef<HTMLDivElement, HackathonProps>(({ id }, ref) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const totalCircles = 4;
@@ -16,7 +20,7 @@ export default function HackatonSection() {
   }, []);
 
   return (
-    <section className={styles.hackatonSectionContainer}>
+    <section id={id} ref={ref} className={styles.hackatonSectionContainer}>
       <article className={styles.hackatonSectionArticle}>
         <div>
           <h2 className={styles.hackatonSectionTitle}>Hackaton</h2>
@@ -93,4 +97,7 @@ export default function HackatonSection() {
       </div>
     </section>
   );
-}
+});
+
+HackatonSection.displayName = 'HackathonSection';
+export default HackatonSection;

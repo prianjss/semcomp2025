@@ -40,6 +40,11 @@
   cursor: pointer;
 }
 
+.headerRedirecionamento nav ul li a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
 .headerBotaoIngresso {
   position: relative;
   display: flex;

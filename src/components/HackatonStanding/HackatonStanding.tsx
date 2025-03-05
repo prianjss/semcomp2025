@@ -45,7 +45,7 @@ export default function HackatonStanding() {
         <p className={styles.hackatonStandingCTA}>
           QUER SABER O CAMINHO E A INFO COMPLETA ATÉ O PRÊMIO SER SEU?
         </p>
-        <a href="/hackaton">
+        <a href="/hackathon">
           <button className={styles.hackatonStandingCTAButton}>
             DESCUBRA AGORA!
           </button>

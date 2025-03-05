@@ -34,9 +34,9 @@ export default function Home() {
       
       <Palestrantes />
       <Patrocinadores />
-      <HackatonSection />
+      <HackatonSection id='hackathon'/>
       <HackatonStanding />
-      <Faq />
+      <Faq id="faq" />
       <Realizations />
     </main>
   );
