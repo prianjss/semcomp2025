@@ -31,7 +31,7 @@ export default function SobreSemcomp() {
             </li>
           </ul>
 
-          <a href="#" className={styles.link}>
+          <a href="https://drive.google.com/drive/folders/1ag4C_L8MXGaIWqZTDAACybr4llfj5DKA?usp=drive_link" className={styles.link}>
             retrospectiva 2024
             <Image
               src="/assets/play.svg"
