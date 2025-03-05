@@ -1,0 +1,178 @@
+.hackatonSectionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #f4f4f4;
+  background-color: #040404;
+}
+
+.hackatonSectionArticle {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  width: 40%;
+  max-width: 554px;
+  justify-content: flex-end;
+}
+
+.hackatonSectionTitle {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 3.75rem;
+  margin: 0;
+}
+
+.hackatonSectionSubtitle {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0;
+}
+
+.hackatonSectionPurpleSpan {
+  color: #ad59fb;
+}
+
+.hackatonSectionText {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.hackatonSectionBold {
+  font-weight: 700;
+}
+
+.hackatonSectionBulletList {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  margin: 0;
+  list-style-type: square;
+  padding-left: 1.125rem;
+  padding-top: 0.5rem;
+}
+
+.hackatonSectionVerticalLine {
+  border: #3d3d3d solid 1.5px;
+  height: 624px;
+  width: 0;
+}
+
+.hackatonSectionDiv {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hackatonSectionCircle {
+  width: 36px;
+  height: 36px;
+  background-color: #3d3d3d;
+  border-radius: 50%;
+  transition: all 400ms;
+  transition: all 200ms
+}
+
+.hackatonSectionOuterCircle {
+  width: 36px;
+  height: 36px;
+  background-color: none;
+  border-radius: 50%;
+  transition: all 400ms;
+  border: 2px solid;
+  border-color: #3d3d3d;
+  background-color: #3d3d3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms
+}
+
+.hackatonSectionOuterCircle.active {
+  border-color: #cd5cff;
+  background-color: transparent;
+  box-shadow: 0 0 24px #cd5cff;
+  transition: all 200ms;
+}
+
+.hackatonSectionOuterCircle.active .hackatonSectionCircle {
+  background-color: #cd5cff;
+  transition: all 200ms;
+}
+
+.hackatonSectionCircle {
+  width: 18px;
+  height: 18px;
+  transition: all 200ms
+}
+
+.hackatonSectionCircleContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 60px;
+  gap: 120px;
+  transition: all 200ms
+}
+
+.hackatonSectionRoadmapTextRight {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: -36px;
+  left: 66px;
+  gap: 195px;
+  color: #f4f4f4;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.hackatonSectionRoadmapTextLeft {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  bottom: -36px;
+  right: 66px;
+  gap: 195px;
+  color: #f4f4f4;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+}
+
+.hackatonSectionButton {
+  margin-top: 40px;
+  width: 303px;
+  height: 52px;
+  background-color: #760ce1;
+  color: white;
+  border: none;
+  outline: none;
+  -webkit-clip-path: path(
+    "M259.217 52H11.7065C10.1214 52 9.32886 52 8.66374 51.9103C4.2013 51.3086 0.691376 47.7987 0.0896819 43.3363C0 42.6711 0 41.8786 0 40.2935C0 38.7018 0 37.906 0.0685368 37.1679C0.519982 32.3062 3.16663 27.9167 7.25554 25.2482C7.87629 24.8431 8.58012 24.4716 9.98775 23.7287L9.98781 23.7287L12.7429 22.2746C13.7014 21.7687 14.1806 21.5158 14.594 21.2258C16.4394 19.9314 17.6531 17.9185 17.9365 15.6822C18 15.1813 18 14.6394 18 13.5557C18 11.181 18 9.99359 18.1826 9.00389C19.0102 4.51918 22.5192 1.01018 27.0039 0.182628C27.9936 0 29.181 0 31.5557 0H276.474C291.124 0 303 11.8762 303 26.5263C303 31.7585 298.758 36 293.526 36H288.22C286.259 36 285.278 36 284.373 36.2134C283.054 36.5243 281.835 37.1653 280.832 38.0762C280.143 38.7013 279.587 39.5094 278.476 41.1254L277.675 42.2902L277.675 42.2905C275.233 45.843 274.012 47.6193 272.416 48.904C271.004 50.0415 269.384 50.8937 267.646 51.4132C265.684 52 263.528 52 259.217 52Z"
+  );
+  clip-path: path(
+    "M259.217 52H11.7065C10.1214 52 9.32886 52 8.66374 51.9103C4.2013 51.3086 0.691376 47.7987 0.0896819 43.3363C0 42.6711 0 41.8786 0 40.2935C0 38.7018 0 37.906 0.0685368 37.1679C0.519982 32.3062 3.16663 27.9167 7.25554 25.2482C7.87629 24.8431 8.58012 24.4716 9.98775 23.7287L9.98781 23.7287L12.7429 22.2746C13.7014 21.7687 14.1806 21.5158 14.594 21.2258C16.4394 19.9314 17.6531 17.9185 17.9365 15.6822C18 15.1813 18 14.6394 18 13.5557C18 11.181 18 9.99359 18.1826 9.00389C19.0102 4.51918 22.5192 1.01018 27.0039 0.182628C27.9936 0 29.181 0 31.5557 0H276.474C291.124 0 303 11.8762 303 26.5263C303 31.7585 298.758 36 293.526 36H288.22C286.259 36 285.278 36 284.373 36.2134C283.054 36.5243 281.835 37.1653 280.832 38.0762C280.143 38.7013 279.587 39.5094 278.476 41.1254L277.675 42.2902L277.675 42.2905C275.233 45.843 274.012 47.6193 272.416 48.904C271.004 50.0415 269.384 50.8937 267.646 51.4132C265.684 52 263.528 52 259.217 52Z"
+  );
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.hackatonSectionColumntainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
