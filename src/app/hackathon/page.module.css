@@ -1,0 +1,99 @@
+.pageHackathonContainer {
+	background: var(--preto);
+	color: var(--branco);
+}
+
+.pageHackathonContainer h1 {
+	font-family: var(--font-title);
+	font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -3%;
+}
+
+.pageHackathonContainer h2 {
+	font-family: var(--font-title);
+	font-weight: 400;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -3%;
+	margin: 0;
+}
+
+.pageHackathonContainer p {
+	font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28.6px;
+  letter-spacing: -3%;
+	margin: 0;
+}
+
+.pageHackathonSection {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 300px;
+} 
+
+.hackathonConteudo{
+	width: 91%;
+}
+
+.pageHackathonConteudo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 68px;
+}
+
+.pageHackathonPerguntas {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.pageHackathonPerguntasQuando {
+	width: 318px;
+}
+
+.pageHackathonPerguntasComo {
+	width: 562px;
+}
+
+.pageHackathonImagens {
+	display: flex;
+	flex-direction: column;
+	gap: 34px;
+}
+
+.pageHackathonDuvida {
+	display: flex;
+	flex-direction: column;
+	margin-top: 90px;
+}
+
+.pageHackathonDuvida p {
+	width: 420px;
+}
+
+.pageHackathonDuvida div {
+	display: flex;
+	flex-direction: row;
+	gap: 4px;
+	justify-items: center;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.pageHackathonDuvida a {
+	font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 32.5px;
+  letter-spacing: -3%;
+	color: var(--branco);
+	margin: 0;
+}

@@ -1,0 +1,138 @@
+.card {
+    width: 225px;
+    height: 320px;
+    border-radius: 12px 12px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardFrente, .cardVerso {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-in-out;
+  }
+
+.cardFrente {
+    background-size: cover;
+    background-position: center;
+}
+
+.informacoesCard {
+    bottom: 0;
+    position: absolute;
+    padding: 0;
+    height: 94px;
+    width: 100%;
+    background: url('/assets/Subtract.svg') no-repeat center bottom;
+    background-position: center bottom;
+    background-size: cover;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardNome {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #F4F4F4;
+    padding-top: 12px;
+    padding-left: 40px;
+    margin: 0 ;
+}
+
+.cardCargo {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #F4F4F4;
+    padding-top: 4px;
+    padding-left: 40px;
+    margin: 0 ;
+}
+
+.animacao{
+    padding-top: 8px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap:6px;
+    color: #F4F4F4;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12.84px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    cursor: pointer;
+}
+
+.cardVerso {
+    background-color: var(--preto);
+    color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: rotateY(180deg);
+}
+
+.versoInformacoes {
+    padding: 21.2px 33.25px 0px 13.56px;
+}
+
+.cardVerso h2 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 600;
+    font-size: 13.56px;
+    margin: 0 ;
+}
+
+.cardVerso h3 {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 8.14px;
+    margin: 0;
+    margin-bottom: 17.48px;
+}
+
+.cardVerso p {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-size: 9.49px;
+    margin: 0 ;
+    margin-bottom: 11.8px;
+    gap: 12px;
+}
+
+.cardInstagram {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-weight: 400;
+    font-size: 8.14px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    cursor: pointer;
+}
+
+.cardInstagram p {
+    margin-bottom: 0;
+}
+
+.cardVersoVoltar {
+    padding: 21.02px 13.56px 0px 0px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.card.flipped .cardFrente {
+    transform: rotateY(180deg);
+}
+  
+  .card.flipped .cardVerso {
+    transform: rotateY(360deg);
+}

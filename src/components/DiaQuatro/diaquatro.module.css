@@ -1,0 +1,144 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    padding-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.programacaoCard{
+    display: flex;
+    gap:16px;
+    width: 80%;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:60px;
+    border: 1px solid #AD59FB;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 20px;
+}
+
+.conteudoCard{
+    width: 323px;
+}
+
+.titulo{
+    margin: 0;
+    color:white;
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38.4px;
+    letter-spacing: -3%;
+}
+
+.titulo span{
+    font-family: Bebas Neue;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33.6px;
+    letter-spacing: -3%;
+}
+
+.sobre{
+    margin: 0;
+    padding-top: 8px;
+    color: white;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    letter-spacing: -3%;
+}
+
+.palestranteP{
+    margin: 0;
+    padding-top: 16px;
+    color: white;
+    font-family: IBM Plex Sans;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: -3%;
+}
+
+.cargoP{
+    margin: 0;
+    padding-top: 2px;
+    color: #f4f4f4;
+    font-family: IBM Plex Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+    letter-spacing: -3%;
+    opacity: 0.4;
+}
+
+.nomeP{
+    margin: 0;
+    padding-top: 2px;
+    color: white;
+    font-family: IBM Plex Sans;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    letter-spacing: -3%;
+}
+
+.imagem {
+    width: 396px;
+    height: auto;
+}
+
+.imagemHack {
+    width: 406px;
+    height: auto;
+}
+
+.hackButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.formaBotao {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border: none; 
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
+.imagemBotao{
+    width: 410px;
+    height: auto;
+    display: block;
+  }
+  
+.textoBotao {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--font-body);
+    font-family: IBM Plex Sans;
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}

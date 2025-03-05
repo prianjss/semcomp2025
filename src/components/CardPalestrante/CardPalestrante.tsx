@@ -1,0 +1,66 @@
+'use client'
+import { useState } from 'react';
+import Image from 'next/image';
+import styles from './card.module.css';
+import InstagramIcon from '../../../public/assets/instagram icon.svg'
+
+interface CardProps {
+  nome: string;
+  cargo: string;
+  descricao: string;
+  instagram: string;
+  imageUrl: string;
+}
+
+export default function Card({ nome, cargo, descricao, instagram, imageUrl }: CardProps) {
+  const [flipped, setFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setFlipped(!flipped);
+  };
+
+  return (
+    <main className={`${styles.card} ${flipped ? styles.flipped : ''}`}>
+      <section className={styles.cardFrente} style={{ backgroundImage: `url(${imageUrl})` }}>
+        <div className={styles.informacoesCard}>
+          <h2 className={styles.cardNome}>{nome}</h2>
+          <h3 className={styles.cardCargo}>{cargo}</h3>
+          <div className={styles.animacao} onClick={handleFlip}> 
+            Conheça mais sobre
+            <Image 
+              src="/assets/conhecaMais.svg" 
+              alt="Conheça mais" 
+              width={12} 
+              height={13} 
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.cardVerso}>
+        <div className={styles.versoInformacoes}>
+          <h2>{nome}</h2>
+          <h3>{cargo}</h3>
+          <div>
+            {descricao && descricao.split("\n").map((paragrafo, index) => (
+            <p key={index}>{paragrafo}</p>
+          ))}
+          </div>
+          <div className={styles.cardInstagram}>
+            <Image src={InstagramIcon} alt='Instagram' width={10}/>
+            <p>{instagram}</p>
+          </div>
+        </div>
+      
+        <Image 
+          src="/assets/conhecaMais.svg" 
+          alt="Conheça mais" 
+          width={12} 
+          height={13}
+          className={styles.cardVersoVoltar}
+          onClick={handleFlip} 
+        />
+      </section>
+    </main>
+  );
+}
