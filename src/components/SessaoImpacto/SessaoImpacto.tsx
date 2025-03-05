@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./SessaoImpacto.module.css";
+import styles from "./sessaoImpacto.module.css"
 
 const impactoData = [
   {
