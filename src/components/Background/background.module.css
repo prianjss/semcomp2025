@@ -26,9 +26,9 @@
 }
 
 .backgroundDestaque {
-	opacity: 0.8;
+	opacity: 1;
 	box-shadow: 0 4px 15px rgba(73, 18, 68, 0.7);	
-	border-radius: 16px;
+	border-radius: 12px;
 }
 
 .backgroundMedio {
