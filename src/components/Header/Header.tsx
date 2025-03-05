@@ -1,11 +1,12 @@
 'use client';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import styles from './header.module.css';
 import Image from 'next/image';
 import LogoSemcomp from '../../../public/assets/logo semcomp.png';
 import LogoMobile from '../../../public/assets/logoMobile.svg';
 import Ingresso from '../../../public/assets/ingresso.svg';
 import Botao from '../../../public/botoes/forma botao 2.png';
+import Link from 'next/link';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -14,28 +15,39 @@ export default function Header() {
         setMenuOpen(prevState => !prevState);
     };
 
+    const scrollToSection = (sectionId: string): void => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''}`}>
-            <Image
-                src={LogoSemcomp}
-                alt='Logo SEMCOMP 2025'
-                width={181}
-                className={styles.headerLogo}
-            />
-            <Image
-                src={LogoMobile}
-                alt='Logo SEMCOMP 2025'
-                width={30}
-                className={styles.logoMobile}
-            />
+            <Link href='/'>
+                <Image
+                    src={LogoSemcomp}
+                    alt='Logo SEMCOMP 2025'
+                    width={181}
+                    className={styles.headerLogo}
+                />
+            </Link>
+            <Link href='/'>
+                <Image
+                    src={LogoMobile}
+                    alt='Logo SEMCOMP 2025'
+                    width={30}
+                    className={styles.logoMobile}
+                />
+            </Link>
 
             <div className={`${styles.headerRedirecionamento} ${menuOpen ? styles.menuOpen : ''}`}>
                 <nav>
                     <ul>
-                        <li>Programação</li>
-                        <li>FAQ</li>
-                        <li>Hackathon</li>
-                        <li>Contato</li>
+                        <li><a href='/programacao-completa'>Programação</a></li>
+                        <li><a href="#" onClick={() => scrollToSection('faq')}>FAQ</a></li>
+                        <li><a href="#" onClick={() => scrollToSection('hackathon')}>Hackathon</a></li>
+                        <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
                     </ul>
                 </nav>
 
@@ -56,10 +68,10 @@ export default function Header() {
             <div className={`${styles.mobileDropdown} ${menuOpen ? styles.open : ''}`}>
                 <nav>
                     <ul>
-                        <li>Programação</li>
-                        <li>FAQ</li>
-                        <li>Hackathon</li>
-                        <li>Contato</li>
+                        <li><a href='/programacao-completa'>Programação</a></li>
+                        <li><a href="#" onClick={() => scrollToSection('faq')}>FAQ</a></li>
+                        <li><a href="#" onClick={() => scrollToSection('hackathon')}>Hackathon</a></li>
+                        <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
                         <div className={styles.headerBotaoIngresso}>
                             <Image
                                 src={Botao}

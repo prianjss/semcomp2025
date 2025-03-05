@@ -71,6 +71,10 @@
   line-height: 26px;
 }
 
+.footerProgramacao ul li a {
+  color: var(--branco);
+}
+
 @media (min-width: 1441px){
   .footerContainer {
     justify-content: space-around;

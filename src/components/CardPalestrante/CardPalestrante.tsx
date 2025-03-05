@@ -30,8 +30,8 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
             <Image 
               src="/assets/conhecaMais.svg" 
               alt="Conheça mais" 
-              width={12} 
-              height={13} 
+              width={13} 
+              height={14} 
             />
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
           ))}
           </div>
           <div className={styles.cardInstagram}>
-            <Image src={InstagramIcon} alt='Instagram' width={10}/>
+            <Image src={InstagramIcon} alt='Instagram' width={12}/>
             <p>{instagram}</p>
           </div>
         </div>
@@ -55,8 +55,8 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
         <Image 
           src="/assets/conhecaMais.svg" 
           alt="Conheça mais" 
-          width={12} 
-          height={13}
+          width={13} 
+          height={14}
           className={styles.cardVersoVoltar}
           onClick={handleFlip} 
         />

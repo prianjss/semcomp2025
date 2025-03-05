@@ -4,6 +4,7 @@
     border-radius: 12px 12px 0px 0px;
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
 
 .cardFrente, .cardVerso {
@@ -93,7 +94,7 @@
 .cardVerso h3 {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    font-size: 8.14px;
+    font-size: 10px;
     margin: 0;
     margin-bottom: 17.48px;
 }
@@ -101,9 +102,9 @@
 .cardVerso p {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    font-size: 9.49px;
+    font-size: 11px;
     margin: 0 ;
-    margin-bottom: 11.8px;
+    margin-bottom: 12px;
     gap: 12px;
 }
 
@@ -112,7 +113,7 @@
     align-items: center;
     gap: 2px;
     font-weight: 400;
-    font-size: 8.14px;
+    font-size: 10px;
     letter-spacing: 0%;
     text-decoration: underline;
     text-decoration-style: solid;

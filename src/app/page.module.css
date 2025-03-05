@@ -1,16 +1,29 @@
-.main{
-  background: var(--grad-preto-roxo);
-}
-.container {
-  height: 100vh;
+.homeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
+  z-index: -1; 
 }
 
-.title {
-  font-family: var(--font-title);
-  color: var(--branco);
-  font-size: 3rem;
+.homeTop {
+  position: relative;
+  isolation: isolate;
+}
+
+.homeMid {
+  position: relative;
+  background: transparent;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+}
+
+.homeLuz {
+	position: absolute;
+	z-index: -1;
+  top: 45%;
+	right: -900px;
+	transform: translateY(-50%);
 }
