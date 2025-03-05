@@ -39,9 +39,8 @@ export default function Home() {
         <SobreSemcomp/>
       </section>
     <Palestrantes />
-    <Patrocinadores/>
+    <Patrocinadores />
     <Faq />
     </main>
-    
   );
 }
