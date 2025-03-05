@@ -4,6 +4,8 @@ import Header from '@/components/Header/Header';
 import Patrocinadores from '@/components/Patrocinadores/Patrocinadores';
 import Palestrantes from '@/components/Palestrantes/Palestrantes';
 import SobreSemcomp from '@/components/SobreSemcomp/sobreSemcomp';
+import HackatonSection from '@/components/HackatonSection/HackatonSection';
+import HackatonStanding from '@/components/HackatonStanding/HackatonStanding';
 import SessaoImpacto from '@/components/SessaoImpacto/SessaoImpacto';
 
 
@@ -14,7 +16,9 @@ export default function Home() {
     <SessaoImpacto/>
     <SobreSemcomp/>
     <Palestrantes />
-    <Patrocinadores/>
+    <Patrocinadores />
+    <HackatonSection />
+    <HackatonStanding />
     <Faq />
     </main>
   );
