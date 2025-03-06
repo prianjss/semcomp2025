@@ -130,6 +130,11 @@
   cursor: pointer;
 }
 
+.mobileDropdown nav ul li a {
+  color: var(--branco);
+  text-decoration: none;
+}
+
 .hamburguer {
   position: relative;
   width: 30px;

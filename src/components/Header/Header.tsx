@@ -24,7 +24,7 @@ export default function Header() {
 
     return (
         <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''}`}>
-            <Link href='/'>
+            <Link href='/' className={styles.headerLogo}>
                 <Image
                     src={LogoSemcomp}
                     alt='Logo SEMCOMP 2025'
@@ -32,7 +32,7 @@ export default function Header() {
                     className={styles.headerLogo}
                 />
             </Link>
-            <Link href='/'>
+            <Link href='/' className={styles.logoMobile}>
                 <Image
                     src={LogoMobile}
                     alt='Logo SEMCOMP 2025'
