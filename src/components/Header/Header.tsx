@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './header.module.css';
 import Image from 'next/image';
 import LogoSemcomp from '../../../public/assets/logo semcomp.png';
@@ -10,6 +10,22 @@ import Link from 'next/link';
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0){
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     const toggleMenu = () => {
         setMenuOpen(prevState => !prevState);
@@ -23,7 +39,7 @@ export default function Header() {
       };
 
     return (
-        <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''}`}>
+        <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''} ${scrolled ? styles.scrolled : ''}`}>
             <Link href='/' className={styles.headerLogo}>
                 <Image
                     src={LogoSemcomp}
@@ -86,12 +102,10 @@ export default function Header() {
                         </div>
                     </ul>   
                 </nav>
-
-                
             </div>
 
             <div className={styles.menuIcon} onClick={toggleMenu}>
-            <div className={`${styles.hamburguer} ${menuOpen ? styles.open : ''}`}></div>
+                <div className={`${styles.hamburguer} ${menuOpen ? styles.open : ''}`}></div>
             </div>
         </div>
     );
