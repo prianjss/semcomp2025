@@ -28,27 +28,29 @@ export default function Banner () {
 
 	return (
 		<main className={styles.banner}>
-			<h1>SEMCOMP</h1>
-			<h1 className={styles.bannerTitle}>EM 2025</h1>
-			
-			<div className={styles.bannerData}>
-				<h4>09 A 12 DE SETEMBRO</h4>
-				<Image src={Star} alt='Estrela' width={55} className={styles.bannerDataEstrela}/>
-				<h4> SALVADOR - BA</h4>
-			</div>
+			<div className={styles.bannerContainer}>
+				<h1>SEMCOMP</h1>
+				<h1 className={styles.bannerTitle}>EM 2025</h1>
 
-			<p className={styles.bannerTexto}>O maior evento de computação e tecnologia de Salvador está de volta, de cara nova, e na sua 13ª edição!</p>
-			
-			<div className={styles.bannerFormaBotao}>
-				<Image src={Botao} alt='Participe Agora' width={239} className={styles.bannerBotao} />
-				<p>PARTICIPE AGORA</p>
+				<div className={styles.bannerData}>
+					<h4>09 A 12 DE SETEMBRO</h4>
+					<Image src={Star} alt='Estrela' width={55} className={styles.bannerDataEstrela}/>
+					<h4> SALVADOR - BA</h4>
+				</div>
+
+				<p className={styles.bannerTexto}>O maior evento de computação e tecnologia de Salvador está de volta, de cara nova, e na sua 13ª edição!</p>
+
+				<div className={styles.bannerFormaBotao}>
+					<Image src={Botao} alt='Participe Agora' className={styles.bannerBotao} />
+					<p>PARTICIPE AGORA</p>
+				</div>
 			</div>
 
 			<div
 			ref={bannerRef}
 			className={`${styles.bannerCirculoSeta} ${isHidden ? styles.hidden : ''}`}>
 				<div className={styles.bannerCirculo}></div>
-				<Image src={Seta} alt='Seta' width={32} className={styles.bannerSeta}/>
+				<Image src={Seta} alt='Seta' className={styles.bannerSeta}/>
 			</div>
 		</main>
 	)

@@ -1,11 +1,16 @@
 .banner {
+    color: #F4F4F4;
+    width: 100%;
+    background: transparent;
+  }
+
+  .bannerContainer {
     display: flex;
     flex-direction: column;
-    color: #F4F4F4;
-    width: 85%;
-    justify-self: center;
+    width: 385px;
+    margin-left: 8%;
     padding-top: 140px;
-    background: transparent;
+    justify-self: flex-start;
   }
 
   .banner h1 {
@@ -23,9 +28,11 @@
     display: flex;
     font-family: var(--font-body);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 26px;
     align-items: center;
+    white-space: nowrap;
+
   }
   
   .bannerDataEstrela {
@@ -35,9 +42,8 @@
   .bannerTexto {
     font-family: var(--font-body);
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 23.4px;
-    width: 385px;
     margin: 0;
     margin-bottom: 60px;
   }
@@ -55,6 +61,8 @@
   .bannerBotao {
     display: block;
     position: relative;
+    width: 240px;
+    height: 48px;
   }
   
   .bannerFormaBotao p {
@@ -93,6 +101,8 @@
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    width: 32px;
+    height: 32px;
   }
   
   @keyframes flutuar {
@@ -108,3 +118,65 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  @media (max-width: 647px){
+    .bannerContainer {
+      width: 300px;
+    }
+
+    .bannerData {
+      font-size: 0.9rem;  
+    }
+  }
+
+  @media (max-width: 500px) {
+    .bannerContainer {
+      width: 200px;
+      padding-top: 40px;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      line-height: 40px;
+    }
+    
+    .bannerData {
+      font-size: 0.7rem;  
+    }
+
+    .bannerTexto {
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+      letter-spacing: 0;
+      line-height: normal;
+    }
+
+    .bannerFormaBotao {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .bannerBotao {
+      width: 100px;
+      height: 20px;
+    }
+    
+    .bannerFormaBotao p {
+      width: 67px;
+      font-size: 7.5px;
+    }
+
+    .bannerCirculoSeta {
+      width: 17px; 
+      height: 17px;
+    }
+
+    .bannerCirculo {
+      filter: blur(9px);
+    }
+    
+    .bannerSeta {
+      width: 10px;
+      height: 9px;
+  }
+}
