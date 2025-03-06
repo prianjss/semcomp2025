@@ -44,7 +44,6 @@
 
 .formaBotao {
     position: relative;
-    z-index: 0;
     display: inline-block;
     text-decoration: none;
     border: none; 

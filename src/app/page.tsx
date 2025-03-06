@@ -21,9 +21,7 @@ export default function Home() {
           <Background />
         </div>
         
-        <div className={styles.homeHeader}>
-          <Header />
-        </div>
+        <Header />
         <Banner />
         {/*COLOCAR COUNTDOWN AQUI*/}
       </section>
