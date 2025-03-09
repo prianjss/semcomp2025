@@ -176,6 +176,12 @@
 	}
 }
 
+@media (max-width: 715px){
+	.pageHackathonSection{
+		margin-top: 72px;
+	}
+}
+
 @media (max-width: 520px) {
 	.pageHackathonSection {
 		padding-bottom: 92px;
