@@ -61,7 +61,7 @@ const Faq = forwardRef<HTMLDivElement, FaqProps>(({ id }, ref) => {
                 <p className={styles.textoBotao}>FAQ COMPLETA</p>
             </a>
 
-            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao}>
+            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao2}>
                 <Image
                     src="/botoes/forma_botao_4.svg"
                     alt="Botão Fale Conosco"
