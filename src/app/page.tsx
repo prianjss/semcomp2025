@@ -15,13 +15,15 @@ import Luz from '../../public/assets/bola 3.png'
 
 export default function Home() {
   return (
-    <main>
+    <main style={{overflow: 'hidden'}}>
       <section className={styles.homeTop}>
         <div className={styles.homeBackground}>
           <Background />
         </div>
         
-        <Header />
+        <div className={styles.homeHeader}>
+          <Header />
+        </div>
         <Banner />
         {/*COLOCAR COUNTDOWN AQUI*/}
       </section>
