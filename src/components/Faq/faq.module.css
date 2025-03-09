@@ -77,6 +77,16 @@
     margin: 0px;
 }
 
+.formaBotao2 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    border: none; 
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+
 .imagemBotao{
     width: 250px;
     height: 48px;
@@ -108,5 +118,156 @@
     font-weight: 700;
     font-size: 16px;
     text-align: center;
+}
+
+@media (max-width:1130px){
+
+    .faqHeader{
+        padding-top: 80px;
+        padding-left: 80px;
+    }
+
+    .faqContent{
+        padding-left: 80px;
+        padding-right: 80px;
+        margin-top: 20px;
+        gap: 30px;
+    }
+
+    .faqSection{
+        gap:40px;
+    }
+
+    .faqButtons {
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width:900px){
+
+    .faqHeader{
+        padding-top: 60px;
+        padding-left: 60px;
+    }
+
+    .faqContent{
+        padding-left: 60px;
+        padding-right: 60px;
+        gap: 30px;
+    }
+
+    .faqButtons {
+        margin-top: 50px;
+        margin-right: 0;
+        justify-content: center;
+    }
+}
+
+@media (max-width:780px){
+
+    .faqHeader{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+
+    .faqContent{
+        padding: 0px 30px;
+    }
+
+    .faqButtons {
+        margin-top: 40px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:677px){
+    .faqContainer{
+        width: 100%;
+        height: auto;
+    }
+
+    .faqHeader{
+        padding: 18px 18px 0px 18px;
+    }
+
+    .faqTitle{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .faqSection{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .faqButtons {
+        margin:0;
+        padding: 18px;
+        flex-direction: column;
+        align-items: center;
+        gap:18px;
+    }
+
+    .imagemBotao{
+        width: 207px;
+        height: 46px;
+      }
+
+      .textoBotao{
+        width: 100%;
+    }
+
+    .textoBotao2{
+        width: 100%;
+    }
+}
+
+@media (max-width:460px){
+
+    .faqContent{
+        margin-top: 0;
+        padding: 0px 18px 48px 18px;
+        gap:20px;
+    }
+
+    .faqSection{
+        gap:20px;
+    }
+
+    .faqTitle{
+        font-size: 36px;
+    }
+
+    .faqSubtitle{
+        padding: 0;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: -0.54px;
+    }
+
+    .faqButtons {
+        padding-bottom: 56px;
+        align-items: flex-start;
+    }
+
+    .formaBotao {
+        width: 207px;
+        margin-left: auto;
+    }
+    
+    .formaBotao2 {
+        width: 207px;
+    }
+
+    .textoBotao{
+        width: 100%;
+    }
+
+    .textoBotao2{
+        width: 100%;
+    }
 }
    

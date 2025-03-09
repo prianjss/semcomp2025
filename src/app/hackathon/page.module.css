@@ -69,7 +69,7 @@
 .pageHackathonImagens {
 	display: flex;
 	flex-direction: column;
-	gap: 34px;
+	gap: 4vh;
 }
 
 .pageHackathonDuvida {
@@ -99,4 +99,115 @@
   letter-spacing: -3%;
 	color: var(--branco);
 	margin: 0;
+}
+
+@media (min-width: 1440px) {
+	.hackathonConteudo{
+		width: 70%;
+	}
+	
+	.pageHackathonDuvida p {
+		width: 70%;
+	}
+
+	.pageHackathonPerguntasQuando {
+		width: 100%;
+	}
+	
+	.pageHackathonPerguntasComo {
+		width: 100%;
+	}
+}
+
+@media (max-width: 1250px) {
+	.pageHackathonSection {
+		padding-bottom: 200px;
+		padding-top: 50px;
+	} 
+
+	.pageHackathonConteudo {
+		flex-direction: column;
+		gap: 4vh;
+	}
+
+	.pageHackathonImagens {
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.pageHackathonSection {
+		padding-bottom: 170px;
+		padding-top: 40px;
+	} 
+
+	.pageHackathonPerguntasQuando {
+		width: 50%;
+	}
+	
+	.pageHackathonPerguntasComo {
+		width: 80%;
+	}
+
+	.pageHackathonDuvida p {
+		width: 70%;
+	}
+
+
+	.pageHackathonContainer h1 {
+		  font-size: 50px;
+		  line-height: 50px;
+		  margin-bottom: 8px;
+	}
+	
+	.pageHackathonContainer h2 {
+	  font-size: 40px;
+	  line-height: 50px;
+	}
+	
+	.pageHackathonContainer p {
+	  font-size: 20px;
+	  line-height: 20px;
+	}
+
+	.pageHackathonDuvida a {
+	  font-size: 22px;
+	  line-height: 20px;
+	}
+}
+
+@media (max-width: 520px) {
+	.pageHackathonSection {
+		padding-bottom: 92px;
+		padding-top: 35px;
+	} 
+
+	.pageHackathonContainer h1 {
+		  font-size: 35px;
+		  line-height: 35px;
+		  margin-bottom: 6px;
+	}
+	
+	.pageHackathonContainer h2 {
+	  font-size: 22px;
+	  line-height: 30px;
+	}
+	
+	.pageHackathonContainer p {
+	  font-size: 13px;
+	  line-height: 15px;
+	}
+
+	.pageHackathonPerguntas {
+		gap: 14px;
+	}
+
+	.pageHackathonDuvida {
+		margin-top: 30px;
+	}
+
+	.pageHackathonDuvida a {
+	  font-size: 12px;
+	  line-height: 20px;
+	}
 }

@@ -41,10 +41,12 @@ export default function SessaoImpacto() {
               height={160}
               className={styles.image}
             />
-            <p className={styles.value} style={{ color: item.color }}>
-              {item.value}
-            </p>
-            <p className={styles.description}>{item.description}</p>
+            <div className={styles.impactContent}>
+              <p className={styles.value} style={{ color: item.color }}>
+                {item.value}
+              </p>
+              <p className={styles.description}>{item.description}</p>
+            </div>
           </div>
         ))}
       </div>
