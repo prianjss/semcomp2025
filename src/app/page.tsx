@@ -12,6 +12,7 @@ import Realizations from '@/components/Realizations/Realizations';
 import Banner from '@/components/Banner/Banner';
 import Image from 'next/image';
 import Luz from '../../public/assets/bola 3.png'
+import Countdown from '@/components/Countdown/Countdown';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
         
         <Header />
         <Banner />
-        {/*COLOCAR COUNTDOWN AQUI*/}
+        <Countdown />
       </section>
 
       <section className={styles.homeMid}>

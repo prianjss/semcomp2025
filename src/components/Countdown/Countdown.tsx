@@ -1,0 +1,184 @@
+'use client';
+import Image from 'next/image';
+import styles from './countdown.module.css';
+import { AnimationEventHandler, useEffect, useState } from 'react';
+
+function StaticCard({ position, digit, over=false }:{
+    position: "upperCard" | "lowerCard";
+    digit: string;
+    over?: boolean;
+}){
+    return (
+        <div className={styles[position]} style={over ? {
+            position: "absolute",
+            top: "50%"
+        } : {}}>
+            <span>{digit}</span>
+        </div>
+    )
+}
+
+function AnimatedCard({ animation, digit, onAnimationEnd, onAnimationStart }:{
+    animation: "fold" | "unfold";
+    digit: string;
+    onAnimationEnd?: AnimationEventHandler<HTMLDivElement>;
+    onAnimationStart?: AnimationEventHandler<HTMLDivElement>;
+}){
+    return (
+        <div className={[styles.flipCard, styles[animation]].join(" ")} onAnimationEnd={onAnimationEnd} onAnimationStart={onAnimationStart}>
+            <span>{digit}</span>
+        </div>
+    )
+}
+
+interface SingleTimerProps {
+    label: string;
+    value: number;
+    prev: number;
+    shuffle: boolean;
+    len?: number;
+}
+
+function SingleTimer({
+    label,
+    value,
+    prev,
+    shuffle,
+    len = 2,
+}: SingleTimerProps){
+    const [overCard, setOverCard] = useState(true);
+    const [overValue, setOverValue] = useState(value)
+    const value1 = shuffle? prev : value;
+    const value2 = shuffle? value : prev;
+
+    useEffect(()=>{
+        setOverValue(prev);
+        setOverCard(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[shuffle])
+    return(
+        <div className={styles.timer}>
+            <div className={styles.timer_clock}>
+                <StaticCard position='upperCard' digit={value.toString().padStart(len, "0")} />
+                <StaticCard position='lowerCard' digit={prev.toString().padStart(len, "0")}/>
+                <AnimatedCard 
+                    animation={shuffle? 'fold' : 'unfold'} 
+                    digit={value1.toString().padStart(len, "0")} 
+                    onAnimationEnd={shuffle ? 
+                        ()=>{
+                            setOverValue(value)
+                            setOverCard(true);
+                        }
+                        : undefined
+                    }
+                    onAnimationStart={!shuffle ?
+                        ()=>{
+                            setOverCard(false);
+                        }
+                        :undefined
+                    }
+                />
+                <AnimatedCard 
+                    animation={shuffle? 'unfold' : 'fold'} 
+                    digit={value2.toString().padStart(len, "0")} 
+                    onAnimationEnd={!shuffle ? 
+                        ()=>{
+                            setOverValue(value)
+                            setOverCard(true);
+                        }
+                        : undefined
+                    }
+                    onAnimationStart={shuffle ?
+                        ()=>{
+                            setOverCard(false);
+                        }
+                        :undefined
+                    }
+                />
+                {overCard && <StaticCard position='lowerCard' digit={overValue.toString().padStart(len, "0")} over={true}/>}
+            </div>
+            <p className={styles.timer_label}>{label}</p>
+        </div>
+    )
+}
+
+export default function Countdown(){
+    const [hours, setHours] = useState({
+        value:0,
+        prev:1,
+        shuffle:true
+    });
+
+    const [days, setDays] = useState({
+        value:0,
+        prev:1,
+        shuffle:true
+    });
+
+    const [months, setMonths] = useState({
+        value:0,
+        prev:1,
+        shuffle:true
+    });
+
+    const updateTime = (first=false)=>{
+        const time = (new Date('09-09-2025'));
+        const now = new Date();
+        const h = time.getHours() - now.getHours();
+        const d = time.getDate() - now.getDate() - +(h < 0);
+        const m = time.getMonth() - now.getMonth() - +(d < 0);
+
+        setHours(prev=>{
+            if(h !== prev.value || first){
+                return {
+                    value: h,
+                    prev: prev.value,
+                    shuffle: !prev.shuffle
+                };
+            }
+            return prev;
+        })
+
+        setDays(prev=>{
+            if(d !== prev.value || first){
+                return {
+                    value: d,
+                    prev: prev.value,
+                    shuffle: !prev.shuffle
+                };
+            }
+            return prev;
+        })
+
+        setMonths(prev=>{
+            if(m !== prev.value || first){
+                return {
+                    value: m,
+                    prev: prev.value,
+                    shuffle: !prev.shuffle
+                };
+            }
+            return prev;
+        })
+    }
+    
+    useEffect(()=>{
+        const interval = setInterval(updateTime, 100);
+        return ()=>clearInterval(interval);
+    }, [hours, days, months])
+
+    useEffect(()=>updateTime(true),[])
+
+    return (
+        <section className={styles.container}>
+            <Image className={styles.container_background} src="/assets/bola 2.png"  width={2047} height={1588} alt="" />
+            <h1 className={styles.container_title}>COUNTDOWN SEMCOMP</h1>
+            <p className={styles.container_desc}>Quanto tempo falta para o maior evento de computação e tecnologia de Salvador?</p>
+            <div className={styles.container_countdown}>
+                <SingleTimer label='Meses' shuffle={months.shuffle} value={months.value} prev={months.prev} />
+                <SingleTimer label='Dias' shuffle={days.shuffle} value={days.value >= 0 ? days.value : (30 + days.value)} prev={days.prev >= 0 ? days.prev : (30 + days.prev)} />
+                <SingleTimer label='Horas' shuffle={hours.shuffle} value={hours.value >= 0 ? hours.value : (24 + hours.value)} prev={hours.prev >= 0 ? hours.prev : (24 + hours.prev)} />
+            </div>
+        </section>
+    )
+}
