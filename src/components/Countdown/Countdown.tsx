@@ -105,19 +105,19 @@ function SingleTimer({
 export default function Countdown(){
     const [hours, setHours] = useState({
         value:0,
-        prev:1,
+        prev:0,
         shuffle:true
     });
 
     const [days, setDays] = useState({
         value:0,
-        prev:1,
+        prev:0,
         shuffle:true
     });
 
     const [months, setMonths] = useState({
         value:0,
-        prev:1,
+        prev:0,
         shuffle:true
     });
 
@@ -166,8 +166,6 @@ export default function Countdown(){
         const interval = setInterval(updateTime, 100);
         return ()=>clearInterval(interval);
     }, [hours, days, months])
-
-    useEffect(()=>updateTime(true),[])
 
     return (
         <section className={styles.container}>
