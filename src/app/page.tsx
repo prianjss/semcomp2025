@@ -16,13 +16,15 @@ import Countdown from '@/components/Countdown/Countdown';
 
 export default function Home() {
   return (
-    <main>
+    <main style={{overflow: 'hidden'}}>
       <section className={styles.homeTop}>
         <div className={styles.homeBackground}>
           <Background />
         </div>
         
-        <Header />
+        <div className={styles.homeHeader}>
+          <Header />
+        </div>
         <Banner />
         <Countdown />
       </section>
