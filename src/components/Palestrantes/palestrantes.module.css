@@ -79,3 +79,10 @@
     text-decoration-thickness: Auto;
     text-decoration-skip-ink: auto;
 }
+
+@media(max-width:1360px){
+    .palestrantesContent {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+    }
+}

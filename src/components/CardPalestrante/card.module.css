@@ -137,3 +137,65 @@
   .card.flipped .cardVerso {
     transform: rotateY(360deg);
 }
+
+@media(max-width:1360px){
+    .card {
+        width: 180px;
+        height: 256px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .informacoesCard {
+        height: 85px;
+    }
+
+    .cardNome {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    .cardCargo {
+        font-size: 11px;
+        padding-left: 20px;
+    }
+
+    .animacao{
+        padding-left: 20px;
+    }
+
+    .versoInformacoes {
+        padding: 21px 13px 0px 13px;
+    }
+
+    .cardVerso h2 {
+        font-size: 12px;
+    }
+    
+    .cardVerso h3 {
+        font-size: 9px;
+        margin-bottom: 12px;
+    }
+    
+    .cardVerso p {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 11px;
+        margin: 0 ;
+        margin-bottom: 10px;
+        gap: 6px;
+    }
+
+    .cardInstagram p {
+        margin-bottom: 0;
+    }
+    
+    .cardVersoVoltar {
+        padding: 21px 13px 6px 0px;
+    }
+    
+}
+
+@media(max-width:1080px){
+    /*aqui ele volta a quebrar*/
+}
