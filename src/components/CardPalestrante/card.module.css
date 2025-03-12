@@ -144,6 +144,7 @@
         height: 256px;
         position: relative;
         overflow: hidden;
+        cursor: pointer;
     }
 
     .informacoesCard {

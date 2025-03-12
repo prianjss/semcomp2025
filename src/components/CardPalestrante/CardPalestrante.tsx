@@ -21,11 +21,11 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
 
   return (
     <main className={`${styles.card} ${flipped ? styles.flipped : ''}`}>
-      <section className={styles.cardFrente} style={{ backgroundImage: `url(${imageUrl})` }}>
+      <section className={styles.cardFrente} style={{ backgroundImage: `url(${imageUrl})` }} onClick={handleFlip}>
         <div className={styles.informacoesCard}>
           <h2 className={styles.cardNome}>{nome}</h2>
           <h3 className={styles.cardCargo}>{cargo}</h3>
-          <div className={styles.animacao} onClick={handleFlip}> 
+          <div className={styles.animacao}> 
             Conheça mais sobre
             <Image 
               src="/assets/conhecaMais.svg" 
@@ -37,7 +37,7 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
         </div>
       </section>
 
-      <section className={styles.cardVerso}>
+      <section className={styles.cardVerso} onClick={handleFlip}>
         <div className={styles.versoInformacoes}>
           <h2>{nome}</h2>
           <h3>{cargo}</h3>
@@ -57,8 +57,7 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
           alt="Conheça mais" 
           width={13} 
           height={14}
-          className={styles.cardVersoVoltar}
-          onClick={handleFlip} 
+          className={styles.cardVersoVoltar} 
         />
       </section>
     </main>
