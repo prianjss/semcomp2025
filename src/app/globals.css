@@ -24,16 +24,27 @@ html, body {
   background-color: #000000;
 }
 
+.swiper{
+  flex-direction: column;
+  contain: paint !important;
+  flex-wrap: nowrap !important;
+  overflow: hidden !important;
+}
+
 .swiper-wrapper {
   display: flex;
   flex-wrap: wrap !important;
+  clip-path: inset(0 0 0 0) !important;
 }
 
 .swiper-slide{
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  margin: 0 0 20px 0 !important;
+  box-sizing: border-box !important;
 }
+
 
 .swiper-pagination {
   position: relative !important;
