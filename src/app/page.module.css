@@ -40,7 +40,6 @@
 }
 
 .swiper-pagination {
-  position: absolute;
   margin-top: 20px;
   text-align: center;
   transition: 300ms opacity;

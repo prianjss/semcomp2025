@@ -154,6 +154,7 @@
     .cardNome {
         font-size: 15px;
         padding-left: 20px;
+        padding-top: 6px;
     }
 
     .cardCargo {
@@ -197,6 +198,72 @@
     
 }
 
-@media(max-width:1080px){
+@media(max-width:425px){
+
+    .card {
+        width: 128px;
+        height: 182px;
+    }
+
+    .informacoesCard {
+        height: 53px;
+    }
+
+    .cardNome {
+        font-size: 9px;
+        padding-left: 20px;
+    }
+
+    .cardCargo {
+        font-size: 6.8px;
+        padding-left: 20px;
+    }
+
+    .animacao{
+        padding-top: 4px;
+        font-size: 7px;
+        align-items: center;
+        gap:2px;
+    }
+
+    .animacao img{
+        width: 8px;
+        height: 8px;
+    }
+
+    .versoInformacoes {
+        padding: 21px 13px 0px 13px;
+    }
+
+    .cardVerso h2 {
+        font-size: 10px;
+    }
+    
+    .cardVerso h3 {
+        font-size: 8px;
+        margin-bottom: 12px;
+    }
+    
+    .cardVerso p {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-weight: 400;
+        font-size: 8px;
+        margin: 0 ;
+        margin-bottom: 10px;
+        gap: 4px;
+    }
+
+    .cardInstagram img{
+        width: 10px;
+    }
+
+    .cardInstagram p {
+        margin-bottom: 0;
+    }
+    
+    .cardVersoVoltar {
+        padding: 21px 13px 6px 0px;
+        width: 10px;
+    }
     
 }
