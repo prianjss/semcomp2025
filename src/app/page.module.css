@@ -33,3 +33,16 @@
 	right: -900px;
 	transform: translateY(-50%);
 }
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
