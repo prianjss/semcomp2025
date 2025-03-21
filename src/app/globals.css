@@ -29,6 +29,12 @@ html, body {
   flex-wrap: wrap !important;
 }
 
+.swiper-slide{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 .swiper-pagination {
   position: relative !important;
   margin-top: 10px !important;
