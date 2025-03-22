@@ -1,3 +1,7 @@
+.homeHeader{
+  z-index: 10;
+}
+
 .homeBackground {
   position: absolute;
   top: 0;
@@ -10,6 +14,7 @@
 .homeTop {
   position: relative;
   isolation: isolate;
+  z-index: 1;
 }
 
 .homeMid {
@@ -18,6 +23,7 @@
   isolation: isolate;
   overflow: hidden;
   width: 100%;
+  z-index: 0;
 }
 
 .homeLuz {
@@ -26,4 +32,17 @@
   top: 45%;
 	right: -900px;
 	transform: translateY(-50%);
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
 }
