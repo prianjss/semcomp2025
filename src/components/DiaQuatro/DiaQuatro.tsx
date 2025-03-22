@@ -62,19 +62,6 @@ export default function DiaQuatro() {
 
             </section>
 
-            <section className={styles.hackButton}>
-                <a href="/sua-pagina-faq" className={styles.formaBotao}>
-                    <Image
-                        src="/botoes/botao_hackathon.svg"
-                        alt="Inscrições em breve"
-                        className={styles.imagemBotao}
-                        width={410} 
-                        height={100} 
-                    />
-                    <p className={styles.textoBotao}>INSCRIÇÕES EM BREVE!</p>
-                </a>
-            </section>
-
         </main>
     );
 }

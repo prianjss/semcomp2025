@@ -1,3 +1,5 @@
+'use client'
+import React from 'react';
 import styles from './footer.module.css';
 import Image from 'next/image';
 import LogoInfo from '../../../public/assets/logo info.png'
@@ -5,6 +7,13 @@ import LogoIC from '../../../public/assets/logo ic.png'
 import LogoSemcomp from '../../../public/assets/logo semcomp.png'
 
 export default function Footer() {
+  const scrollToSection = (sectionId: string): void => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
     return (
       <div className={styles.footerContainer}>
         <div className={styles.footerEmpresas}>
@@ -33,10 +42,10 @@ export default function Footer() {
 
           <nav>
             <ul>
-              <li>Programação</li>
-              <li>FAQ</li>
-              <li>Hackathon</li>
-              <li>Contato</li>
+              <li><a href='/programacao-completa'>Programação</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault();  scrollToSection('faq');}}>FAQ</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('hackathon');}}>Hackathon</a></li>
+              <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
             </ul>
           </nav>
         </div>

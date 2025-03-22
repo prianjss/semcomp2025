@@ -1,5 +1,9 @@
 .headerContent {
   padding: 18px 120px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,8 +12,12 @@
   color: var(--branco);
   position: relative;
   isolation: isolate;
-  z-index: 1000;
+  z-index: 10;
   transition: background-color 0.2s ease-out;
+}
+
+.headerContent.scrolled {
+  background-color: black !important;
 }
 
 .headerLogo {
@@ -38,6 +46,11 @@
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+
+.headerRedirecionamento nav ul li a {
+  color: var(--branco);
+  text-decoration: none;
 }
 
 .headerBotaoIngresso {
@@ -82,7 +95,7 @@
   opacity: 0;
   backdrop-filter: blur(8px);
   transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
-  z-index: 999;
+  z-index: 9;
 }
 
 .mobileDropdown div{
@@ -90,15 +103,15 @@
 }
 
 .mobileDropdown.open {
-  display: none;
+  display: flex;
   transform: translateX(-50%) translateY(0);
   background-color: black;
   opacity: 1;
   pointer-events: auto;
-  z-index: 999;
+  z-index: 9;
 }
 
-.mobileDropdown .headerIngresso {
+.mobileDropdown.open .headerIngresso {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,7 +121,7 @@
   left: 17%;
 }
 
-.mobileDropdown nav ul {
+.mobileDropdown.open nav ul {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -118,11 +131,17 @@
   padding: 0;
 }
 
-.mobileDropdown nav ul li {
+.mobileDropdown.open nav ul li {
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 16px;
   cursor: pointer;
+}
+
+.mobileDropdown.open nav ul li a {
+  display: flex;
+  color: var(--branco);
+  text-decoration: none;
 }
 
 .hamburguer {
@@ -172,7 +191,7 @@
   height: 24px;
   position: relative;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9;
 }
 
 .menuIcon div {
@@ -245,7 +264,11 @@
 
 @media (max-width: 715px) {
   .headerContent {
+    width: 100vw;
+    box-sizing: border-box;
     padding: 16px 40px;
+    position: fixed !important;
+    z-index: 10;
   }
 
   .headerRedirecionamento {
@@ -254,10 +277,11 @@
 
   .menuIcon {
     display: block;
+    z-index: 11;
   }
 
   .mobileDropdown{
-    display: block;
+    display: none;
   }
 
   .mobileDropdown div{

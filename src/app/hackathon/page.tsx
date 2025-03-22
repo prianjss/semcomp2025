@@ -2,8 +2,8 @@ import Header from "@/components/Header/Header";
 import Image from "next/image";
 import styles from "./page.module.css";
 import InstagramIcon from '../../../public/assets/instagram icon.svg'
-import Hackathon1 from '../../../public/assets/hackathon 1.png'
-import Hackathon2 from '../../../public/assets/hackathon 2.png'
+import Hackathon1 from '../../../public/hackathon/hackathon 1.png'
+import Hackathon2 from '../../../public/hackathon/hackathon 2.png'
 
 export default function Hackathon() {
   return (
@@ -11,11 +11,11 @@ export default function Hackathon() {
     <Header /> 
 
     <section className={styles.pageHackathonSection}>
-      <div className={styles.hackathonConteudo}>
-        <h1>HACKATHON</h1>
-        
+      <div className={styles.hackathonConteudo}>        
         <section className={styles.pageHackathonConteudo}>
           <div className={styles.pageHackathonPerguntas}>
+            <h1>HACKATHON</h1>
+
             <div>
               <h2>Onde?</h2>
               <p>SmartClass II, localizada no PAF 2</p>

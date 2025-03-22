@@ -1,16 +1,48 @@
-.main{
-  background: var(--grad-preto-roxo);
-}
-.container {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.homeHeader{
+  z-index: 10;
 }
 
-.title {
-  font-family: var(--font-title);
-  color: var(--branco);
-  font-size: 3rem;
+.homeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+}
+
+.homeTop {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+}
+
+.homeMid {
+  position: relative;
+  background: transparent;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  z-index: 0;
+}
+
+.homeLuz {
+	position: absolute;
+	z-index: -1;
+  top: 45%;
+	right: -900px;
+	transform: translateY(-50%);
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.swiper-pagination {
+  margin-top: 20px;
+  text-align: center;
+  transition: 300ms opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
 }

@@ -1,10 +1,14 @@
+import React, { forwardRef } from 'react';
 import styles from './faq.module.css';
 import Image from 'next/image';
 
-export default function Faq() {
-  return (
+interface FaqProps {
+    id: string;
+  }
 
-    <section className={styles.faqContainer}>
+const Faq = forwardRef<HTMLDivElement, FaqProps>(({ id }, ref) => {
+  return (
+    <section id={id} ref={ref} className={styles.faqContainer}>
 
         <header className={styles.faqHeader}>
             <h1 className={styles.faqTitle}>Perguntas Frequentes</h1>
@@ -57,7 +61,7 @@ export default function Faq() {
                 <p className={styles.textoBotao}>FAQ COMPLETA</p>
             </a>
 
-            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao}>
+            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao2}>
                 <Image
                     src="/botoes/forma_botao_4.svg"
                     alt="Botão Fale Conosco"
@@ -71,4 +75,7 @@ export default function Faq() {
 
     </section>
   );
-}
+});
+
+Faq.displayName = 'Faq';
+export default Faq;
