@@ -14,7 +14,7 @@
 .backgroundLuz {
 	position: absolute;
 	z-index: 2;
-	top: -120%;
+	bottom: 220px;
 }
 
 .backgroundElipse {
