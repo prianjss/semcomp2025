@@ -1,0 +1,222 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.container_background {
+    position: absolute;
+    max-width: 100%;
+}
+
+.container_title {
+	margin: 0;
+	font-family: var(--font-title);
+    text-align: center;
+	font-size: 60px;
+	font-weight: 400;
+	line-height: 72px;
+	letter-spacing: -3%;
+}
+
+.container_desc {
+    width: 464px;
+	font-family: var(--font-body);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.container_countdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 464px;
+}
+
+.timer {
+    display: block;
+    position: relative;
+    width: 114px;
+    justify-self: center;
+}
+
+.timer_clock {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 128px;
+    perspective-origin: 50% 50%;
+    perspective: 300px;
+    box-sizing: border-box;
+    font-size: 98px;
+}
+
+.timer_label {
+    text-align: center;
+	font-family: var(--font-body);
+    font-weight: bold;
+}
+
+.timer_object {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( #54088B 40%, #880CE1 60%);
+}
+
+.upperCard, .lowerCard {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.upperCard span, .lowerCard span {
+    position: absolute;
+    font-family: var(--font-title);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.upperCard {
+    background: linear-gradient( #54088B 80%, #880CE1 120%);
+	/*align-items: flex-end;*/
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.upperCard span {
+    transform: translateY(50%);
+    top: -100%;
+}
+
+.lowerCard {
+    background: linear-gradient( #54088B -20%, #880CE1 20%);
+	/*align-items: flex-start;*/
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.lowerCard span {
+    transform: translateY(-50%);
+    top: -1px;
+}
+
+.flipCard {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 100%;
+	height: 50%;
+	overflow: hidden;
+	backface-visibility: hidden;
+
+    &.unfold {
+        background: linear-gradient( #54088B -20%, #880CE1 20%);
+		top: 50%;
+		transform-origin: 50% 0%;
+		transform: rotateX(200deg);
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+    }
+
+    &.fold {
+        background: linear-gradient( #54088B 80%, #880CE1 120%);
+		top: 0%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+		transform-origin: 50% 100%;
+		transform: rotateX(0deg);
+    }
+}
+
+.flipCard span {
+    font-family: var(--font-title);
+    font-weight: bold;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.unfold span {
+    transform: translateY(-50%);
+    top: -1px;
+}
+
+.fold span {
+    transform: translateY(50%);
+    top: -100%;
+}
+
+.fold {
+    transform-style: preserve-3d;
+    animation: fold 0.7s ease-in-out forwards;
+}
+
+.unfold {
+    transform-style: preserve-3d;
+    animation: unfold 0.7s ease-in-out forwards;
+}
+
+@keyframes fold {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes unfold {
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container_title {
+        font-size: 48px;
+    }
+
+    .container_countdown {
+        width: 100%;
+    }
+
+    .container_desc {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .timer {
+        width: 86px;
+    }
+
+    .timer_clock {
+        height: 94px;
+        font-size: 72px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container_title {
+        font-size: 40px;
+    }
+
+    .timer {
+        width: 72px;
+    }
+
+    .timer_clock {
+        height: 86px;
+        font-size: 65px;
+    }
+}

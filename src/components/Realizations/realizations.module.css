@@ -1,0 +1,173 @@
+.realizationContainer {
+	display: grid;
+	padding: 55px 120px;
+	background-color: #B5F000;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 5rem;
+}
+
+.realizationContainer_text {
+	color: #040404;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 2rem 0;
+	font-weight: 500;
+}
+
+.realizationContainer_text_title, .realizationContainer_text_title_responsive {
+	margin: 0;
+	font-family: var(--font-title);
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 72px;
+	letter-spacing: -3%;
+}
+
+.realizationContainer_text_title_responsive {
+	display: none;
+}
+
+.realizationContainer_text_article {
+	font-family: var(--font-body);
+}
+
+.realizationContainer_text_link {
+	display: flex;
+	align-items: center;
+	color: inherit;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	font-family: var(--font-body);
+	gap: 12px;
+}
+
+.realizationContainer_section {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.realizationContainer_section_image {
+	width: clamp(100%, 580px , 40vw);
+	overflow: hidden;	
+}
+
+.firstContainer {
+	height: 242px;
+
+}
+
+.secondContainer {
+	height: 220px;
+}
+
+.realizationContainer_section_image img {
+	position: relative;
+	object-fit: fill;
+	max-width: 100%;
+	height: auto;
+}
+
+.firstImage {
+	bottom: 2.5rem;
+}
+
+.secondImage {
+	bottom: 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+	.realizationContainer {
+		padding: 55px 50px;
+		gap: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.realizationContainer_section_image img {
+		max-width: 120%;
+		right: 8%;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.realizationContainer {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.realizationContainer_text_title {
+		display: none;
+	}
+
+	.realizationContainer_text_title_responsive {
+		display: inline;
+		text-align: center;
+	}
+
+	.realizationContainer_section_image {
+		width: 100%;
+	}
+
+	.realizationContainer_section_image img {
+		max-width: 100%;
+		right: 0;
+	}	
+
+	.firstImage {
+		bottom: 3rem;
+	}
+
+	.firstContainer {
+		height: 300px;
+	}
+
+	.secondContainer {
+		height: 270px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.firstImage {
+		bottom: 3.5rem;
+	}
+
+	.firstContainer {
+		height: 200px;
+	}
+
+	.secondContainer {
+		height: 200px;
+	}
+
+	.realizationContainer_text {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.firstImage {
+		bottom: 0;
+	}
+
+	.secondImage {
+		bottom: 1rem;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.firstContainer {
+		height: 150px;
+	}
+
+	.secondImage {
+		bottom: 0;
+	}
+
+	.secondContainer {
+		height: 150px;
+	}
+	
+}

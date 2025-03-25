@@ -1,0 +1,191 @@
+.container {
+    width: 100%;
+    max-width: 1044px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px; 
+  }
+  
+  .title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -3%;
+    color: #f4f4f4;
+    margin-bottom: 10px; 
+  }
+  
+  .subtitle {
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 625px;
+    height: 83px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #f4f4f4;
+    max-width: 75%;
+    margin-top: 0px;
+  }
+  
+  .impactContainer {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 6px; 
+    width: 100%;
+    margin-top: 35px; 
+  }
+  
+  .impactItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+  }
+
+  .impactContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .image {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+  }
+  
+  .value {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 75px;
+    margin-top: 5px;
+  }
+  
+  .description {
+    font-family: "IBM Plex Sans", sans-serif;
+    width: 207px;
+    height: 42px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #f4f4f4;
+    margin-top: -50px;
+  }
+  
+  @media (max-width: 375px) {
+    .title {
+      font-size: 22px;
+      line-height: 36px;
+      margin-bottom: 10px; 
+    }
+    
+    .subtitle {
+      width: 220px;
+      height: 33px;
+      font-size: 10px;
+      max-width: 75%;
+      line-height: 15px;
+    }
+
+    .image {
+      width: 57px;
+      height: 57px;
+      object-fit: contain;
+    }
+
+    .value {
+      font-size: 25px;
+      line-height: 75px;
+      margin-top: 5px;
+    }
+    
+    .description {
+      width: 109px;
+      height: 40px;
+      font-size: 11px;
+      line-height: 15px;
+      margin-top: -50px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .impactContainer {
+      flex-direction: column;
+    }
+
+    .impactItem {
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 10px; 
+    }
+    
+    .subtitle {
+      width: 300px;
+      height: 33px;
+      font-size: 16px;
+      max-width: 75%;
+      line-height: 20px;
+    }
+
+    .image {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .value {
+      font-size: 33px;
+      line-height: 75px;
+      margin-top: 5px;
+    }
+    
+    .description {
+      width: 109px;
+      height: 40px;
+      font-size: 14px;
+      line-height: 15px;
+      margin-top: -50px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .title {
+      font-size: 48px;
+      line-height: 36px;
+      margin-bottom: 10px; 
+    }
+    
+    .subtitle {
+      width: 450px;
+      height: 33px;
+      font-size: 18px;
+      max-width: 75%;
+      line-height: 20px;
+    }
+
+    .image {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+    }
+
+    .value {
+      font-size: 45px;
+      line-height: 75px;
+      margin-top: 5px;
+    }
+    
+  }

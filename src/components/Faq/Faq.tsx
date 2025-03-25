@@ -1,9 +1,14 @@
+import React, { forwardRef } from 'react';
 import styles from './faq.module.css';
+import Image from 'next/image';
 
-export default function Faq() {
+interface FaqProps {
+    id: string;
+  }
+
+const Faq = forwardRef<HTMLDivElement, FaqProps>(({ id }, ref) => {
   return (
-
-    <section className={styles.faqContainer}>
+    <section id={id} ref={ref} className={styles.faqContainer}>
 
         <header className={styles.faqHeader}>
             <h1 className={styles.faqTitle}>Perguntas Frequentes</h1>
@@ -46,16 +51,31 @@ export default function Faq() {
 
         <div className={styles.faqButtons}>
             <a href="/sua-pagina-faq" className={styles.formaBotao}>
-                <img src="./botoes/forma_botao_3.svg" alt="Botão FAQ Completa" className={styles.imagemBotao} />
+                <Image
+                    src="/botoes/forma_botao_3.svg"
+                    alt="Botão FAQ Completa"
+                    className={styles.imagemBotao}
+                    width={250} 
+                    height={48} 
+                />
                 <p className={styles.textoBotao}>FAQ COMPLETA</p>
             </a>
 
-            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao}>
-                <img src="./botoes/forma_botao_4.svg" alt="Botão Fale Conosco" className={styles.imagemBotao} />
+            <a href="https://www.instagram.com/semcompssa/" className={styles.formaBotao2}>
+                <Image
+                    src="/botoes/forma_botao_4.svg"
+                    alt="Botão Fale Conosco"
+                    className={styles.imagemBotao}
+                    width={250}
+                    height={48}
+                />
                 <p className={styles.textoBotao2}>FALE CONOSCO!</p>
             </a>
         </div>
 
     </section>
   );
-}
+});
+
+Faq.displayName = 'Faq';
+export default Faq;

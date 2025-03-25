@@ -1,0 +1,161 @@
+.hackatonStanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f4f4f4;
+  padding-bottom: 100px;
+  background-color: #040404;
+}
+
+.hackatonStandingTitle {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 4.5rem;
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 30px;
+  margin-top: 90px;
+}
+
+.hackatonStandingContainer {
+  height: 532px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hackatonStanding1st,
+.hackatonStanding2nd,
+.hackatonStanding3rd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 28px;
+  border: 1px solid;
+  width: 25%;
+}
+
+.hackatonStanding1st {
+  border-color: #ad59fb;
+  height: 100%;
+  color: #ad59fb;
+}
+
+.hackatonStanding2nd {
+  height: 75%;
+}
+
+.hackatonStanding3rd {
+  height: 50%;
+}
+
+.hackatonStandingPlacesTitle {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 3.125rem;
+  line-height: 3.75rem;
+  margin: 0;
+}
+
+.hackatonStandingPlacesText {
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  text-overflow: ellipsis;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hackatonStandingCTAContainer {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hackatonStandingCTA {
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 1.375rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.hackatonStandingCTAButton {
+  width: 233px;
+  height: 46px;
+  background-color: #f4f4f42e;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-clip-path: path(
+    "M44.9186 0H224.224C224.72 0 224.968 0 225.177 0.0103531C229.545 0.227142 233.021 3.75095 233.179 8.12213C233.186 8.33091 233.183 8.57871 233.176 9.07431C233.166 9.80171 233.161 10.1654 233.144 10.4947C232.786 17.2655 228.405 23.1624 222.026 25.4598C221.716 25.5715 221.369 25.6813 220.676 25.9008L220.676 25.9008L220.007 26.1123C219.93 26.1369 219.891 26.1491 219.856 26.1605C216.415 27.2828 214.075 30.4775 214.044 34.0969C214.044 34.1336 214.044 34.1743 214.044 34.2556C214.044 34.404 214.044 34.4783 214.043 34.541C213.975 40.8408 208.884 45.931 202.585 45.9993C202.522 46 202.448 46 202.299 46H23.579C10.5567 46 4.57764e-05 35.4433 4.57764e-05 22.4211C4.57764e-05 17.7702 3.77028 14 8.4211 14H16.1398C18.1755 14 19.1933 14 20.1442 13.7765C21.2559 13.5152 22.303 13.0306 23.2216 12.3521C24.0074 11.7718 24.6661 10.9959 25.9834 9.44398L26.9341 8.32399C29.5325 5.26297 30.8317 3.73246 32.4156 2.63277C33.8191 1.65834 35.3813 0.935284 37.0325 0.495884C38.8959 0 40.9035 0 44.9186 0Z"
+  );
+  clip-path: path(
+    "M44.9186 0H224.224C224.72 0 224.968 0 225.177 0.0103531C229.545 0.227142 233.021 3.75095 233.179 8.12213C233.186 8.33091 233.183 8.57871 233.176 9.07431C233.166 9.80171 233.161 10.1654 233.144 10.4947C232.786 17.2655 228.405 23.1624 222.026 25.4598C221.716 25.5715 221.369 25.6813 220.676 25.9008L220.676 25.9008L220.007 26.1123C219.93 26.1369 219.891 26.1491 219.856 26.1605C216.415 27.2828 214.075 30.4775 214.044 34.0969C214.044 34.1336 214.044 34.1743 214.044 34.2556C214.044 34.404 214.044 34.4783 214.043 34.541C213.975 40.8408 208.884 45.931 202.585 45.9993C202.522 46 202.448 46 202.299 46H23.579C10.5567 46 4.57764e-05 35.4433 4.57764e-05 22.4211C4.57764e-05 17.7702 3.77028 14 8.4211 14H16.1398C18.1755 14 19.1933 14 20.1442 13.7765C21.2559 13.5152 22.303 13.0306 23.2216 12.3521C24.0074 11.7718 24.6661 10.9959 25.9834 9.44398L26.9341 8.32399C29.5325 5.26297 30.8317 3.73246 32.4156 2.63277C33.8191 1.65834 35.3813 0.935284 37.0325 0.495884C38.8959 0 40.9035 0 44.9186 0Z"
+  );
+  font-family: IBM Plex Sans;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .hackatonStanding {
+    padding-bottom: 28px;
+  }
+
+  .hackatonStandingContainer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 12px;
+  }
+  .hackatonStanding1st {
+    order: -1;
+  }
+  .hackatonStanding1st,
+  .hackatonStanding2nd,
+  .hackatonStanding3rd {
+    width: 90%;
+    height: auto;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .hackatonStandingTitle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    max-width: 50%;
+    align-self: center;
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+
+  .hackatonStandingPlacesTitle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .hackatonStandingPlacesText {
+    font-size: 1rem;
+  }
+
+  .hackatonStandingCTA {
+    font-size: 0.875rem;
+    max-width: 90%;
+  }
+
+  .hackatonStandingCTAContainer {
+    margin-top: 60px;
+  }
+}

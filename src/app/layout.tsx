@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import Footer from '@/components/Footer/Footer';
 
@@ -14,11 +13,11 @@ export default function RootLayout({
     <html data-lt-installed="true">
       <head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Sans:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body cz-shortcut-listen="true">
         {children}
         <Footer />
       </body>

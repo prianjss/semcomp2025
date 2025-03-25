@@ -1,27 +1,15 @@
 .container {
   background-color: #040404;
   text-align: center;
+  padding: 80px 20px; 
   padding: 80px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400;
-  font-size: 60px;
-  line-height: 100px;
-  letter-spacing: -3%;
-  text-align: center;
-  color: #F4F4F4;
-  margin-bottom: 20px;
-}
-
-.grid {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px; 
   gap: 50px;
   flex-wrap: wrap;
   padding: 30px;
@@ -29,18 +17,23 @@
 }
 
 .logo {
+  width: 160px; 
   width: 160px;
   height: auto;
+  filter: brightness(0) invert(1); 
   filter: brightness(0) invert(1);
 }
 
 .aluraLogo {
+  width: 140px; 
   width: 140px;
 }
 
 .row {
   display: flex;
   align-items: center;
+  justify-content: center; 
+  gap: 40px; 
   justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
@@ -113,4 +106,3 @@
   }
 
 }
-
