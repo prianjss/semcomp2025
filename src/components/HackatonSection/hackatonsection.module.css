@@ -165,6 +165,72 @@
 .hackatonSectionColumntainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 992px) {
+.hackatonSectionContainer {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hackatonSectionDiv {
+  margin-left: 16px;
+}
+
+.hackatonSectionArticle {
+  width: 90%;
+  max-width: none;
+  gap: 40px;
+  justify-content: center;
+}
+
+.hackatonSectionTitle {
+  font-size: 2.5rem;
+}
+
+.hackatonSectionSubtitle {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.hackatonSectionText, .hackatonSectionBulletList {
+  font-size: 1rem;
+}
+
+.hackatonSectionRoadmapTextLeft, .hackatonSectionRoadmapTextRight {
+  font-size: 1.5rem;
+  gap: 90px;
+  line-height: 1.5rem;
+}
+
+.hackatonSectionVerticalLine {
+  height: 324px;
+}
+
+.hackatonSectionCircle, .hackatonSectionOuterCircle {
+  width: 24px;
+  height: 24px;
+}
+
+.hackatonSectionOuterCircle.active .hackatonSectionCircle {
+  width: 12px;
+  height: 12px;
+}
+
+.hackatonSectionCircleContainer {
+  top: 20px;
+  gap: 60px;
+}
+
+.hackatonSectionRoadmapTextRight {
+  top: -22px;
+  left: 36px; 
+}
+
+.hackatonSectionRoadmapTextLeft {
+  bottom: -22px;
+  right: 36px;
+}
 }
