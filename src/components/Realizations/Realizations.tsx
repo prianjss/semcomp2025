@@ -26,6 +26,7 @@ export default function Realizations(){
                     <Image className={styles.secondImage} src="/realizations/celebration.png" alt="Foto do grupo de membros da infoJr torcendo para a vitória da mesma no campeonato LugoBots" width={4096} height={2731}></Image>
                 </div>
             </section>
+            <h1 className={styles.realizationContainer_text_title_responsive}>Realização</h1>
         </section>
     )
 }
