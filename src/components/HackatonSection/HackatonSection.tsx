@@ -23,7 +23,7 @@ const HackatonSection = forwardRef<HTMLDivElement, HackathonProps>(({ id }, ref)
     <section id={id} ref={ref} className={styles.hackatonSectionContainer}>
       <article className={styles.hackatonSectionArticle}>
         <div>
-          <h2 className={styles.hackatonSectionTitle}>Hackaton</h2>
+          <h2 className={styles.hackatonSectionTitle}>Hackathon</h2>
           <p className={styles.hackatonSectionText}>
             Hackathon é um{" "}
             <span className={styles.hackatonSectionBold}>
@@ -43,7 +43,7 @@ const HackatonSection = forwardRef<HTMLDivElement, HackathonProps>(({ id }, ref)
         </h3>
         <div>
           <h3 className={styles.hackatonSectionSubtitle}>
-            POR QUE PARTICIPAR DO HACKATON?
+            POR QUE PARTICIPAR DO HACKATHON?
           </h3>
           <ul className={styles.hackatonSectionBulletList}>
             <li>

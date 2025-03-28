@@ -3,7 +3,7 @@ import styles from "./hackatonstanding.module.css";
 export default function HackatonStanding() {
   return (
     <section className={styles.hackatonStanding}>
-      <h3 className={styles.hackatonStandingTitle}>PREMIAÇÃO DO HACKATON</h3>
+      <h3 className={styles.hackatonStandingTitle}>PREMIAÇÃO DO HACKATHON</h3>
       <div className={styles.hackatonStandingContainer}>
         <div className={styles.hackatonStanding2nd}>
           <h4 className={styles.hackatonStandingPlacesTitle}>2º LUGAR</h4>
