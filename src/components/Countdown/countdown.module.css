@@ -32,8 +32,8 @@
 
 .container_countdown {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 464px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 500px;
 }
 
 .timer {
@@ -188,7 +188,12 @@
     }
 
     .container_countdown {
+        grid-template-columns: repeat(3, 1fr);
         width: 100%;
+    }
+
+    .container_countdown > *:last-child {
+        display: none;
     }
 
     .container_desc {
