@@ -42,7 +42,7 @@ export default function Banner () {
 
 				<div className={styles.bannerFormaBotao}>
 					<Image src={Botao} alt='Participe Agora' className={styles.bannerBotao} />
-					<p>PARTICIPE AGORA</p>
+					<p className={styles.textoBotao}>PARTICIPE AGORA</p>
 				</div>
 			</div>
 
