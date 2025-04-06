@@ -126,12 +126,16 @@
 
     .programacaoCard{
         flex-direction: column;
-        width: 80%;
+        width: 85%;
         justify-content: center;
     }
 
     .conteudoCard{
         width: 100%;
+    }
+
+    .sobre{
+        text-align: justify;
     }
 
     .imagem {
