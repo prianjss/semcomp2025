@@ -96,7 +96,7 @@ export default function ProgramacaoCompleta() {
                 {diaSelecionado === 4 && (
                 <div className={styles.dia}>
                     <h2 className={styles.tituloDia}>HACKATHON</h2>
-                    <h3 className={styles.subtituloDia}>SEXTA-FEIRA</h3>
+                    <h3 className={styles.subtituloDiaH}>SEXTA-FEIRA</h3>
                 </div>
                 )}
             </div>
