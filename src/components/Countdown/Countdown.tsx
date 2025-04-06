@@ -103,6 +103,12 @@ function SingleTimer({
 }
 
 export default function Countdown(){
+    const [seconds, setSeconds] = useState({
+        value: 0,
+        prev: 0,
+        shuffle: true,
+    })
+
     const [hours, setHours] = useState({
         value:0,
         prev:0,
@@ -122,11 +128,22 @@ export default function Countdown(){
     });
 
     const updateTime = (first=false)=>{
-        const time = (new Date('09-09-2025'));
-        const now = new Date();
+        const time = (new Date(2025, 8, 9));
+        const now = new Date(); 
+        const s = time.getSeconds() - now.getSeconds();
         const h = time.getHours() - now.getHours();
         const d = time.getDate() - now.getDate() - +(h < 0);
         const m = time.getMonth() - now.getMonth() - +(d < 0);
+
+        setSeconds(prev=>
+            s !== prev.value || first?
+            {
+                value: s,
+                prev: prev.value,
+                shuffle: !prev.shuffle
+            }
+            : prev
+        )
 
         setHours(prev=>{
             if(h !== prev.value || first){
@@ -176,6 +193,7 @@ export default function Countdown(){
                 <SingleTimer label='Meses' shuffle={months.shuffle} value={months.value} prev={months.prev} />
                 <SingleTimer label='Dias' shuffle={days.shuffle} value={days.value >= 0 ? days.value : (30 + days.value)} prev={days.prev >= 0 ? days.prev : (30 + days.prev)} />
                 <SingleTimer label='Horas' shuffle={hours.shuffle} value={hours.value >= 0 ? hours.value : (24 + hours.value)} prev={hours.prev >= 0 ? hours.prev : (24 + hours.prev)} />
+                <SingleTimer label='Segundos' shuffle={seconds.shuffle} value={seconds.value >= 0 ? seconds.value : (60 + seconds.value)} prev={seconds.prev >= 0 ? seconds.prev : (60 + seconds.prev)} />
             </div>
         </section>
     )
