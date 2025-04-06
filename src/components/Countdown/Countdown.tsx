@@ -128,8 +128,8 @@ export default function Countdown(){
     });
 
     const updateTime = (first=false)=>{
-        const time = (new Date('09-09-2025'));
-        const now = new Date();
+        const time = (new Date(2025, 8, 9));
+        const now = new Date(); 
         const s = time.getSeconds() - now.getSeconds();
         const h = time.getHours() - now.getHours();
         const d = time.getDate() - now.getDate() - +(h < 0);
