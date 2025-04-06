@@ -105,3 +105,78 @@
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     margin-right: -16px;
 }
+
+@media(max-width: 1024px){
+    .programacaoCard{
+        width: 95%;
+    }
+
+    .imagem {
+        width: 200px;
+        height: 245px;
+    }
+
+}
+
+@media(max-width: 1010px){
+
+    .conteudoCard{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+    
+    /*.titulo{
+        font-size: 24px;
+    }
+    
+    .titulo span{
+        font-size: 25px;
+    }
+    
+    .sobre{
+        font-size: 14px;
+    }
+    
+    .palestranteP{
+        margin: 0;
+        padding-top: 16px;
+        font-size: 18px;
+    }
+    
+    .cargoP{
+        margin: 0;
+        padding-top: 2px;
+        font-size: 14px;
+    }
+    
+    .nomeP{
+        margin: 0;
+        padding-top: 2px;
+        font-size: 14px;
+    }*/
+
+}
+
+@media(max-width: 940px){
+    .cardImage{
+        display: none;
+    }
+
+    .conteudoCard{
+        padding: 20px;
+    }
+
+    .sobre{
+        text-align: justify;
+    }
+}
+
+@media(max-width: 640px){
+
+    .programacaoCard{
+        width: 85%;
+        flex-direction: column;
+    }
+
+}
