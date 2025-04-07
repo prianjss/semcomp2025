@@ -31,13 +31,6 @@ export default function HeaderTwo() {
         setMenuOpen(prevState => !prevState);
     };
 
-    const scrollToSection = (sectionId: string): void => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
-
     return (
         <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''} ${scrolled ? styles.scrolled : ''}`}>
             <Link href='/' className={styles.headerLogo}>
