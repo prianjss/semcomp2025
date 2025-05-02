@@ -1,3 +1,6 @@
+"use client"
+import { useSearchParams } from 'next/navigation';
+import { useEffect } from 'react';
 import Faq from '@/components/Faq/Faq';
 import styles from './page.module.css';
 import Header from '@/components/Header/Header';
@@ -15,6 +18,18 @@ import Luz from '../../public/assets/bola 3.png'
 import Countdown from '@/components/Countdown/Countdown';
 
 export default function Home() {
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const section = searchParams.get('scrollTo');
+    if (section) {
+      const el = document.getElementById(section);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [searchParams]);
+
   return (
     <main style={{overflow: 'hidden'}}>
       <section className={styles.homeTop}>

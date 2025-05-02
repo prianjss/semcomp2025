@@ -144,6 +144,16 @@
   text-decoration: none;
 }
 
+.siv {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  color: var(--branco);
+  text-decoration: none;
+}
+
 .hamburguer {
   position: relative;
   width: 30px;

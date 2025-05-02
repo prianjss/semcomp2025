@@ -6,7 +6,7 @@ import DiaUm from '@/components/DiaUm/DiaUm';
 import DiaDois from '@/components/DiaDois/DiaDois';
 import DiaTres from '@/components/DiaTres/DiaTres';
 import DiaQuatro from '@/components/DiaQuatro/DiaQuatro';
-import HeaderTwo from '@/components/HeaderTwo/HeaderTwo';
+import { HeaderSecundaria } from '@/components/Header/Header';
 
 import Image from 'next/image';
 
@@ -21,7 +21,7 @@ export default function ProgramacaoCompleta() {
 
   return (
     <main className={styles.container}>
-        <HeaderTwo/>
+        <HeaderSecundaria/>
 
         <section className={styles.programacaoTitulo}>
             <h1 className={styles.titulo}>PROGRAMAÇÃO<br />COMPLETA</h1>
