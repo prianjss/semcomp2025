@@ -1,5 +1,6 @@
 import "./globals.css";
 import Footer from '@/components/Footer/Footer';
+import { Suspense } from 'react';
 
 export const metadata = {
   title: "SEMCOMP 2025",
@@ -18,10 +19,12 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
       </head>
+      <Suspense fallback={null}>
       <body cz-shortcut-listen="true">
         {children}
         <Footer />
       </body>
+      </Suspense>
     </html>
   );
 }
