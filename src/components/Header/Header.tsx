@@ -61,8 +61,8 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li><a href='/programacao-completa'>Programação</a></li>
-                        <li><a href="#" onClick={() => scrollToSection('faq')}>FAQ</a></li>
-                        <li><a href="#" onClick={() => scrollToSection('hackathon')}>Hackathon</a></li>
+                        <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}>FAQ</a></li>
+                        <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('hackathon'); }}>Hackathon</a></li>
                         <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
                     </ul>
                 </nav>
@@ -85,8 +85,8 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li><a href='/programacao-completa'>Programação</a></li>
-                        <li><a href="#" onClick={() => scrollToSection('faq')}>FAQ</a></li>
-                        <li><a href="#" onClick={() => scrollToSection('hackathon')}>Hackathon</a></li>
+                        <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}>FAQ</a></li>
+                        <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('hackathon'); }}>Hackathon</a></li>
                         <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
                         <div className={styles.headerBotaoIngresso}>
                             <Image
