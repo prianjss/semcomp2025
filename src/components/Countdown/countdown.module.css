@@ -32,8 +32,8 @@
 
 .container_countdown {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 500px;
+    grid-template-columns: repeat(5, 1fr);
+    width: 700px;
 }
 
 .timer {
@@ -48,6 +48,8 @@
     position: relative;
     width: 100%;
     height: 128px;
+    -webkit-perspective-origin: 50% 50%;
+    -webkit-perspective: 300px;
     perspective-origin: 50% 50%;
     perspective: 300px;
     box-sizing: border-box;
@@ -66,16 +68,19 @@
     background: linear-gradient( #54088B 40%, #880CE1 60%);
 }
 
-.upperCard, .lowerCard {
+.upperCard, .lowerCard, .fullCard {
 	display: flex;
 	position: relative;
 	justify-content: center;
 	width: 100%;
-	height: 50%;
 	overflow: hidden;
 }
 
-.upperCard span, .lowerCard span {
+.upperCard, .lowerCard {
+    height: 50%;
+}
+
+.upperCard span, .lowerCard span, .fullCard span {
     position: absolute;
     font-family: var(--font-title);
     width: 100%;
@@ -91,6 +96,7 @@
 }
 
 .upperCard span {
+    -webkit-transform: translateY(50%);
     transform: translateY(50%);
     top: -100%;
 }
@@ -103,8 +109,15 @@
 }
 
 .lowerCard span {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     top: -1px;
+}
+
+.fullCard {
+    height: 100%;
+    background: linear-gradient( #54088B 40%, #880CE1 60%);
+    border-radius: 10px;
 }
 
 .flipCard {
@@ -119,6 +132,8 @@
     &.unfold {
         background: linear-gradient( #54088B -20%, #880CE1 20%);
 		top: 50%;
+        -webkit-transform-origin: 50% 0%;
+        -webkit-transform: rotateX(200deg);
 		transform-origin: 50% 0%;
 		transform: rotateX(200deg);
 		border-bottom-left-radius: 10px;
@@ -130,6 +145,8 @@
 		top: 0%;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+		-webkit-transform-origin: 50% 100%;
+		-webkit-transform: rotateX(0deg);
 		transform-origin: 50% 100%;
 		transform: rotateX(0deg);
     }
@@ -144,41 +161,63 @@
 }
 
 .unfold span {
+    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     top: -1px;
 }
 
 .fold span {
+    -webkit-transform: translateY(50%);
     transform: translateY(50%);
     top: -100%;
 }
 
 .fold {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: unfold 0.7s ease-in-out forwards;
     transform-style: preserve-3d;
     animation: fold 0.7s ease-in-out forwards;
 }
 
 .unfold {
+    -webkit-transform-style: preserve-3d;
+    -webkit-animation: unfold 0.7s ease-in-out forwards;
     transform-style: preserve-3d;
     animation: unfold 0.7s ease-in-out forwards;
 }
 
 @keyframes fold {
     0% {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
     100% {
+        -webkit-transform: rotateX(-180deg);
         transform: rotateX(-180deg);
     }
 }
 
 @keyframes unfold {
     0% {
+        -webkit-transform: rotateX(180deg);
         transform: rotateX(180deg);
     }
     100% {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
+}
+
+@media only screen and (max-width: 750px) {
+    .container_countdown > div:last-child {
+        display: none;
+    }
+
+    .container_countdown {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -188,10 +227,9 @@
 
     .container_countdown {
         grid-template-columns: repeat(3, 1fr);
-        width: 100%;
     }
 
-    .container_countdown > *:last-child {
+    .container_countdown > div:nth-child(4) {
         display: none;
     }
 

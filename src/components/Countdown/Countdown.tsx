@@ -4,15 +4,22 @@ import styles from './countdown.module.css';
 import { AnimationEventHandler, useEffect, useState } from 'react';
 
 function StaticCard({ position, digit, over=false }:{
-    position: "upperCard" | "lowerCard";
+    position: "upperCard" | "lowerCard" | "fullCard";
     digit: string;
     over?: boolean;
 }){
     return (
-        <div className={styles[position]} style={over ? {
-            position: "absolute",
-            top: "50%"
-        } : {}}>
+        <div className={styles[position]} style={over ? 
+            position=="fullCard"?
+            {
+                position: "absolute",
+                top: 0
+            }
+            :{
+                position: "absolute",
+                top: "50%"
+            } : {}}
+        >
             <span>{digit}</span>
         </div>
     )
@@ -37,6 +44,7 @@ interface SingleTimerProps {
     prev: number;
     shuffle: boolean;
     len?: number;
+    useStatic?: boolean;
 }
 
 function SingleTimer({
@@ -45,6 +53,7 @@ function SingleTimer({
     prev,
     shuffle,
     len = 2,
+    useStatic=false,
 }: SingleTimerProps){
     const [overCard, setOverCard] = useState(true);
     const [overValue, setOverValue] = useState(value)
@@ -96,6 +105,7 @@ function SingleTimer({
                     }
                 />
                 {overCard && <StaticCard position='lowerCard' digit={overValue.toString().padStart(len, "0")} over={true}/>}
+                {useStatic && <StaticCard position='fullCard' digit={value.toString().padStart(len,'0')} over={true}/>}
             </div>
             <p className={styles.timer_label}>{label}</p>
         </div>
@@ -104,6 +114,12 @@ function SingleTimer({
 
 export default function Countdown(){
     const [seconds, setSeconds] = useState({
+        value: 0,
+        prev: 0,
+        shuffle: true,
+    })
+
+    const [minutes, setMinutes] = useState({
         value: 0,
         prev: 0,
         shuffle: true,
@@ -131,7 +147,8 @@ export default function Countdown(){
         const time = (new Date(2025, 8, 9));
         const now = new Date(); 
         const s = time.getSeconds() - now.getSeconds();
-        const h = time.getHours() - now.getHours();
+        const min = time.getMinutes() - now.getMinutes() - +(s < 0);
+        const h = time.getHours() - now.getHours() - +(min < 0);
         const d = time.getDate() - now.getDate() - +(h < 0);
         const m = time.getMonth() - now.getMonth() - +(d < 0);
 
@@ -139,6 +156,16 @@ export default function Countdown(){
             s !== prev.value || first?
             {
                 value: s,
+                prev: prev.value,
+                shuffle: !prev.shuffle
+            }
+            : prev
+        )
+
+        setMinutes(prev=>
+            min !== prev.value || first?
+            {
+                value: min,
                 prev: prev.value,
                 shuffle: !prev.shuffle
             }
@@ -182,7 +209,7 @@ export default function Countdown(){
     useEffect(()=>{
         const interval = setInterval(updateTime, 100);
         return ()=>clearInterval(interval);
-    }, [hours, days, months])
+    }, [hours, days, months, minutes, seconds])
 
     return (
         <section className={styles.container}>
@@ -190,9 +217,11 @@ export default function Countdown(){
             <h1 className={styles.container_title}>COUNTDOWN SEMCOMP</h1>
             <p className={styles.container_desc}>Quanto tempo falta para o maior evento de computação e tecnologia de Salvador?</p>
             <div className={styles.container_countdown}>
-                <SingleTimer label='Meses' shuffle={months.shuffle} value={months.value} prev={months.prev} />
-                <SingleTimer label='Dias' shuffle={days.shuffle} value={days.value >= 0 ? days.value : (30 + days.value)} prev={days.prev >= 0 ? days.prev : (30 + days.prev)} />
-                <SingleTimer label='Horas' shuffle={hours.shuffle} value={hours.value >= 0 ? hours.value : (24 + hours.value)} prev={hours.prev >= 0 ? hours.prev : (24 + hours.prev)} />
+
+                <SingleTimer label='Meses' shuffle={months.shuffle} value={months.value} prev={months.prev} useStatic={(days.value < -1 && days.value>-28) || (days.value>1 && days.value<29)} />
+                <SingleTimer label='Dias' shuffle={days.shuffle} value={days.value >= 0 ? days.value : (30 + days.value)} prev={days.prev >= 0 ? days.prev : (30 + days.prev)} useStatic={(hours.value < -1 && hours.value > -22) || (hours.value>1 && hours.value<23)} />
+                <SingleTimer label='Horas' shuffle={hours.shuffle} value={hours.value >= 0 ? hours.value : (24 + hours.value)} prev={hours.prev >= 0 ? hours.prev : (24 + hours.prev)} useStatic={(minutes.value < -1 && minutes.value>-58) || (minutes.value>2 && minutes.value<59)} />
+                <SingleTimer label='Minutos' shuffle={minutes.shuffle} value={minutes.value >= 0 ? minutes.value : (60 + minutes.value)} prev={minutes.prev >= 0 ? minutes.prev : (60 + minutes.prev)} useStatic={(seconds.value < -1 && seconds.value>-58) || (seconds.value>2 && seconds.value<59)} />
                 <SingleTimer label='Segundos' shuffle={seconds.shuffle} value={seconds.value >= 0 ? seconds.value : (60 + seconds.value)} prev={seconds.prev >= 0 ? seconds.prev : (60 + seconds.prev)} />
             </div>
         </section>
