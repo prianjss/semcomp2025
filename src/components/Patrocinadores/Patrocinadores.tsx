@@ -2,9 +2,9 @@ import Image from 'next/image';
 import styles from './patrocinadores.module.css';
 
 const sponsors = [
-  { name: 'Escavador', src: '/logos/escavador.svg' },
-  { name: 'Google', src: '/logos/google.svg' },
-  { name: 'Alura', src: '/logos/alura.svg' }
+  { name: 'Escavador', src: '/logos/semcomp.svg' },
+  { name: 'Google', src: '/logos/semcomp.svg' },
+  { name: 'Alura', src: '/logos/semcomp.svg' }
 ];
 
 function LogoGrid({ title }: { title: string }) {

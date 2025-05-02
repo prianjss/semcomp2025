@@ -53,6 +53,7 @@
   .impactContent {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   
   .image {
@@ -78,11 +79,13 @@
     line-height: 25px;
     color: #f4f4f4;
     margin-top: -50px;
+    align-items: center;
+    align-self: center;
   }
   
   @media (max-width: 375px) {
     .title {
-      font-size: 22px;
+      font-size: 20px;
       line-height: 36px;
       margin-bottom: 10px; 
     }
@@ -90,9 +93,10 @@
     .subtitle {
       width: 220px;
       height: 33px;
-      font-size: 10px;
+      font-size: 9px;
       max-width: 75%;
       line-height: 15px;
+      margin-bottom: 25px;
     }
 
     .image {
@@ -163,7 +167,7 @@
   
   @media (max-width: 700px) {
     .title {
-      font-size: 48px;
+      font-size: 40px;
       line-height: 36px;
       margin-bottom: 10px; 
     }

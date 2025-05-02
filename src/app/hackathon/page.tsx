@@ -1,14 +1,14 @@
-import Header from "@/components/Header/Header";
 import Image from "next/image";
 import styles from "./page.module.css";
 import InstagramIcon from '../../../public/assets/instagram icon.svg'
 import Hackathon1 from '../../../public/hackathon/hackathon 1.png'
 import Hackathon2 from '../../../public/hackathon/hackathon 2.png'
+import HeaderTwo from "@/components/HeaderTwo/HeaderTwo";
 
 export default function Hackathon() {
   return (
     <main className={styles.pageHackathonContainer}>
-    <Header /> 
+    <HeaderTwo /> 
 
     <section className={styles.pageHackathonSection}>
       <div className={styles.hackathonConteudo}>        
