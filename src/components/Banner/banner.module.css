@@ -158,18 +158,18 @@
     }
 
     .bannerFormaBotao {
-      width: 150px;
+      width: 180px;
       margin-bottom: 20px;
     }
 
     .bannerBotao {
-      width: 150px;
-      height: 25px;
+      width: 180px;
+      height: 35px;
     }
     
     .textoBotao {
       width: fit-content;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .bannerCirculoSeta {
