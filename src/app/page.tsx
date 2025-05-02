@@ -16,6 +16,7 @@ import Banner from '@/components/Banner/Banner';
 import Image from 'next/image';
 import Luz from '../../public/assets/bola 3.png'
 import Countdown from '@/components/Countdown/Countdown';
+import Footer from '@/components/Footer/Footer';
 
 export default function Home() {
   const searchParams = useSearchParams();
@@ -56,6 +57,7 @@ export default function Home() {
       <HackatonStanding />
       <Faq id="faq" />
       <Realizations />
+      <Footer />
     </main>
   );
 }

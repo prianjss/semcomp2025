@@ -1,5 +1,4 @@
 import "./globals.css";
-import Footer from '@/components/Footer/Footer';
 import { Suspense } from 'react';
 
 export const metadata = {
@@ -22,7 +21,6 @@ export default function RootLayout({
       <Suspense fallback={null}>
       <body cz-shortcut-listen="true">
         {children}
-        <Footer />
       </body>
       </Suspense>
     </html>

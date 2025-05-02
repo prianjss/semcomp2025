@@ -75,6 +75,16 @@
   color: var(--branco);
 }
 
+.siv {
+  list-style-type: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--branco);
+}
+
 @media (min-width: 1441px){
   .footerContainer {
     justify-content: space-around;
