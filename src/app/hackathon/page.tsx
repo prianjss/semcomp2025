@@ -4,6 +4,7 @@ import InstagramIcon from '../../../public/assets/instagram icon.svg'
 import Hackathon1 from '../../../public/hackathon/hackathon 1.png'
 import Hackathon2 from '../../../public/hackathon/hackathon 2.png'
 import { HeaderSecundaria } from "@/components/Header/Header";
+import { FooterSecundario } from "@/components/Footer/Footer";
 
 export default function Hackathon() {
   return (
@@ -51,6 +52,8 @@ export default function Hackathon() {
         </section>
       </div>
     </section>
+
+    <FooterSecundario />
   </main>
   )
 };

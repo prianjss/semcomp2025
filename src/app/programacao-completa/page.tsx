@@ -9,6 +9,7 @@ import DiaQuatro from '@/components/DiaQuatro/DiaQuatro';
 import { HeaderSecundaria } from '@/components/Header/Header';
 
 import Image from 'next/image';
+import { FooterSecundario } from '@/components/Footer/Footer';
 
 type Dia = 1 | 2 | 3 | 4;
 
@@ -129,6 +130,8 @@ export default function ProgramacaoCompleta() {
             </div>
             )}
         </section>
+
+        <FooterSecundario />
     </main>
   );
 }
