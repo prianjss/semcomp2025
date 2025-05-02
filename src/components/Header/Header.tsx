@@ -110,3 +110,107 @@ export default function Header() {
         </div>
     );
 }
+
+export function HeaderSecundaria() {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0){
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+    const toggleMenu = () => {
+        setMenuOpen(prevState => !prevState);
+    };
+
+    return (
+        <div className={`${styles.headerContent} ${menuOpen ? styles.open : ''} ${scrolled ? styles.scrolled : ''}`}>
+            <Link href='/' className={styles.headerLogo}>
+                <Image
+                    src={LogoSemcomp}
+                    alt='Logo SEMCOMP 2025'
+                    width={181}
+                    className={styles.headerLogo}
+                />
+            </Link>
+            <Link href='/' className={styles.logoMobile}>
+                <Image
+                    src={LogoMobile}
+                    alt='Logo SEMCOMP 2025'
+                    width={30}
+                    className={styles.logoMobile}
+                />
+            </Link>
+
+            <div className={`${styles.headerRedirecionamento} ${menuOpen ? styles.menuOpen : ''}`}>
+                <nav>
+                    <ul>
+                        <li><a href='/programacao-completa'>Programação</a></li>
+                        <Link href={{ pathname: '/', query: { scrollTo: 'faq' } }} className={styles.siv}>
+                            FAQ
+                        </Link>
+                        <Link href={{ pathname: '/', query: { scrollTo: 'hackathon' } }} className={styles.siv}>
+                            Hackathon
+                        </Link>
+                        <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
+                    </ul>
+                </nav>
+
+                <div className={styles.headerBotaoIngresso}>
+                    <Image
+                        src={Botao}
+                        alt='Ingressos'
+                        width={198}
+                        className={styles.headerBotao}
+                    />
+                    <div className={styles.headerIngresso}>
+                        <Image src={Ingresso} alt='Ingressos' width={28} />
+                        <p>INGRESSOS</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`${styles.mobileDropdown} ${menuOpen ? styles.open : ''}`}>
+                <nav>
+                    <ul>
+                        <li><a href='/programacao-completa'>Programação</a></li>
+                        <Link href={{ pathname: '/', query: { scrollTo: 'faq' } }} onClick={toggleMenu} className={styles.siv}>
+                            FAQ
+                        </Link>
+                        <Link href={{ pathname: '/', query: { scrollTo: 'hackathon' } }} onClick={toggleMenu} className={styles.siv}>
+                            Hackathon
+                        </Link>
+                        <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
+                        <div className={styles.headerBotaoIngresso}>
+                            <Image
+                                src={Botao}
+                                alt='Ingressos'
+                                width={198}
+                                className={styles.headerBotao}
+                            />
+                            <div className={styles.headerIngresso}>
+                                <Image src={Ingresso} alt='Ingressos' width={28} />
+                                <p>INGRESSOS</p>
+                            </div>
+                        </div>
+                    </ul>   
+                </nav>
+            </div>
+
+            <div className={styles.menuIcon} onClick={toggleMenu}>
+                <div className={`${styles.hamburguer} ${menuOpen ? styles.open : ''}`}></div>
+            </div>
+        </div>
+    );
+}
