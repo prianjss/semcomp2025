@@ -1,6 +1,5 @@
 'use client';
-import React, { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import React, { useState, useEffect } from 'react';
 import styles from './header.module.css';
 import Image from 'next/image';
 import LogoSemcomp from '../../../public/assets/logo semcomp.png';
@@ -8,23 +7,10 @@ import LogoMobile from '../../../public/assets/logoMobile.svg';
 import Ingresso from '../../../public/assets/ingresso.svg';
 import Botao from '../../../public/botoes/forma botao 2.png';
 import Link from 'next/link';
-import StaticHeader, { StaticHeaderSecundaria } from './StaticHeader';
 
-function HeaderContent() {
+export default function StaticHeader() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-    
-    const searchParams = useSearchParams();
-    
-    useEffect(() => {
-      const section = searchParams.get('scrollTo');
-      if (section) {
-        const el = document.getElementById(section);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    }, [searchParams]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -125,30 +111,9 @@ function HeaderContent() {
     );
 }
 
-export default function Header(){
-    return(
-        <Suspense fallback={<StaticHeader />}>
-            <HeaderContent />
-        </Suspense>
-    )
-}
-
-function HeaderSecundariaContent() {
+export function StaticHeaderSecundaria() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
-        
-    const searchParams = useSearchParams();
-    
-    useEffect(() => {
-      const section = searchParams.get('scrollTo');
-      if (section) {
-        const el = document.getElementById(section);
-        if (el) {
-          el.scrollIntoView({ behavior: 'smooth' });
-        }
-      }
-    }, [searchParams]);
-    
 
     useEffect(() => {
         const handleScroll = () => {
@@ -248,12 +213,4 @@ function HeaderSecundariaContent() {
             </div>
         </div>
     );
-}
-
-export function HeaderSecundaria(){
-    return (
-        <Suspense fallback={<StaticHeaderSecundaria />}>
-            <HeaderSecundariaContent />
-        </Suspense>
-    )
 }
