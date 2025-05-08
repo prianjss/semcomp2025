@@ -45,6 +45,7 @@ interface SingleTimerProps {
     shuffle: boolean;
     len?: number;
     useStatic?: boolean;
+    styleOs: 'windows'|'linux';
 }
 
 function SingleTimer({
@@ -54,9 +55,10 @@ function SingleTimer({
     shuffle,
     len = 2,
     useStatic=false,
+    styleOs
 }: SingleTimerProps){
     const [overCard, setOverCard] = useState(true);
-    const [overValue, setOverValue] = useState(value)
+    const [overValue, setOverValue] = useState(value);
     const value1 = shuffle? prev : value;
     const value2 = shuffle? value : prev;
 
@@ -67,7 +69,7 @@ function SingleTimer({
     },[shuffle])
     return(
         <div className={styles.timer}>
-            <div className={styles.timer_clock}>
+            <div className={[styles.timer_clock, styles[`timer_${styleOs}`]].join(' ')}>
                 <StaticCard position='upperCard' digit={value.toString().padStart(len, "0")} />
                 <StaticCard position='lowerCard' digit={prev.toString().padStart(len, "0")}/>
                 <AnimatedCard 
@@ -112,7 +114,36 @@ function SingleTimer({
     )
 }
 
-export default function Countdown(){
+interface StaticTimerProps {
+    label: string;
+    value: number;
+    len?: number;
+}
+
+function StaticTimer({
+    label,
+    value,
+    len=2,
+
+}: StaticTimerProps){
+    return (
+        <div className={styles.timer}>
+            <div className={styles.timer_clock}>
+                <StaticCard position='fullCard' digit={value.toString().padStart(len,'0')} over={true} />
+            </div>
+            <p className={styles.timer_label}>{label}</p>
+        </div>
+    )
+}
+
+const getRealValue = (max: number, prop: 'value'|'prev', unity: {
+    value: number;
+    prev: number;
+    shuffle: boolean;
+}) => unity[prop] >= 0 ? unity[prop] : (max + unity[prop])
+
+
+export default function Countdown({osName}:{osName: string}){
     const [seconds, setSeconds] = useState({
         value: 0,
         prev: 0,
@@ -142,7 +173,7 @@ export default function Countdown(){
         prev:0,
         shuffle:true
     });
-
+    
     const updateTime = (first=false)=>{
         const time = (new Date(2025, 8, 9));
         const now = new Date(); 
@@ -217,12 +248,22 @@ export default function Countdown(){
             <h1 className={styles.container_title}>COUNTDOWN SEMCOMP</h1>
             <p className={styles.container_desc}>Quanto tempo falta para o maior evento de computação e tecnologia de Salvador?</p>
             <div className={styles.container_countdown}>
-
-                <SingleTimer label='Meses' shuffle={months.shuffle} value={months.value} prev={months.prev} useStatic={(days.value < -1 && days.value>-28) || (days.value>1 && days.value<29)} />
-                <SingleTimer label='Dias' shuffle={days.shuffle} value={days.value >= 0 ? days.value : (30 + days.value)} prev={days.prev >= 0 ? days.prev : (30 + days.prev)} useStatic={(hours.value < -1 && hours.value > -22) || (hours.value>1 && hours.value<23)} />
-                <SingleTimer label='Horas' shuffle={hours.shuffle} value={hours.value >= 0 ? hours.value : (24 + hours.value)} prev={hours.prev >= 0 ? hours.prev : (24 + hours.prev)} useStatic={(minutes.value < -1 && minutes.value>-58) || (minutes.value>2 && minutes.value<59)} />
-                <SingleTimer label='Minutos' shuffle={minutes.shuffle} value={minutes.value >= 0 ? minutes.value : (60 + minutes.value)} prev={minutes.prev >= 0 ? minutes.prev : (60 + minutes.prev)} useStatic={(seconds.value < -1 && seconds.value>-58) || (seconds.value>2 && seconds.value<59)} />
-                <SingleTimer label='Segundos' shuffle={seconds.shuffle} value={seconds.value >= 0 ? seconds.value : (60 + seconds.value)} prev={seconds.prev >= 0 ? seconds.prev : (60 + seconds.prev)} />
+                {osName==='windows' || osName==='linux'?
+                (<>
+                    <SingleTimer label='Meses' styleOs={osName} shuffle={months.shuffle} value={months.value} prev={months.prev} useStatic={getRealValue(30,'value',days)>1 && getRealValue(30,'value',days)<29} />
+                    <SingleTimer label='Dias' styleOs={osName} shuffle={days.shuffle} value={getRealValue(30,'value',days)} prev={getRealValue(30,'prev',days)} useStatic={getRealValue(24,'value',hours)>1 && getRealValue(24,'value',hours)<23} />
+                    <SingleTimer label='Horas' styleOs={osName} shuffle={hours.shuffle} value={getRealValue(30,'value', hours)} prev={getRealValue(24,'prev',hours)} useStatic={getRealValue(60,'value',minutes)>2 && getRealValue(60,'value',minutes)<59} />
+                    <SingleTimer label='Minutos' styleOs={osName} shuffle={minutes.shuffle} value={getRealValue(60,'value',minutes)} prev={getRealValue(60,'prev',minutes)} useStatic={getRealValue(60,'value',seconds)>2 && getRealValue(60,'value',seconds)<59} />
+                    <SingleTimer label='Segundos' styleOs={osName} shuffle={seconds.shuffle} value={getRealValue(60,'value',seconds)} prev={getRealValue(60,'prev',seconds)} />
+                </>)
+                :(<>
+                    <StaticTimer label='Meses' value={months.value} />
+                    <StaticTimer label='Dias' value={getRealValue(30,'value',days)} />
+                    <StaticTimer label='Horas' value={getRealValue(30,'value', hours)} />
+                    <StaticTimer label='Minutos' value={getRealValue(60,'value',minutes)} />
+                    <StaticTimer label='Segundos' value={getRealValue(60,'value',seconds)} />
+                </>)
+                }
             </div>
         </section>
     )

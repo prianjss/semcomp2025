@@ -1,5 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import styles from './header.module.css';
 import Image from 'next/image';
 import LogoSemcomp from '../../../public/assets/logo semcomp.png';
@@ -11,6 +12,18 @@ import Link from 'next/link';
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    
+    const searchParams = useSearchParams();
+    
+    useEffect(() => {
+      const section = searchParams.get('scrollTo');
+      if (section) {
+        const el = document.getElementById(section);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, [searchParams]);
 
     useEffect(() => {
         const handleScroll = () => {

@@ -55,6 +55,15 @@
     box-sizing: border-box;
     font-size: 98px;
 }
+
+.timer_windows {
+    font-size: 98px;
+}
+
+.timer_linux {
+    font-size: 105px;
+}
+
 .timer_label {
     text-align: center;
 	font-family: var(--font-body);
@@ -216,6 +225,10 @@
     .container_countdown {
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
+    }
+
+    .container_background {
+        max-width: 200%;
     }
 
 }

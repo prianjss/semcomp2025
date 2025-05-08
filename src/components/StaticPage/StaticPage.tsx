@@ -1,5 +1,6 @@
+'use client';
 import Faq from '@/components/Faq/Faq';
-import styles from './page.module.css';
+import styles from '../../app/page.module.css';
 import Header from '@/components/Header/Header';
 import Patrocinadores from '@/components/Patrocinadores/Patrocinadores';
 import Palestrantes from '@/components/Palestrantes/Palestrantes';
@@ -11,15 +12,11 @@ import HackatonStanding from '@/components/HackatonStanding/HackatonStanding';
 import Realizations from '@/components/Realizations/Realizations';
 import Banner from '@/components/Banner/Banner';
 import Image from 'next/image';
-import Luz from '../../public/assets/bola 3.png'
+import Luz from '../../../public/assets/bola 3.png'
 import Countdown from '@/components/Countdown/Countdown';
 import Footer from '@/components/Footer/Footer';
-import { headers } from 'next/headers';
 
-export default async function Home() {
-  const headersList = await headers();
-  const osName = headersList.get('os-name') || 'null';
-
+export default function StaticPage() {
   return (
     <main style={{overflow: 'hidden'}}>
       <section className={styles.homeTop}>
@@ -31,7 +28,7 @@ export default async function Home() {
           <Header />
         </div>
         <Banner />
-        <Countdown osName={osName} />
+        <Countdown osName={''} />
       </section>
 
       <section className={styles.homeMid}>
