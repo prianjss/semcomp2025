@@ -14,12 +14,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500}
@@ -36,12 +36,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500} 
@@ -62,12 +62,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500} 
@@ -84,12 +84,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500}
@@ -110,12 +110,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500} 
@@ -132,12 +132,12 @@ export default function DiaDois() {
               Buscamos criar um ambiente acolhedor e acessível, onde todos os participantes se sintam bem-vindos e representados.
             </p>
             <h3 className={styles.palestranteP}>Palestrante</h3>
-            <p className={styles.cargoP}>Former CEO da Meta</p>
-            <p className={styles.nomeP}>Mark Zuckerberg</p>
+            <p className={styles.cargoP}>CEO de Alguma Coisa</p>
+            <p className={styles.nomeP}>Fulano da Silva</p>
           </div>
           <div className={styles.cardImage}>
             <Image
-              src="/palestrantes/marquinhos.png"
+              src="/palestrantes/perfil.png"
               alt="Botão Fale Conosco"
               className={styles.imagem}
               width={500} 
