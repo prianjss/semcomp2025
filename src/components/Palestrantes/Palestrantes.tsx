@@ -42,128 +42,128 @@ export default function Palestrantes() {
           >
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
+                  descricao={`Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinhas pois.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               <SwiperSlide>
                 <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  nome="FULANO DA SILVA"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
+                  imageUrl="./palestrantes/perfil.png"
                 />
               </SwiperSlide>
 
               {/*<SwiperSlide>
                 <Card
                   nome="MARK ZUCKERBERG"
-                  cargo="FORMER CEO DA META"
+                  cargo="CEO DE ALGUMA COISA"
                   descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
                   instagram="@fulanodasilva"
                   imageUrl="./palestrantes/marquinhos.png"
