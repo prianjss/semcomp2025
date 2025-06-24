@@ -58,6 +58,11 @@
     cursor: pointer;
     width: 240px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .bannerFormaBotao:hover {
+    transform: scale(1.05);
   }
   
   .bannerBotao {

@@ -75,6 +75,11 @@
     cursor: pointer;
     padding: 0px;
     margin: 0px;
+    transition: transform 0.3s ease;
+}
+
+.formaBotao:hover {
+    transform: scale(1.05);
 }
 
 .formaBotao2 {
@@ -85,14 +90,19 @@
     cursor: pointer;
     padding: 0px;
     margin: 0px;
+    transition: transform 0.3s ease;
+}
+
+.formaBotao2:hover {
+    transform: scale(1.05);
 }
 
 .imagemBotao{
     width: 250px;
     height: 48px;
     display: block;
-  }
-  
+}
+
 .textoBotao {
     margin: 0px;
     padding: 0px;
