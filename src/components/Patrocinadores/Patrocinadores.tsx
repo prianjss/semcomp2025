@@ -1,31 +1,32 @@
 import Image from 'next/image';
 import styles from './patrocinadores.module.css';
 
-const sponsors = [
-  { name: 'Escavador', src: '/logos/semcomp.svg' },
-  { name: 'Google', src: '/logos/semcomp.svg' },
-  { name: 'Alura', src: '/logos/semcomp.svg' }
+const patrocinadores = [
+  { name: 'Escavador', src: '/logos/escavadoramarela.svg' },
+  { name: 'Alura', src: '/logos/alura-light.svg' }
 ];
 
-function LogoGrid({ title }: { title: string }) {
+const apoio = [
+  { name: 'Alura', src: '/logos/alura-light.svg' }
+];
+
+function LogoGrid({ title, logos }: { title: string; logos: { name: string; src: string }[] }) {
   return (
     <div>
       <h2 className={styles.title}>{title}</h2>
       <div className={styles.grid}>
-        {[...Array(6)].map((_, rowIndex) => (
-          <div key={rowIndex} className={styles.row}>
-            {sponsors.map((sponsor, index) => (
-              <Image 
-                key={`${rowIndex}-${index}`} 
-                src={sponsor.src} 
-                alt={sponsor.name} 
-                width={sponsor.name === 'Alura' ? 100 : 120} 
-                height={sponsor.name === 'Alura' ? 50 : 60} 
-                className={sponsor.name === 'Alura' ? `${styles.logo} ${styles.aluraLogo}` : styles.logo} 
-              />
-            ))}
-          </div>
-        ))}
+        <div className={styles.row}>
+          {logos.map((logo, index) => (
+            <Image
+              key={index}
+              src={logo.src}
+              alt={logo.name}
+              width={logo.name === 'Alura' ? 100 : 120}
+              height={logo.name === 'Alura' ? 50 : 60}
+              className={logo.name === 'Alura' ? `${styles.logo} ${styles.aluraLogo}` : styles.logo}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -34,8 +35,8 @@ function LogoGrid({ title }: { title: string }) {
 export default function Patrocinadores() {
   return (
     <div className={styles.container}>
-      <LogoGrid title="Patrocínio" />
-      <LogoGrid title="Apoio" />
+      <LogoGrid title="Patrocínio" logos={patrocinadores} />
+      <LogoGrid title="Apoio" logos={apoio} />
     </div>
   );
 }
