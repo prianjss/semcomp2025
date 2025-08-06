@@ -3,14 +3,17 @@ import styles from './patrocinadores.module.css';
 
 const patrocinadores = [
   { name: 'Escavador', src: '/logos/escavadoramarela.svg' },
-  { name: 'Alura', src: '/logos/alura-light.svg' }
+  /*{ name: 'MobApps', src: '/logos/mobapss.jpg' }*/
 ];
 
 const apoio = [
-  { name: 'Alura', src: '/logos/alura-light.svg' }
+  { name: 'Instituto de Computação', src: '/logos/logoic.png' },
+  { name: 'Alura', src: '/logos/alura-light.svg', small:true }
 ];
 
-function LogoGrid({ title, logos }: { title: string; logos: { name: string; src: string }[] }) {
+function LogoGrid({ title, logos }: { title: string; logos: {
+  small?: boolean; name: string; src: string 
+}[] }) {
   return (
     <div>
       <h2 className={styles.title}>{title}</h2>
@@ -21,10 +24,22 @@ function LogoGrid({ title, logos }: { title: string; logos: { name: string; src:
               key={index}
               src={logo.src}
               alt={logo.name}
+              width={logo.small ? 100 : 120}
+              height={logo.small ? 50 : 60}
+              className={
+                logo.small
+                  ? `${styles.logo} ${styles.aluraPequena}`
+                  : styles.logo
+              }
+            />/*
+            <Image
+              key={index}
+              src={logo.src}
+              alt={logo.name}
               width={logo.name === 'Alura' ? 100 : 120}
               height={logo.name === 'Alura' ? 50 : 60}
               className={logo.name === 'Alura' ? `${styles.logo} ${styles.aluraLogo}` : styles.logo}
-            />
+            />*/
           ))}
         </div>
       </div>
