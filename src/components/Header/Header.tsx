@@ -81,7 +81,11 @@ function HeaderContent() {
                     </ul>
                 </nav>
 
-                <div className={styles.headerBotaoIngresso}>
+                <a 
+                className={styles.headerBotaoIngresso} 
+                href='https://cheers.com.br/pagina/semcomp25~12976'
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <Image
                         src={Botao}
                         alt='Ingressos'
@@ -92,7 +96,7 @@ function HeaderContent() {
                         <Image src={Ingresso} alt='Ingressos' width={28} />
                         <p>INGRESSOS</p>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div className={`${styles.mobileDropdown} ${menuOpen ? styles.open : ''}`}>
@@ -102,7 +106,11 @@ function HeaderContent() {
                         <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('faq'); }}>FAQ</a></li>
                         <li><a href="#" onClick={(e) => { e.preventDefault(); scrollToSection('hackathon'); }}>Hackathon</a></li>
                         <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
-                        <div className={styles.headerBotaoIngresso}>
+                        <a 
+                            className={styles.headerBotaoIngresso} 
+                            href='https://cheers.com.br/pagina/semcomp25~12976'
+                                target="_blank"
+                                rel="noopener noreferrer">
                             <Image
                                 src={Botao}
                                 alt='Ingressos'
@@ -113,7 +121,7 @@ function HeaderContent() {
                                 <Image src={Ingresso} alt='Ingressos' width={28} />
                                 <p>INGRESSOS</p>
                             </div>
-                        </div>
+                        </a>
                     </ul>   
                 </nav>
             </div>
@@ -202,7 +210,11 @@ function HeaderSecundariaContent() {
                     </ul>
                 </nav>
 
-                <div className={styles.headerBotaoIngresso}>
+                <a 
+                className={styles.headerBotaoIngresso} 
+                href='https://cheers.com.br/pagina/semcomp25~12976'
+                    target="_blank"
+                    rel="noopener noreferrer">
                     <Image
                         src={Botao}
                         alt='Ingressos'
@@ -213,7 +225,7 @@ function HeaderSecundariaContent() {
                         <Image src={Ingresso} alt='Ingressos' width={28} />
                         <p>INGRESSOS</p>
                     </div>
-                </div>
+                </a>
             </div>
 
             <div className={`${styles.mobileDropdown} ${menuOpen ? styles.open : ''}`}>
@@ -227,7 +239,11 @@ function HeaderSecundariaContent() {
                             Hackathon
                         </Link>
                         <li><a href='https://www.instagram.com/semcompssa/'>Contato</a></li>
-                        <div className={styles.headerBotaoIngresso}>
+                        <a 
+                            className={styles.headerBotaoIngresso} 
+                            href='https://cheers.com.br/pagina/semcomp25~12976'
+                                target="_blank"
+                                rel="noopener noreferrer">
                             <Image
                                 src={Botao}
                                 alt='Ingressos'
@@ -238,7 +254,7 @@ function HeaderSecundariaContent() {
                                 <Image src={Ingresso} alt='Ingressos' width={28} />
                                 <p>INGRESSOS</p>
                             </div>
-                        </div>
+                        </a>
                     </ul>   
                 </nav>
             </div>

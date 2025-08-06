@@ -40,10 +40,13 @@ export default function Banner () {
 
 				<p className={styles.bannerTexto}>O maior evento de computação e tecnologia de Salvador está de volta, de cara nova, e na sua 13ª edição!</p>
 
-				<div className={styles.bannerFormaBotao}>
+				<a className={styles.bannerFormaBotao} 
+				href='https://cheers.com.br/pagina/semcomp25~12976'
+				target="_blank"
+				rel="noopener noreferrer">
 					<Image src={Botao} alt='Participe Agora' className={styles.bannerBotao} />
 					<p className={styles.textoBotao}>PARTICIPE AGORA</p>
-				</div>
+				</a>
 			</div>
 
 			<div
