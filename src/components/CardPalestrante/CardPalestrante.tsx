@@ -1,5 +1,5 @@
 'use client'
-import { ReactNode, useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import styles from './card.module.css';
 import InstagramIcon from '../../../public/assets/instagram icon.svg'
