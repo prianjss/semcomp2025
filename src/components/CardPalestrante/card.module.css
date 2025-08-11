@@ -94,7 +94,7 @@
   overflow-y: auto;
   /* Para Firefox */
   scrollbar-width: thin; /* barra mais fina */
-  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* cor da barra e do fundo */
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent; /* cor da barra e do fundo */
 }
 
 /* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
@@ -107,7 +107,7 @@
 }
 
 .versoInformacoes::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.3); /* cor da barra */
+  background-color: rgba(255, 255, 255, 0.3); /* cor da barra */
   border-radius: 3px; /* bordas arredondadas */
 }
 
