@@ -198,6 +198,10 @@
         height: auto;
     }
 
+    .faqItem{
+        width: 100%;
+    }
+
     .faqHeader{
         padding: 18px 18px 0px 18px;
     }
