@@ -3,17 +3,20 @@ import styles from './patrocinadores.module.css';
 
 const patrocinadores = [
   { name: 'Escavador', src: '/logos/escavadoramarela.svg' },
+  { name: 'Google', src: '/logos/google.svg' },
   /*{ name: 'MobApps', src: '/logos/mobapss.jpg' }*/
 ];
 
 const apoio = [
   { name: 'Instituto de Computação', src: '/logos/logoic.png' },
-  { name: 'Alura', src: '/logos/alura-light.svg', small:true }
+  { name: 'Alura', src: '/logos/alura-light.svg', small: true }
 ];
 
-function LogoGrid({ title, logos }: { title: string; logos: {
-  small?: boolean; name: string; src: string 
-}[] }) {
+function LogoGrid({ title, logos }: {
+  title: string; logos: {
+    small?: boolean; name: string; src: string
+  }[]
+}) {
   return (
     <div>
       <h2 className={styles.title}>{title}</h2>
