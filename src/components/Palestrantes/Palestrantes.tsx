@@ -7,8 +7,52 @@ import { Pagination, Grid } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Card from "../CardPalestrante/CardPalestrante";
+import Card, { CardProps } from "../CardPalestrante/CardPalestrante";
 import styles from "./palestrantes.module.css";
+import { v4 } from 'uuid';
+
+export type SpeakerData = CardProps & { id?: string };
+
+const speakers: SpeakerData[] = [
+  {
+    nome: "Luiz Santos",
+    cargo: "Desenvolvedor, Docente e Pesquisador",
+    descricao: "Desenvolvedor .NET e Node.js, com experiência em arquitetura de software e micro frontends. Atuo também como docente e pesquisador, no Centro Universitário Estácio Sergipe, sendo também mestrando, em último semestre, na Universidade Federal de Sergipe.",
+    imageUrl: "/palestrantes/luiz-felipe.png",
+    instagram: "@luiz.cirqueira",
+    id: "luiz-cirqueira-1",
+  },
+  {
+    nome: "Priscila Araújo",
+    cargo: "Desenvolvedora, Técnica e Pesquisadora em IA",
+    descricao: "Desenvolvedora de software desde 2018, tecnica em automação pelo IFBA, estudante de ciência da computação na UFBA e pesquisadora em Inteligencia Artificial e Otimização na Ford Motor Company. Além de anos de experiência no mercado de trabalho, fiz parte de iniciativas da Google, Alura, entre outros, sempre sendo destaque em curriculo, pesquisa e formação.",
+    imageUrl: "/palestrantes/priscila-araujo.jpeg",
+    instagram: "@prihcaraujo",
+    id: "priscila-ara-1",
+  },
+  {
+    nome: "Pachi Parra",
+    cargo: "Developer Advocate, Palestrante e Mentora",
+    descricao: "Pachi Parra atua como Developer Advocate no GitHub, focada na comunidade brasileira. Especialista em Developer Relations, gerenciamento de comunidades e eventos tech, ela é fundadora da Abacate DevRel, pioneira em consultoria DevRel no Brasil, e co-fundadora da Feministech, comunidade que fortalece a presença de mulheres e pessoas LGBTQIAP+ na tecnologia. Palestrante, mentora e apaixonada por construir relações que nutrem o ecossistema tech.",
+    instagram: "@pachicodes",
+    imageUrl: "/palestrantes/pachi-parra.jpg",
+  },
+  {
+    nome: "Leka Hattori",
+    cargo: "Founder & CEO da Space Terra, Representante NASA Space Challenge, Administradora, Consultora, Astronauta Análoga, Palestrante, Chef de Cozinha, etc.",
+    descricao: "Founder & CEO Space Terra| TEDx Speaker | Representante NASA Space Challenge (world winner) | Administradora, MBA em finanças| Especialista em inovação na educação | Consultora de negócios internacionais e espaciais |Astronauta Análoga | Palestrante | Chef de cozinha internacional| Membra da “Bold Community - Comunidade de Visionários” – Programa do Governo da Áustria e do Coletivo \"Nasa Space\" - EUA.",
+    instagram: "@lekahattori @spaceterrahub",
+    imageUrl: "./palestrantes/leka-hattori.jpg",
+  },
+  {
+    nome: "Iasmim Oliveira",
+    cargo: "Software Engineer no iFood, especialista em soluções Front-end e Mentora",
+    descricao: "Staff Software Engineer no iFood, especialista em soluções Front-end. Apaixonada por automatização e IA aplicada a fluxos de desenvolvimento.Mentora no Programadores do Amanhã, minha missão é unir código, arte e impacto social para acelerar inovação real.",
+    instagram: "@oliv_code",
+    imageUrl: "./palestrantes/iasmin-oliveira.jpeg",
+  },
+
+]
 
 export default function Palestrantes() {
 
@@ -27,148 +71,31 @@ export default function Palestrantes() {
       <article className={styles.palestrantesContent}>
         {isMounted && (
           <Swiper
-              modules={[Pagination, Grid]}
-              spaceBetween={10}
-              slidesPerView={5}
-              grid={{ rows: 2, fill: "row" }}
-              pagination={{ clickable: true }}
-              breakpoints={{
-                  320: { slidesPerView: 2, grid: { rows: 2 } },
-                  480: { slidesPerView: 2, grid: { rows: 2 } },
-                  768: { slidesPerView: 3, grid: { rows: 2 } },
-                  1024: { slidesPerView: 4, grid: { rows: 2 } },
-                  1440: { slidesPerView: 5, grid: { rows: 2 } },
-              }}
+            modules={[Pagination, Grid]}
+            spaceBetween={10}
+            slidesPerView={5}
+            grid={{ rows: 2, fill: "row" }}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              320: { slidesPerView: 2, grid: { rows: 2 } },
+              480: { slidesPerView: 2, grid: { rows: 2 } },
+              768: { slidesPerView: 3, grid: { rows: 2 } },
+              1024: { slidesPerView: 4, grid: { rows: 2 } },
+              1440: { slidesPerView: 5, grid: { rows: 2 } },
+            }}
           >
-              <SwiperSlide>
+
+            {speakers.map((speaker) => (
+              <SwiperSlide key={speaker.id ?? v4()}>
                 <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinhas pois.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
+                  nome={speaker.nome}
+                  cargo={speaker.cargo}
+                  descricao={speaker.descricao}
+                  instagram={speaker.instagram}
+                  imageUrl={speaker.imageUrl}
                 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <Card
-                  nome="FULANO DA SILVA"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/perfil.png"
-                />
-              </SwiperSlide>
-
-              {/*<SwiperSlide>
-                <Card
-                  nome="MARK ZUCKERBERG"
-                  cargo="CEO DE ALGUMA COISA"
-                  descricao={`Pequeno resumo sobre a carreira ou vida ou algo relevante do palestrante aqui. \nMarta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.`}
-                  instagram="@fulanodasilva"
-                  imageUrl="./palestrantes/marquinhos.png"
-                />
-              </SwiperSlide>*/}
+            ))}
 
           </Swiper>
         )}
