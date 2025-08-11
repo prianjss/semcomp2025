@@ -20,14 +20,16 @@ const Faq = forwardRef<HTMLDivElement, FaqProps>(({ id }, ref) => {
                 <div className={styles.faqItem}>
                     <h2 className={styles.faqSubtitle}>Quem pode participar?</h2>
                     <p className={styles.faqTexto}>
-                        Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.            
+                        Todos podem participar, sendo estudante da UFBA ou não, só venha!
+
                     </p>
                 </div>
 
                 <div className={styles.faqItem}>
                     <h2 className={styles.faqSubtitle}>Onde ocorrerá o evento?</h2>
                     <p className={styles.faqTexto}>
-                        Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.            
+                        Auditório Leopoldo Amaral da Escola Politécnica - UFBA. 
+                        Endereço: Rua Aristides Novis, 02, 6º andar, Federação Salvador - Bahia
                     </p>
                 </div>
             </section>
@@ -36,21 +38,22 @@ const Faq = forwardRef<HTMLDivElement, FaqProps>(({ id }, ref) => {
                 <div className={styles.faqItem}>
                     <h2 className={styles.faqSubtitle}>Onde acontecerá o hackathon?</h2>
                     <p className={styles.faqTexto}>
-                        Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.            
+                        Sala Smart Class II do PAF II - Campus Federação/Ondina - UFBA. 
+                        Endereço: Rua Barão de Jeremoabo, S/N, Ondina - CEP: 40170-115 | Salvador-BA.
                     </p>
                 </div>
 
                 <div className={styles.faqItem}>
                     <h2 className={styles.faqSubtitle}>Haverá certificação?</h2>
                     <p className={styles.faqTexto}>
-                        Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.            
+                        Sim! A participação na SemComp25 é certificada com um certificado de 07 horas de participação para cada um dos 3 dias de palestras que o congressista se credenciar
                     </p>
                 </div>
             </section>
         </article>
 
         <div className={styles.faqButtons}>
-            <a href="/sua-pagina-faq" className={styles.formaBotao}>
+            <a href="https://drive.google.com/drive/folders/1e5UgDcX8QivfspJ0dNxey4-LRvJc3rzo?usp=drive_link" className={styles.formaBotao}>
                 <Image
                     src="/botoes/forma_botao_3.svg"
                     alt="Botão FAQ Completa"
