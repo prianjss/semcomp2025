@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import Image from 'next/image';
 import styles from './card.module.css';
 import InstagramIcon from '../../../public/assets/instagram icon.svg'
@@ -24,7 +24,7 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
       <section className={styles.cardFrente} style={{ backgroundImage: `url(${imageUrl})` }} onClick={handleFlip}>
         <div className={styles.informacoesCard}>
           <h2 className={styles.cardNome}>{nome}</h2>
-          <h3 className={styles.cardCargo}>{cargo}</h3>
+          <h3 className={styles.cardCargo} title={cargo?.toString()}>{cargo}</h3>
           <div className={styles.animacao}>
             Conheça mais sobre
             <Image
