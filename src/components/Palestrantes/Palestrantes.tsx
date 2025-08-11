@@ -9,7 +9,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Card, { CardProps } from "../CardPalestrante/CardPalestrante";
 import styles from "./palestrantes.module.css";
-import { v4 } from 'uuid';
 
 export type SpeakerData = CardProps & { id?: string };
 
@@ -85,8 +84,8 @@ export default function Palestrantes() {
             }}
           >
 
-            {speakers.map((speaker) => (
-              <SwiperSlide key={speaker.id ?? v4()}>
+            {speakers.map((speaker, index) => (
+              <SwiperSlide key={speaker.id ?? index}>
                 <Card
                   nome={speaker.nome}
                   cargo={speaker.cargo}
