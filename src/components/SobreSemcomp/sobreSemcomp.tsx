@@ -9,7 +9,7 @@ export default function SobreSemcomp() {
           <h1 className={styles.title}>O QUE É A SEMCOMP?</h1>
           <p className={styles.description}>
             A SEMCOMP SSA (Semana de Computação de Salvador) é um evento anual
-            realizado na UFBA pelo InfoJr UFBA. Seu propósito é unir e fortalecer
+            realizado na UFBA pela InfoJr UFBA. Seu propósito é unir e fortalecer
             a comunidade acadêmica e entusiastas em tecnologia, inovação e
             empreendedorismo.
           </p>
