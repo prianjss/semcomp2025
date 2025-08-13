@@ -8,6 +8,7 @@ const patrocinadores = [
 ];
 
 const apoio = [
+  { name: 'Rocketseat', src: '/logos/rockeatseat.svg' },
   { name: 'Instituto de Computação', src: '/logos/logoic.png' },
   { name: 'Alura', src: '/logos/alura-light.svg', small: true }
 ];
