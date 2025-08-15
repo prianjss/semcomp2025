@@ -43,26 +43,20 @@ const speakers: SpeakerData[] = [
     instagram: "@pachicodes",
     imageUrl: "/palestrantes/pachi-parra.jpg",
   },
+  */
   {
     nome: "Iasmim Oliveira",
     cargo: "Software Engineer no iFood, especialista em soluções Front-end e Mentora",
     descricao: "Staff Software Engineer no iFood, especialista em soluções Front-end. Apaixonada por automatização e IA aplicada a fluxos de desenvolvimento.Mentora no Programadores do Amanhã, minha missão é unir código, arte e impacto social para acelerar inovação real.",
     instagram: "@oliv_code",
     imageUrl: "./palestrantes/iasmin-oliveira.jpeg",
-  },*/
-  {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
   },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Mateus Carvalho",
+    cargo: "Fundador e CEO da MobApps",
+    descricao: "Mateus Carvalho é fundador da Mobapps, empresa referência no Brasil no desenvolvimento de aplicativos White Label para mobilidade, com presença internacional e mais de 25 colaboradores. Natural do sertão baiano, Mateus atua no mercado digital há mais de 17 anos. Iniciou sua trajetória criando sites em sua cidade natal e, ao longo dos anos, participou de projetos de destaque para empresas como OAS, Ivete Sangalo, Cozinhas Itatiaia, além de aplicativos para a Ambev e o Governo da Bahia. \n Vencedor da competição nacional Campus Mobile, que o levou ao Vale do Silício, e campeão de hackathons, Mateus é hoje um exemplo de como a tecnologia pode abrir caminhos inimagináveis. Ele inspira pela sua resiliência e pela prova de que é possível construir grandes coisas partindo de lugares pequenos. \n Hoje, além de liderar sua empresa, compartilha sua história para motivar desenvolvedores a também despertarem seu lado empreendedor — mostrando que, com visão e atitude, é possível transformar código em impacto real no mundo.",
+    instagram: "@mateuscarvalho.tech ",
+    imageUrl: "./palestrantes/MateusCarvalho.JPG",
   },
   {
     nome: "Palestrante",
