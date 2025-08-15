@@ -2,20 +2,20 @@ import Image from 'next/image';
 import styles from './patrocinadores.module.css';
 
 const patrocinadores = [
-  { name: 'Escavador', src: '/logos/escavadoramarela.svg' },
+  { name: 'Escavador', src: '/logos/escavadoramarela-cropped.svg' },
   { name: 'Google', src: '/logos/google.svg' },
   /*{ name: 'MobApps', src: '/logos/mobapss.jpg' }*/
 ];
 
 const apoio = [
   { name: 'Rocketseat', src: '/logos/rockeatseat.svg' },
-  { name: 'Instituto de Computação', src: '/logos/logoic.png' },
-  { name: 'Alura', src: '/logos/alura-light.svg', small: true }
+  { name: 'Instituto de Computação', src: '/logos/logoic.png', width: 522, height: 161 },
+  { name: 'Alura', src: '/logos/alura-light.svg' }
 ];
 
 function LogoGrid({ title, logos }: {
   title: string; logos: {
-    small?: boolean; name: string; src: string
+    small?: boolean; name: string; src: string;
   }[]
 }) {
   return (
@@ -30,6 +30,7 @@ function LogoGrid({ title, logos }: {
               alt={logo.name}
               width={logo.small ? 100 : 120}
               height={logo.small ? 50 : 60}
+
               className={
                 logo.small
                   ? `${styles.logo} ${styles.aluraPequena}`
