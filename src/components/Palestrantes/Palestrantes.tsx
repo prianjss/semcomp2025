@@ -181,8 +181,8 @@ export default function Palestrantes() {
 
   useEffect(() => {
     // COLOCAR CARDS NA ORDEM CORRETA NA HORA DA VISUALIZAÇÃO
-    let aux: SpeakerData[] = [...speakers];
-    let rows: SpeakerData[][] = [];
+    const aux: SpeakerData[] = [...speakers];
+    const rows: SpeakerData[][] = [];
     let slidesPerView = 2;
 
     if (windowWidth >= 1440) {
@@ -201,7 +201,7 @@ export default function Palestrantes() {
     rows[1] = aux.splice(0, slidesPerView);
 
     while (aux.length > 0) {
-      let index = rows[0].length - rows[1].length;
+      const index = rows[0].length - rows[1].length;
       rows[index].push(aux.shift() as SpeakerData);
     }
 
