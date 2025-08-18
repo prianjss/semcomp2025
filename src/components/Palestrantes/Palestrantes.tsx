@@ -30,14 +30,6 @@ const speakers: SpeakerData[] = [
     id: "luiz-cirqueira-1",
   },
   {
-    nome: "Priscila Araújo",
-    cargo: "Desenvolvedora, Técnica e Pesquisadora em IA",
-    descricao: "Desenvolvedora de software desde 2018, tecnica em automação pelo IFBA, estudante de ciência da computação na UFBA e pesquisadora em Inteligencia Artificial e Otimização na Ford Motor Company. Além de anos de experiência no mercado de trabalho, fiz parte de iniciativas da Google, Alura, entre outros, sempre sendo destaque em curriculo, pesquisa e formação.",
-    imageUrl: "/palestrantes/priscila-araujo.jpeg",
-    instagram: "@prihcaraujo",
-    id: "priscila-ara-1",
-  },
-  {
     nome: "Pachi Parra",
     cargo: "Developer Advocate, Palestrante e Mentora",
     descricao: "Pachi Parra atua como Developer Advocate no GitHub, focada na comunidade brasileira. Especialista em Developer Relations, gerenciamento de comunidades e eventos tech, ela é fundadora da Abacate DevRel, pioneira em consultoria DevRel no Brasil, e co-fundadora da Feministech, comunidade que fortalece a presença de mulheres e pessoas LGBTQIAP+ na tecnologia. Palestrante, mentora e apaixonada por construir relações que nutrem o ecossistema tech.",
@@ -58,6 +50,13 @@ const speakers: SpeakerData[] = [
     descricao: "Mateus Carvalho é fundador da Mobapps, empresa referência no Brasil no desenvolvimento de aplicativos White Label para mobilidade, com presença internacional e mais de 25 colaboradores. Natural do sertão baiano, Mateus atua no mercado digital há mais de 17 anos. Iniciou sua trajetória criando sites em sua cidade natal e, ao longo dos anos, participou de projetos de destaque para empresas como OAS, Ivete Sangalo, Cozinhas Itatiaia, além de aplicativos para a Ambev e o Governo da Bahia. \n Vencedor da competição nacional Campus Mobile, que o levou ao Vale do Silício, e campeão de hackathons, Mateus é hoje um exemplo de como a tecnologia pode abrir caminhos inimagináveis. Ele inspira pela sua resiliência e pela prova de que é possível construir grandes coisas partindo de lugares pequenos. \n Hoje, além de liderar sua empresa, compartilha sua história para motivar desenvolvedores a também despertarem seu lado empreendedor — mostrando que, com visão e atitude, é possível transformar código em impacto real no mundo.",
     instagram: "@mateuscarvalho.tech ",
     imageUrl: "./palestrantes/MateusCarvalho.JPG",
+  },
+  {
+    nome: "Priscila Araújo",
+    cargo: "Desenvolvedora, Técnica e Pesquisadora em IA",
+    descricao: "Desenvolvedora de software desde 2018, tecnica em automação pelo IFBA, estudante de ciência da computação na UFBA e pesquisadora em Inteligencia Artificial e Otimização na Ford Motor Company. Além de anos de experiência no mercado de trabalho, fiz parte de iniciativas da Google, Alura, entre outros, sempre sendo destaque em curriculo, pesquisa e formação.",
+    imageUrl: "/palestrantes/priscila-araujo.jpeg",
+    instagram: "@prihcaraujo",
   },
   {
     nome: "Palestrante",
