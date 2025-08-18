@@ -156,13 +156,6 @@ const speakers: SpeakerData[] = [
     instagram: "Novidades em breve",
     imageUrl: "./palestrantes/embreve.png",
   },
-  {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
-  },
 
 ]
 
