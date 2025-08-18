@@ -63,14 +63,14 @@ const speakers: SpeakerData[] = [
   //   cargo: "Game designer, Desenvolvedor de jogos, Artista e Empresário",
   //   descricao: "Graduado no Bacharelado Interdisciplinar em Artes com concentração em Artes e Tecnologias Contemporâneas na Universidade Federal da Bahia. Aprendeu a desenvolver jogos ainda na adolescência, de forma autodidata, através de tutoriais online. Fundou seu estúdio em 2018, onde já publicou mais de 15 jogos e experiências artísticas digitais. Está na posição de vice-presidente da BIND, coletivo de desenvolvedores de jogos da Bahia, desde 2023. Irlan também já atuou como professor de desenvolvimento de jogos.",
   //   instagram: "@bragiestudios",
-  //   imageUrl: "./palestrantes/embreve.png",
+  //   imageUrl: "./palestrantes/irlan.png",
   // },
   // {
   //   nome: "Eduarda Bango",
   //   cargo: "Produtora cultural, Artista e Diretora de arte",
   //   descricao: "Produtora cultural (audiovisual, games e eventos), artista e diretora de arte. Graduada no Bacharelado Interdisciplinar em Artes com concentração em Cinema e Audiovisual e no Bacharelado em Comunicação com habilitação em Produção Cultural, ambos na Universidade Federal da Bahia. Já ocupou cargos de direção, direção de arte, roteiro e produção em audiovisual, mas migrou para a área de games. Atua como produtora de jogos e diretora de arte na Bragi Estúdios desde 2022, onde já participou de mais de 10 jogos produzidos. Assina roteiro, direção de arte e produção do jogo MOOH.",
   //   instagram: "@bragiestudios",
-  //   imageUrl: "./palestrantes/embreve.png",
+  //   imageUrl: "./palestrantes/eduarda-bango.png",
   // },
   // {
   //   nome: "Caio Lopes",
