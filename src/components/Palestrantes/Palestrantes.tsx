@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Card, { CardProps } from "../CardPalestrante/CardPalestrante";
 import styles from "./palestrantes.module.css";
+import { useWindowSize } from "@/hooks/useWindowSize";
 
 export type SpeakerData = CardProps & { id?: string };
 
@@ -27,14 +28,6 @@ const speakers: SpeakerData[] = [
     imageUrl: "/palestrantes/luiz-felipe.png",
     instagram: "@luiz.cirqueira",
     id: "luiz-cirqueira-1",
-  },
-  {
-    nome: "Priscila Araújo",
-    cargo: "Desenvolvedora, Técnica e Pesquisadora em IA",
-    descricao: "Desenvolvedora de software desde 2018, tecnica em automação pelo IFBA, estudante de ciência da computação na UFBA e pesquisadora em Inteligencia Artificial e Otimização na Ford Motor Company. Além de anos de experiência no mercado de trabalho, fiz parte de iniciativas da Google, Alura, entre outros, sempre sendo destaque em curriculo, pesquisa e formação.",
-    imageUrl: "/palestrantes/priscila-araujo.jpeg",
-    instagram: "@prihcaraujo",
-    id: "priscila-ara-1",
   },
   {
     nome: "Pachi Parra",
@@ -59,11 +52,11 @@ const speakers: SpeakerData[] = [
     imageUrl: "./palestrantes/MateusCarvalho.JPG",
   },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Priscila Araújo",
+    cargo: "Desenvolvedora, Técnica e Pesquisadora em IA",
+    descricao: "Desenvolvedora de software desde 2018, tecnica em automação pelo IFBA, estudante de ciência da computação na UFBA e pesquisadora em Inteligencia Artificial e Otimização na Ford Motor Company. Além de anos de experiência no mercado de trabalho, fiz parte de iniciativas da Google, Alura, entre outros, sempre sendo destaque em curriculo, pesquisa e formação.",
+    imageUrl: "/palestrantes/priscila-araujo.jpeg",
+    instagram: "@prihcaraujo",
   },
   {
     nome: "Palestrante",
@@ -166,13 +159,54 @@ const speakers: SpeakerData[] = [
 
 ]
 
-export default function Palestrantes() {
 
+
+const swiperBreakpoints = {
+  320: { slidesPerView: 2 },
+  480: { slidesPerView: 2 },
+  768: { slidesPerView: 3 },
+  1024: { slidesPerView: 4 },
+  1440: { slidesPerView: 5 },
+}
+
+export default function Palestrantes() {
   const [isMounted, setIsMounted] = useState(false);
+  const { width: windowWidth } = useWindowSize();
+  const [formattedSpeakers, setFormattedSpeakers] = useState<SpeakerData[]>([]);
 
   useEffect(() => {
     setIsMounted(true);
+    setFormattedSpeakers(speakers);
   }, []);
+
+  useEffect(() => {
+    // COLOCAR CARDS NA ORDEM CORRETA NA HORA DA VISUALIZAÇÃO
+    let aux: SpeakerData[] = [...speakers];
+    let rows: SpeakerData[][] = [];
+    let slidesPerView = 2;
+
+    if (windowWidth >= 1440) {
+      slidesPerView = swiperBreakpoints[1440].slidesPerView;
+    } else if (windowWidth >= 1024) {
+      slidesPerView = swiperBreakpoints[1024].slidesPerView;
+    } else if (windowWidth >= 768) {
+      slidesPerView = swiperBreakpoints[768].slidesPerView;
+    } else if (windowWidth >= 480) {
+      slidesPerView = swiperBreakpoints[480].slidesPerView;
+    } else if (windowWidth >= 320) {
+      slidesPerView = swiperBreakpoints[320].slidesPerView;
+    }
+
+    rows[0] = aux.splice(0, slidesPerView);
+    rows[1] = aux.splice(0, slidesPerView);
+
+    while (aux.length > 0) {
+      let index = rows[0].length - rows[1].length;
+      rows[index].push(aux.shift() as SpeakerData);
+    }
+
+    setFormattedSpeakers(rows.flat());
+  }, [windowWidth]);
 
   return (
     <main className={styles.palestrantesContainer}>
@@ -188,17 +222,11 @@ export default function Palestrantes() {
             slidesPerView={5}
             grid={{ rows: 2, fill: "row" }}
             pagination={{ clickable: true }}
-            breakpoints={{
-              320: { slidesPerView: 2, grid: { rows: 2 } },
-              480: { slidesPerView: 2, grid: { rows: 2 } },
-              768: { slidesPerView: 3, grid: { rows: 2 } },
-              1024: { slidesPerView: 4, grid: { rows: 2 } },
-              1440: { slidesPerView: 5, grid: { rows: 2 } },
-            }}
+            breakpoints={swiperBreakpoints}
           >
 
-            {speakers.map((speaker, index) => (
-              <SwiperSlide key={speaker.id ?? index}>
+            {formattedSpeakers.map((speaker, index) => (
+              <SwiperSlide key={speaker.id ?? index} >
                 <Card
                   nome={speaker.nome}
                   cargo={speaker.cargo}
