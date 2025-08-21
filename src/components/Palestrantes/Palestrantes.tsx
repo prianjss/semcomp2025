@@ -28,15 +28,7 @@ const speakers: SpeakerData[] = [
     imageUrl: "/palestrantes/luiz-felipe.png",
     instagram: "@luiz.cirqueira",
     id: "luiz-cirqueira-1",
-  },
-  {
-    nome: "Pachi Parra",
-    cargo: "Developer Advocate, Palestrante e Mentora",
-    descricao: "Pachi Parra atua como Developer Advocate no GitHub, focada na comunidade brasileira. Especialista em Developer Relations, gerenciamento de comunidades e eventos tech, ela é fundadora da Abacate DevRel, pioneira em consultoria DevRel no Brasil, e co-fundadora da Feministech, comunidade que fortalece a presença de mulheres e pessoas LGBTQIAP+ na tecnologia. Palestrante, mentora e apaixonada por construir relações que nutrem o ecossistema tech.",
-    instagram: "@pachicodes",
-    imageUrl: "/palestrantes/pachi-parra.jpg",
-  },
-  */
+  },*/
   {
     nome: "Iasmim Oliveira",
     cargo: "Software Engineer no iFood, especialista em soluções Front-end e Mentora",
@@ -72,26 +64,19 @@ const speakers: SpeakerData[] = [
     instagram: "@bragiestudios",
     imageUrl: "./palestrantes/eduarda-bango.png",
   },
-  // {
-  //   nome: "Caio Lopes",
-  //   cargo: "Designer de Produto Sênior, Diretor do ConDan.SSA, Artista e Mestrando em Dança",
-  //   descricao: "Bacharel em Ciência da Computação pela UFBA e artista independente, atuo na interseção entre tecnologia, arte e produção cultural. Com experiência em UX/UI, produto, programação e marketing, já integrei equipes de startups e projetos de economia criativa, além de ter passagem pelo Movimento Empresa Júnior na InfoJr, NEJ Salvador e enquanto coordenador da SEMCOMP nos anos de 2019 e 2020. Atualmente sou aluno especial do Mestrado Profissional em Dança (PRODAN/UFBA), diretor do ConDan.SSA – Convergências em Dança Salvador e Designer de Produto Sênior na Caffeine Army, desenvolvendo produtos digitais e trabalhos que atravessam educação, inovação e criação artística.",
-  //   instagram: "@caiovinisl",
-  //   imageUrl: "./palestrantes/caio-lopes.jpg",
-  // },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Pachi Parra",
+    cargo: "Developer Advocate, Palestrante e Mentora",
+    descricao: "Pachi Parra atua como Developer Advocate no GitHub, focada na comunidade brasileira. Especialista em Developer Relations, gerenciamento de comunidades e eventos tech, ela é fundadora da Abacate DevRel, pioneira em consultoria DevRel no Brasil, e co-fundadora da Feministech, comunidade que fortalece a presença de mulheres e pessoas LGBTQIAP+ na tecnologia. Palestrante, mentora e apaixonada por construir relações que nutrem o ecossistema tech.",
+    instagram: "@pachicodes",
+    imageUrl: "/palestrantes/pachi-parra.jpg",
   },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Caio Lopes",
+    cargo: "Designer de Produto Sênior, Diretor do ConDan.SSA, Artista e Mestrando em Dança",
+    descricao: "Bacharel em Ciência da Computação pela UFBA e artista independente, atuo na interseção entre tecnologia, arte e produção cultural. Com experiência em UX/UI, produto, programação e marketing, já integrei equipes de startups e projetos de economia criativa, além de ter passagem pelo Movimento Empresa Júnior na InfoJr, NEJ Salvador e enquanto coordenador da SEMCOMP nos anos de 2019 e 2020. Atualmente sou aluno especial do Mestrado Profissional em Dança (PRODAN/UFBA), diretor do ConDan.SSA – Convergências em Dança Salvador e Designer de Produto Sênior na Caffeine Army, desenvolvendo produtos digitais e trabalhos que atravessam educação, inovação e criação artística.",
+    instagram: "@caiovinisl",
+    imageUrl: "./palestrantes/caio-lopes.jpg",
   },
   {
     nome: "Palestrante",
