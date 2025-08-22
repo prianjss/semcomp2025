@@ -10,7 +10,8 @@ const patrocinadores = [
 const apoio = [
   { name: 'Rocketseat', src: '/logos/rockeatseat.svg' },
   { name: 'Instituto de Computação', src: '/logos/logoic.png', width: 522, height: 161 },
-  { name: 'Alura', src: '/logos/alura-light.svg' }
+  { name: 'Alura', src: '/logos/alura-light.svg' },
+  { name: 'GitHub', src: '/logos/github.png' },
 ];
 
 function LogoGrid({ title, logos }: {
