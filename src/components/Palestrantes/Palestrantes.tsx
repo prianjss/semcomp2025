@@ -21,14 +21,6 @@ const speakers: SpeakerData[] = [
     instagram: "@lekahattori @spaceterrahub",
     imageUrl: "./palestrantes/leka-hattori.jpg",
   },
-  /*{
-    nome: "Luiz Santos",
-    cargo: "Desenvolvedor, Docente e Pesquisador",
-    descricao: "Desenvolvedor .NET e Node.js, com experiência em arquitetura de software e micro frontends. Atuo também como docente e pesquisador, no Centro Universitário Estácio Sergipe, sendo também mestrando, em último semestre, na Universidade Federal de Sergipe.",
-    imageUrl: "/palestrantes/luiz-felipe.png",
-    instagram: "@luiz.cirqueira",
-    id: "luiz-cirqueira-1",
-  },*/
   {
     nome: "Iasmim Oliveira",
     cargo: "Software Engineer no iFood, especialista em soluções Front-end e Mentora",
@@ -79,18 +71,18 @@ const speakers: SpeakerData[] = [
     imageUrl: "./palestrantes/caio-lopes.jpg",
   },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Luiz Santos",
+    cargo: "Desenvolvedor, Docente e Pesquisador",
+    descricao: "Desenvolvedor .NET e Node.js, com experiência em arquitetura de software e micro frontends. Atuo também como docente e pesquisador, no Centro Universitário Estácio Sergipe, sendo também mestrando, em último semestre, na Universidade Federal de Sergipe.",
+    imageUrl: "/palestrantes/luiz-felipe.png",
+    instagram: "@luiz.cirqueira",
   },
   {
-    nome: "Palestrante",
-    cargo: "Novidades em breve",
-    descricao: "Novidades em breve",
-    instagram: "Novidades em breve",
-    imageUrl: "./palestrantes/embreve.png",
+    nome: "Caio Nery",
+    cargo: "Engenheiro de Software Associado em Escavador",
+    descricao: "Apaixonado por resolver desde cubos mágicos até quebra-cabeças mais complexos com tecnologia, Caio encontrou na área de Recuperação de Informações o campo perfeito para transformar dados em soluções práticas. Como membro do time de Busca no Escavador, ele e sua equipe estão na linha de frente da inovação, construindo soluções que permitem a produtos como o EscavAI encontrar a informação mais relevante em um universo de milhões de documentos.",
+    instagram: "@caionms",
+    imageUrl: "./palestrantes/caio-nery.jpg",
   },
   {
     nome: "Palestrante",
