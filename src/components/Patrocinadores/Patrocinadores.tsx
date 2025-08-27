@@ -4,19 +4,23 @@ import styles from './patrocinadores.module.css';
 const patrocinadores = [
   { name: 'Escavador', src: '/logos/escavadoramarela-cropped.svg' },
   { name: 'Google', src: '/logos/google.svg' },
+  { name: '42Cultural', src: '/logos/42cultural.png', square: true },
+  { name: 'Solutis', src: '/logos/solutis.png' },
+  { name: 'Projétil', src: '/logos/projetil.svg', square: true },
+  { name: 'Avantsoft', src: '/logos/avantsoft.png' },
   /*{ name: 'MobApps', src: '/logos/mobapss.jpg' }*/
 ];
 
 const apoio = [
   { name: 'Rocketseat', src: '/logos/rockeatseat.svg' },
-  { name: 'Instituto de Computação', src: '/logos/logoic.png', width: 522, height: 161 },
+  { name: 'Instituto de Computação', src: '/logos/logoic.png' },
   { name: 'Alura', src: '/logos/alura-light.svg' },
   { name: 'GitHub', src: '/logos/github.png' },
 ];
 
 function LogoGrid({ title, logos }: {
   title: string; logos: {
-    small?: boolean; name: string; src: string;
+    name: string; src: string; colored?: boolean; square?: boolean
   }[]
 }) {
   return (
@@ -29,14 +33,10 @@ function LogoGrid({ title, logos }: {
               key={index}
               src={logo.src}
               alt={logo.name}
-              width={logo.small ? 100 : 120}
-              height={logo.small ? 50 : 60}
+              width={300}
+              height={150}
 
-              className={
-                logo.small
-                  ? `${styles.logo} ${styles.aluraPequena}`
-                  : styles.logo
-              }
+              className={`${styles.logo} ${logo.colored ? '' : styles.whiteLogo} ${logo.square ? styles.square : ''}`}
             />/*
             <Image
               key={index}
