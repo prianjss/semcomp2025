@@ -7,7 +7,7 @@ import SobreSemcomp from '@/components/SobreSemcomp/sobreSemcomp';
 import SessaoImpacto from '@/components/SessaoImpacto/SessaoImpacto';
 import Background from '@/components/Background/Background';
 import HackatonSection from '@/components/HackatonSection/HackatonSection';
-/*import HackatonStanding from '@/components/HackatonStanding/HackatonStanding';*/
+import HackatonStanding from '@/components/HackatonStanding/HackatonStanding';
 import Realizations from '@/components/Realizations/Realizations';
 import Banner from '@/components/Banner/Banner';
 import Image from 'next/image';
@@ -43,7 +43,7 @@ export default async function Home() {
       <Palestrantes />
       <Patrocinadores />
       <HackatonSection id='hackathon'/>
-      {/*<HackatonStanding />*/}
+      <HackatonStanding />
       <Faq id="faq" />
       <Realizations />
       <Footer />

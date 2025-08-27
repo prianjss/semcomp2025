@@ -8,36 +8,32 @@ export default function HackatonStanding() {
         <div className={styles.hackatonStanding2nd}>
           <h4 className={styles.hackatonStandingPlacesTitle}>2º LUGAR</h4>
           <p className={styles.hackatonStandingPlacesText}>
-            Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi
-            a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha
-            pois queria ver belo jogo de xicaras. Marta foi a cozinha pois
-            queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver
-            belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo
-            de xicaras. Marta foi a cozinha pois queria ver belo jogo de
-            xicaras.
+            ➜ Camiseta SEMCOMP<br></br><br></br>
+            ➜ Ecobag<br></br><br></br>
+            ➜ Boné<br></br><br></br>
+            ➜ 2 Bottons <br></br><br></br>
+            ➜ Stickers
           </p>
         </div>
         <div className={styles.hackatonStanding1st}>
           <h4 className={styles.hackatonStandingPlacesTitle}>1º LUGAR</h4>
           <p className={styles.hackatonStandingPlacesText}>
-            Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi
-            a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha
-            pois queria ver belo jogo de xicaras. Marta foi a cozinha pois
-            queria ver belo jogo de xicaras. Marta foi a cozinha pois queria ver
-            belo jogo de xicaras. Marta foi a cozinha pois queria ver belo jogo
-            de xicaras. Marta foi a cozinha pois queria ver belo jogo de
-            xicaras. Marta foi a cozinha pois queria ver belo jogo de xicaras.
-            Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi
-            a cozinha pois queria ver belo jogo de xicaras.
+            ➜ Bolsa de acesso completo da Rocketseat (12 meses)<br></br><br></br>
+            ➜ Camiseta SEMCOMP<br></br><br></br>
+            ➜ Ecobag<br></br><br></br>
+            ➜ Bloco de notas adesivo<br></br><br></br>
+            ➜ Boné<br></br><br></br>
+            ➜ 4 Bottons <br></br><br></br>
+            ➜ Stickers
           </p>
         </div>
         <div className={styles.hackatonStanding3rd}>
           <h4 className={styles.hackatonStandingPlacesTitle}>3º LUGAR</h4>
           <p className={styles.hackatonStandingPlacesText}>
-            Marta foi a cozinha pois queria ver belo jogo de xicaras. Marta foi
-            a cozinha pois queria ver belo jogo de xicaras. Marta foi a cozinha
-            pois queria ver belo jogo de xicaras. Marta foi a cozinha pois
-            queria ver belo jogo de xicaras.
+            ➜ Camiseta SEMCOMP<br></br><br></br>
+            ➜ Boné<br></br><br></br>
+            ➜ 2 Bottons <br></br><br></br>
+            ➜ Stickers
           </p>
         </div>
       </div>
