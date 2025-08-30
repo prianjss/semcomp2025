@@ -46,10 +46,10 @@ export default function Card({ nome, cargo, descricao, instagram, imageUrl }: Ca
               <p key={index}>{paragrafo}</p>
             ))}
           </div>
-          <div className={styles.cardInstagram}>
+          {instagram && <div className={styles.cardInstagram}>
             <Image src={InstagramIcon} alt='Instagram' width={12} />
             <p>{instagram}</p>
-          </div>
+          </div>}
         </div>
 
         <Image
