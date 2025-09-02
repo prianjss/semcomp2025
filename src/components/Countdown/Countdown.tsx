@@ -1,7 +1,10 @@
 'use client';
 import Image from 'next/image';
 import styles from './countdown.module.css';
+import buttonStyles from '../Header/header.module.css';
 import { AnimationEventHandler, useEffect, useState } from 'react';
+import Ingresso from '../../../public/assets/ingresso.svg';
+import Botao from '../../../public/botoes/forma botao 2.png';
 
 function StaticCard({ position, digit, over=false }:{
     position: "upperCard" | "lowerCard" | "fullCard";
@@ -242,13 +245,52 @@ export default function Countdown({osName}:{osName: string}){
         return ()=>clearInterval(interval);
     }, [hours, days, months, minutes, seconds])
 
+    const semcompStarted = new Date() > new Date(2025, 8, 9);
+
     return (
         <section className={styles.container}>
             <Image className={styles.container_background} src="/assets/bola 2.png"  width={2047} height={1588} alt="" />
-            <h1 className={styles.container_title}>COUNTDOWN SEMCOMP</h1>
-            <p className={styles.container_desc}>Quanto tempo falta para o maior evento de computação e tecnologia de Salvador?</p>
-            <div className={styles.container_countdown}>
-                {osName==='windows' || osName==='linux'?
+            <h1 className={styles.container_title}>{
+                semcompStarted?
+                "A SEMCOMP JÁ COMEÇOU!"
+                :"COUNTDOWN SEMCOMP"
+            }</h1>
+            <p className={styles.container_desc}>{
+                semcompStarted?
+                "E você, vai ficar de fora? Compre já o seu ingresso e não perca mais nenhum segundo dessa experiência única e sensacional!"    
+                :"Quanto tempo falta para o maior evento de computação e tecnologia de Salvador?"
+            }</p>
+            <div className={[styles.container_countdown, styles.container_countdownEnded].join(' ')}>
+                {
+                semcompStarted ?
+                (<>
+                    <div className={styles.buynow_space}></div>
+                    <StaticTimer label='Minutos' value={0} />
+                    <StaticTimer label='Minutos' value={0} />
+                    <div className={styles.buynow}>
+                        <p className={styles.buynow_text}>COMPRE AGORA:</p>
+                        <a 
+                            className={buttonStyles.headerBotaoIngresso} 
+                            href='https://cheers.com.br/pagina/semcomp25~12976'
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src={Botao}
+                                alt='Ingressos'
+                                width={198}
+                                className={buttonStyles.headerBotao}
+                            />
+                            <div className={buttonStyles.headerIngresso}>
+                                <Image src={Ingresso} alt='Ingressos' width={28} />
+                                <p>INGRESSOS</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="buynow_spaceEnd" />
+                    <div className="buynow_spaceEnd" />
+                </>)
+                : osName==='windows' || osName==='linux'?
                 (<>
                     <SingleTimer label='Meses' styleOs={osName} shuffle={months.shuffle} value={months.value} prev={months.prev} useStatic={getRealValue(30,'value',days)>1 && getRealValue(30,'value',days)<29} />
                     <SingleTimer label='Dias' styleOs={osName} shuffle={days.shuffle} value={getRealValue(30,'value',days)} prev={getRealValue(30,'prev',days)} useStatic={getRealValue(24,'value',hours)>1 && getRealValue(24,'value',hours)<23} />

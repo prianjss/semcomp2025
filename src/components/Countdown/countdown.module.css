@@ -196,6 +196,24 @@
     animation: unfold 0.7s ease-in-out forwards;
 }
 
+.buynow_text {
+    text-align: center;
+    font-weight: 500;
+    font-family: "Heading Now Trial";
+    font-size: 1.2rem;
+    letter-spacing: -0.6px;
+}
+
+.buynow_spaceEnd {
+    display: none;
+}
+
+.container_countdownEnded {
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 @keyframes fold {
     0% {
         -webkit-transform: rotateX(0deg);
@@ -223,9 +241,27 @@
         display: none;
     }
 
+    .buynow {
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buynow_space {
+        display: none;
+    }
+
     .container_countdown {
         grid-template-columns: repeat(4, 1fr);
         width: 100%;
+    }
+
+    .container_countdownEnded {
+        gap: 1rem;
+        padding-right: 3rem;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .container_background {
@@ -243,8 +279,22 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .container_countdownEnded {
+        grid-template-columns: repeat(1,1fr);
+    }
+
     .container_countdown > div:nth-child(4) {
         display: none;
+    }
+    .container_countdownEnded > div:nth-child(2) {
+        display: none;
+    }
+    .container_countdownEnded > div:nth-child(3) {
+        display: none;
+    }
+
+    .container_countdownEnded > div:nth-child(4) {
+        display: flex;
     }
 
     .container_desc {
