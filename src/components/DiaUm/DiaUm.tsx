@@ -219,12 +219,10 @@ export default function DiaUm() {
 
           <div className={styles.cardHorizontal}>
             <div className={styles.conteudoCard}>
-              <p className={styles.sobre}>
-                TODO
-              </p>
+
 
               <h3 className={styles.palestranteP}>Palestrante</h3>
-              <p className={styles.cargoP}>TODO</p>
+
               <p className={styles.nomeP}>Gildásio Júnior</p>
             </div>
             <div className={styles.cardImage}>
