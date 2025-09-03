@@ -61,7 +61,7 @@ export default function DiaTres() {
 
         <div className={styles.card}>
           <h1 className={styles.titulo}>13:50 - <span>PALESTRA</span></h1>
-          <h2 className={styles.subtitulo}>Desenvolvendo o jogo "Um Gato no Cangaço"</h2>
+          <h2 className={styles.subtitulo}>Desenvolvendo o jogo &quot;Um Gato no Cangaço&quot;</h2>
 
 
           <div className={styles.cardHorizontal}>
