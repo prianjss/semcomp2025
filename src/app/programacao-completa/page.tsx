@@ -109,31 +109,24 @@ export default function ProgramacaoCompleta() {
                 {diaSelecionado === 1 && (
                     <div className={styles.conteudoDia}>
                         <DiaUm />
-                        <div className={styles.weAreWorking}>Aguarde um pouco...<br />Estamos trabalhando nisso.</div>
                     </div>
                 )}
 
                 {diaSelecionado === 2 && (
                     <div className={styles.conteudoDia}>
                         <DiaDois />
-                        <div className={styles.weAreWorking}>Aguarde um pouco...<br />Estamos trabalhando nisso.</div>
-
                     </div>
                 )}
 
                 {diaSelecionado === 3 && (
                     <div className={styles.conteudoDia}>
                         <DiaTres />
-                        <div className={styles.weAreWorking}>Aguarde um pouco...<br />Estamos trabalhando nisso.</div>
-
                     </div>
                 )}
 
                 {diaSelecionado === 4 && (
                     <div className={styles.conteudoDia}>
                         <DiaQuatro />
-                        <div className={styles.weAreWorking}>Aguarde um pouco...<br />Estamos trabalhando nisso.</div>
-
                     </div>
                 )}
             </section>

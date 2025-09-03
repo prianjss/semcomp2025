@@ -1,132 +1,183 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    gap:16px;
-    padding-bottom: 100px;
-    align-items: center;
-    justify-content: center;
+.container * {
+  box-sizing: border-box;
 }
 
-.programacaoCard{
-    display: flex;
-    gap:16px;
-    width: 80%;
-    justify-content: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
-.card{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-end; 
-    border: 1px solid #AD59FB;
-    overflow: visible;
+.programacaoCard {
+  display: flex;
+  gap: 16px;
+  width: 80%;
+  justify-content: center;
 }
 
-.conteudoCard{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+.card {
+  border: 1px solid #ad59fb;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.titulo{
-    margin: 0;
-    color:white;
-    font-family: Bebas Neue;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 38.4px;
-    letter-spacing: -3%;
+.card.unique {
+  width: fit-content;
 }
 
-.titulo span{
-    font-family: Bebas Neue;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 33.6px;
-    letter-spacing: -3%;
+.cardHorizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  overflow: visible;
+
+  height: 100%;
 }
 
-.sobre{
-    margin: 0;
-    padding-top: 8px;
-    color: white;
-    font-family: IBM Plex Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20.8px;
-    letter-spacing: -3%;
+.conteudoCard {
+  height: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 12px;
 }
 
-.palestranteP{
-    margin: 0;
-    padding-top: 16px;
-    color: white;
-    font-family: IBM Plex Sans;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 23.4px;
-    letter-spacing: -3%;
+.titulo {
+  margin: 0;
+  color: white;
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38.4px;
+  letter-spacing: -3%;
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 12px;
 }
 
-.cargoP{
-    margin: 0;
-    padding-top: 2px;
-    color: #f4f4f4;
-    font-family: IBM Plex Sans;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20.8px;
-    letter-spacing: -3%;
-    opacity: 0.4;
+.subtitulo {
+  margin: 0;
+  color: white;
+  font-family: Bebas Neue;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 38.4px;
+  letter-spacing: -3%;
+  padding-left: 24px;
+  padding-right: 12px;
 }
 
-.nomeP{
-    margin: 0;
-    padding-top: 2px;
-    color: white;
-    font-family: IBM Plex Sans;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20.8px;
-    letter-spacing: -3%;
+.titulo span {
+  font-family: Bebas Neue;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33.6px;
+  letter-spacing: -3%;
+}
+
+.sobre {
+  margin: 0;
+  padding-top: 8px;
+  color: white;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -3%;
+  max-height: 185px;
+  overflow-y: auto;
+  /* Para Firefox */
+  scrollbar-width: thin; /* barra mais fina */
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent; /* cor da barra e do fundo */
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Edge, Safari) */
+.sobre::-webkit-scrollbar {
+  width: 6px; /* largura da barra */
+}
+
+.sobre::-webkit-scrollbar-track {
+  background: transparent; /* fundo da área da barra */
+}
+
+.sobre::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* cor da barra */
+  border-radius: 3px; /* bordas arredondadas */
+}
+
+.palestranteP {
+  margin: 0;
+  padding-top: 16px;
+  color: white;
+  font-family: IBM Plex Sans;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -3%;
+}
+
+.cargoP {
+  margin: 0;
+  padding-top: 2px;
+  color: #f4f4f4;
+  font-family: IBM Plex Sans;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -3%;
+  opacity: 0.4;
+}
+
+.nomeP {
+  margin: 0;
+  padding-top: 2px;
+  color: white;
+  font-family: IBM Plex Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -3%;
 }
 
 .cardImage {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
 }
 
 .imagem {
-    width: 260px;
-    height: 289px;
-    object-fit: cover;
-    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-    margin-right: -16px;
+  width: 260px;
+  height: 289px;
+  object-fit: cover;
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  margin-right: -16px;
 }
 
-@media(max-width: 1024px){
-    .programacaoCard{
-        width: 95%;
-    }
+@media (max-width: 1210px) {
+  .programacaoCard {
+    width: 95%;
+  }
 
-    .imagem {
-        width: 200px;
-        height: 245px;
-    }
-
+  .imagem {
+    width: 200px;
+    height: 245px;
+  }
 }
 
-@media(max-width: 1010px){
+@media (max-width: 1010px) {
+  .conteudoCard {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
 
-    .conteudoCard{
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 15px;
-    }
-    
-    /*.titulo{
+  /*.titulo{
         font-size: 24px;
     }
     
@@ -155,28 +206,29 @@
         padding-top: 2px;
         font-size: 14px;
     }*/
-
 }
 
-@media(max-width: 940px){
-    .cardImage{
-        display: none;
-    }
+@media (max-width: 940px) {
+  .cardImage {
+    display: none;
+  }
 
-    .conteudoCard{
-        padding: 20px;
-    }
+  .conteudoCard {
+    padding: 20px;
+  }
 
-    .sobre{
-        text-align: justify;
-    }
+  .sobre {
+    text-align: justify;
+  }
 }
 
-@media(max-width: 640px){
+@media (max-width: 640px) {
+  .programacaoCard {
+    width: 85%;
+    flex-direction: column;
+  }
 
-    .programacaoCard{
-        width: 85%;
-        flex-direction: column;
-    }
-
+  .sobre {
+    max-height: initial;
+  }
 }

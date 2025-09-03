@@ -106,14 +106,14 @@ const speakers: SpeakerData[] = [
     imageUrl: "./palestrantes/iran-dias.jpg",
   },
   {
-    nome: "Paulo",
+    nome: "Paulo Carvalho",
     cargo: "CEO da Avantsoft",
     descricao: "Paulo Carvalho é o atual CEO da Avantsoft. Ele se formou nos Estados Unidos em engenharia biomédica e engenharia robótica culminando em seu doutorado onde ele liderou o desenvolvimento de um robô para cirurgia de tumores cerebrais profundos. Ele co-fundou o Bigdelivery que ja entregou mais de 1 milhão de itens em Salvador e a empresa de datacenter Trygondata. As empresas dele hoje empregram mais de 100 profissionais na area de tecnologia e inovação.",
     instagram: "",
     imageUrl: "./palestrantes/paulo.jfif",
   },
   {
-    nome: "Leandro",
+    nome: "Leandro Correia",
     cargo: "DBA, analista de BI, desenvolvedor e engenheiro de dados",
     descricao: "Tenho longa experiência na área de dados, atuando como DBA, analista de BI, desenvolvedor e engenheiro de dados. Sou especialista em Sistemas Distribuídos e em Inteligência Artificial, mestre em Educação e professor universitário há muitos anos. Atualmente, atuo em projetos que cobrem todo o ciclo de vida da engenharia de dados, explorando como essa disciplina e a IA se complementam na criação de soluções inovadoras.",
     instagram: "",
