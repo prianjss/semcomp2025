@@ -44,7 +44,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/images/abertura.svg"
+                src="/images/credenciamento.jpg"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 style={{ objectFit: 'contain' }}
@@ -280,7 +280,7 @@ export default function DiaDois() {
       </section>
 
       <section className={styles.programacaoCard}>
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.unique}`}>
           <h1 className={styles.titulo}>19:10 - <span>PALESTRA</span></h1>
           <h2 className={styles.subtitulo}>IA na Prática: Como Criar um Workflow de Desenvolvimento Inteligente, Produtivo e Acelerar Seu Trabalho</h2>
 

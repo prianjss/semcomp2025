@@ -18,7 +18,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/images/abertura.svg"
+                src="/images/credenciamento.jpg"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 style={{ objectFit: 'contain' }}

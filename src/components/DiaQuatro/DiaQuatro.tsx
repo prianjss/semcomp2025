@@ -14,9 +14,9 @@ export default function DiaQuatro() {
                     </div>
                     <div className={styles.cardImage}>
                         <Image
-                            src="/hackathon/hack1.png"
+                            src="/hackathon/hack2.png"
                             alt="Hackathon SemComp 2024"
-                            className={styles.imagem}
+                            className={styles.imagemHack}
                             width={396}
                             height={300}
                         />
@@ -28,22 +28,14 @@ export default function DiaQuatro() {
                         <h1 className={styles.titulo}>13:00 - <span>Hackathon</span></h1>
                         <p className={styles.sobre}>O Hackathon SEMCOMP25 é uma competição onde os participantes devem criar soluções para um problema que descobrirão na hora em tempo limitado.</p>
                     </div>
-                    <div className={styles.cardImage}>
-                        <Image
-                            src="/hackathon/hack2.png"
-                            alt="Hackathon SemComp 2024"
-                            className={styles.imagemHack}
-                            width={396}
-                            height={300}
-                        />
-                    </div>
+
                 </div>
 
             </section>
 
             <section className={styles.programacaoCard}>
 
-                <div className={styles.card}>
+                <div className={`${styles.card} ${styles.limited}`}>
 
 
                     <div className={styles.cardHorizontal}>
@@ -60,6 +52,15 @@ export default function DiaQuatro() {
                     <div className={styles.conteudoCard}>
                         <h1 className={styles.titulo}>≈17:00 - <span>PREMIAÇÃO</span></h1>
                         <p className={styles.sobre}>A premiação da SEMCOMP25 é um momento de reconhecimento, reconhecendo o trabalho dos participantes e premiando os melhores.</p>
+                    </div>
+                    <div className={styles.cardImage}>
+                        <Image
+                            src="/hackathon/hack1.png"
+                            alt="Hackathon SemComp 2024"
+                            className={styles.imagem}
+                            width={396}
+                            height={300}
+                        />
                     </div>
                 </div>
 

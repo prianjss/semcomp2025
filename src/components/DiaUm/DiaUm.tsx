@@ -18,7 +18,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/images/abertura.svg"
+                src="/images/credenciamento.jpg"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 style={{ objectFit: 'contain' }}
@@ -213,7 +213,7 @@ export default function DiaUm() {
 
       <section className={styles.programacaoCard}>
 
-        <div className={styles.card}>
+        <div className={`${styles.card} ${styles.unique}`}>
           <h1 className={styles.titulo}>19:00 - <span>PALESTRA</span></h1>
           <h2 className={styles.subtitulo}>Web App Hardening: HTTP Headers</h2>
 
