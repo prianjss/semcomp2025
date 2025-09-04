@@ -222,7 +222,7 @@ export default function DiaUm() {
 
 
               <h3 className={styles.palestranteP}>Palestrante</h3>
-
+              <p className={styles.cargoP}>Analista Sênior de Cyber Segurança</p>
               <p className={styles.nomeP}>Gildásio Júnior</p>
             </div>
             <div className={styles.cardImage}>

@@ -84,20 +84,41 @@ const speakers: SpeakerData[] = [
     instagram: "@caionms",
     imageUrl: "./palestrantes/caio-nery.jpg",
   },
-  // {
-  //   nome: "Maria E. Ribeiro",
-  //   cargo: "Produtora cultural",
-  //   descricao: "Maria Emília Ribeiro é Produtora Cultural formada pela Universidade Federal Fluminense (RJ) e atua na área de arte e cultura desde 2012. Passou por experiências em produção, planejamento e gestão de várias linguagens artísticas e festivais no Departamento Nacional do SESC (2014/2015 RJ), Centro de Artes da UFF (2016/2017 RJ), Espaços Culturais Boca de Brasa (2018/2019 SSA), dentre outros. De 2021 até o momento atual, é colaboradora da Vale do Dendê, desempenhando o papel de coordenação de eventos, em especial, coordenação geral do Festival Afrofuturismo desde 2022.",
-  //   instagram: "@valedodende",
-  //   imageUrl: "./palestrantes/maria-ribeiro.jpeg",
-  // },
-  // {
-  //   nome: "Gildásio Júnior",
-  //   cargo: "TODO",
-  //   descricao: "TODO",
-  //   instagram: "",
-  //   imageUrl: "./palestrantes/gildasio-junior.jpg",
-  // },
+  {
+    nome: "Maria E. Ribeiro",
+    cargo: "Produtora cultural",
+    descricao: "Maria Emília Ribeiro é Produtora Cultural formada pela Universidade Federal Fluminense (RJ) e atua na área de arte e cultura desde 2012. Passou por experiências em produção, planejamento e gestão de várias linguagens artísticas e festivais no Departamento Nacional do SESC (2014/2015 RJ), Centro de Artes da UFF (2016/2017 RJ), Espaços Culturais Boca de Brasa (2018/2019 SSA), dentre outros. De 2021 até o momento atual, é colaboradora da Vale do Dendê, desempenhando o papel de coordenação de eventos, em especial, coordenação geral do Festival Afrofuturismo desde 2022.",
+    instagram: "@valedodende",
+    imageUrl: "./palestrantes/maria-ribeiro.jpeg",
+  },
+  {
+    nome: "Tata Ribeiro",
+    cargo: "Atividade pela inclusão na tecnologia, formada em Design e Gestão",
+    descricao: "Tais Ribeiro, também conhecida como Tata Ribeiro, é uma ativista pela inclusão de pessoas negras e mulheres no campo da tecnologia, com foco na área de jogos. Ela é a idealizadora do Black XP Game Jam, um evento que busca promover a diversidade e representatividade na indústria de jogos, indo além da etnia dos personagens e dos consumidores. Tata possui formação em design e gestão, com mestrados em ambas as áreas, e atua ativamente para que a diversidade seja refletida em todas as etapas da produção de jogos, desde a criação até o consumo, segundo o Scream Labs.",
+    instagram: "",
+    imageUrl: "./palestrantes/tata-ribeiro.jpeg",
+  },
+  {
+    nome: "Mateus Aragão",
+    cargo: "Sócio-fundador da Punk Hazard Studios",
+    descricao: "Músico e Sound Designer. Mestre em Comunicação e Cultura Contemporânea (POSCOM/UFBA), com foco nas culturas da imagem e do som. Graduado em Direito pela Unijorge, especializou-se em Processo Civil pela Faculdade Baiana de Direito. Em 2015, iniciou sua segunda graduação no Bacharelado Interdisciplinar em Artes, com ênfase em Cinema e Audiovisual (UFBA). Também estudou roteiro na Academia Internacional de Cinema (2019) e música com ênfase em tecnologia na Pracatum. É sócio - fundador da Punk Hazard Studios, empresa especializada em áudio para projetos audiovisuais.",
+    instagram: "",
+    imageUrl: "./palestrantes/mateus-aragao.png",
+  },
+  {
+    nome: "Lucas Hagen",
+    cargo: "Engenheiro de Software no Google",
+    descricao: "Lucas Hagen é Engenheiro de Software no Google, atuando em Belo Horizonte - MG. Integra a equipe de Kids & Families do Google no Brasil, onde se dedica ao desenvolvimento Android para implementar e garantir supervisão de dispositivos Android para crianças e adolescentes. Com 3 anos de experiência na empresa, Lucas possui um bacharelado em Ciência da Computação pela Universidade Federal do Rio Grande do Sul e também estudou na Technische Universität Kaiserslautern, na Alemanha.",
+    instagram: "",
+    imageUrl: "./palestrantes/lucas-hagen.jpg",
+  },
+  {
+    nome: "Gildásio Júnior",
+    cargo: "Analista Sênior de Cyber Segurança",
+    descricao: "Gildásio Júnior é Analista Sênior de Cyber Segurança, focado em pesquisa de segurança, exercícios de equipe vermelha, testes de penetração, automação de segurança, elaboração de relatórios, consultoria em segurança da informação.",
+    instagram: "",
+    imageUrl: "./palestrantes/gildasio-junior.jpg",
+  },
   {
     nome: "Iran Dias",
     cargo: "Desenvolvedor Mobile Flutter",
@@ -118,9 +139,7 @@ const speakers: SpeakerData[] = [
     descricao: "Tenho longa experiência na área de dados, atuando como DBA, analista de BI, desenvolvedor e engenheiro de dados. Sou especialista em Sistemas Distribuídos e em Inteligência Artificial, mestre em Educação e professor universitário há muitos anos. Atualmente, atuo em projetos que cobrem todo o ciclo de vida da engenharia de dados, explorando como essa disciplina e a IA se complementam na criação de soluções inovadoras.",
     instagram: "",
     imageUrl: "./palestrantes/leandro-correia.jpg",
-  },
-
-
+  }
 ]
 
 
