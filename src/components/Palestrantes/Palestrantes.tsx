@@ -85,6 +85,27 @@ const speakers: SpeakerData[] = [
     imageUrl: "./palestrantes/caio-nery.jpg",
   },
   {
+    nome: "Iran Dias",
+    cargo: "Desenvolvedor Mobile Flutter",
+    descricao: "Sou Desenvolvedor Mobile Flutter e iniciei minha trajetória como voluntário no IEEE Unifacs, onde rapidamente assumi papéis de liderança como Coordenador e, posteriormente, Presidente da RAS (Sociedade de Robótica e Automação). Nessa experiência, pude gerenciar projetos comunitários e liderar processos seletivos, desenvolvendo desde cedo minhas habilidades em gestão e organização.\n\nEm seguida, atuei como Tech Recruiter na INTERA, aprofundando meu conhecimento sobre o mercado de tecnologia.Depois, ingressei em uma startup de recrutamento e seleção em estágio inicial, onde fui responsável por estruturar a área de Tech Recruiting, capacitar novos profissionais e liderar a equipe, além de posteriormente atuar como Closer de R& S.\n\nMinha carreira seguiu na Mach1, escola de programação dedicada a desenvolver não apenas competências técnicas, mas também soft skills.Lá, atuei como Consultor de Carreira, auxiliando alunos a compreenderem o mercado de tecnologia e se prepararem para ele.\n\nAtualmente, sou Closer Comercial na Projétil, onde gerencio leads com ferramentas como Pipefy e Miro, realizo prospecção em plataformas como Workana e Upwork, e conduzo reuniões estratégicas com clientes.Paralelamente, também trabalho para uma cliente no exterior como Desenvolvedor Mobile Flutter.",
+    instagram: "@iransd.27",
+    imageUrl: "./palestrantes/iran-dias.jpg",
+  },
+  {
+    nome: "Paulo Carvalho",
+    cargo: "CEO da Avantsoft",
+    descricao: "Paulo Carvalho é o atual CEO da Avantsoft. Ele se formou nos Estados Unidos em engenharia biomédica e engenharia robótica culminando em seu doutorado onde ele liderou o desenvolvimento de um robô para cirurgia de tumores cerebrais profundos. Ele co-fundou o Bigdelivery que ja entregou mais de 1 milhão de itens em Salvador e a empresa de datacenter Trygondata. As empresas dele hoje empregram mais de 100 profissionais na area de tecnologia e inovação.",
+    instagram: "",
+    imageUrl: "./palestrantes/paulo.jfif",
+  },
+  {
+    nome: "Leandro Correia",
+    cargo: "DBA, analista de BI, desenvolvedor e engenheiro de dados",
+    descricao: "Tenho longa experiência na área de dados, atuando como DBA, analista de BI, desenvolvedor e engenheiro de dados. Sou especialista em Sistemas Distribuídos e em Inteligência Artificial, mestre em Educação e professor universitário há muitos anos. Atualmente, atuo em projetos que cobrem todo o ciclo de vida da engenharia de dados, explorando como essa disciplina e a IA se complementam na criação de soluções inovadoras.",
+    instagram: "",
+    imageUrl: "./palestrantes/leandro-correia.jpg",
+  },
+  {
     nome: "Maria E. Ribeiro",
     cargo: "Produtora cultural",
     descricao: "Maria Emília Ribeiro é Produtora Cultural formada pela Universidade Federal Fluminense (RJ) e atua na área de arte e cultura desde 2012. Passou por experiências em produção, planejamento e gestão de várias linguagens artísticas e festivais no Departamento Nacional do SESC (2014/2015 RJ), Centro de Artes da UFF (2016/2017 RJ), Espaços Culturais Boca de Brasa (2018/2019 SSA), dentre outros. De 2021 até o momento atual, é colaboradora da Vale do Dendê, desempenhando o papel de coordenação de eventos, em especial, coordenação geral do Festival Afrofuturismo desde 2022.",
@@ -118,27 +139,6 @@ const speakers: SpeakerData[] = [
     descricao: "Gildásio Júnior é Analista Sênior de Cyber Segurança, focado em pesquisa de segurança, exercícios de equipe vermelha, testes de penetração, automação de segurança, elaboração de relatórios, consultoria em segurança da informação.",
     instagram: "",
     imageUrl: "./palestrantes/gildasio-junior.jpg",
-  },
-  {
-    nome: "Iran Dias",
-    cargo: "Desenvolvedor Mobile Flutter",
-    descricao: "Sou Desenvolvedor Mobile Flutter e iniciei minha trajetória como voluntário no IEEE Unifacs, onde rapidamente assumi papéis de liderança como Coordenador e, posteriormente, Presidente da RAS (Sociedade de Robótica e Automação). Nessa experiência, pude gerenciar projetos comunitários e liderar processos seletivos, desenvolvendo desde cedo minhas habilidades em gestão e organização.\n\nEm seguida, atuei como Tech Recruiter na INTERA, aprofundando meu conhecimento sobre o mercado de tecnologia.Depois, ingressei em uma startup de recrutamento e seleção em estágio inicial, onde fui responsável por estruturar a área de Tech Recruiting, capacitar novos profissionais e liderar a equipe, além de posteriormente atuar como Closer de R& S.\n\nMinha carreira seguiu na Mach1, escola de programação dedicada a desenvolver não apenas competências técnicas, mas também soft skills.Lá, atuei como Consultor de Carreira, auxiliando alunos a compreenderem o mercado de tecnologia e se prepararem para ele.\n\nAtualmente, sou Closer Comercial na Projétil, onde gerencio leads com ferramentas como Pipefy e Miro, realizo prospecção em plataformas como Workana e Upwork, e conduzo reuniões estratégicas com clientes.Paralelamente, também trabalho para uma cliente no exterior como Desenvolvedor Mobile Flutter.",
-    instagram: "@iransd.27",
-    imageUrl: "./palestrantes/iran-dias.jpg",
-  },
-  {
-    nome: "Paulo Carvalho",
-    cargo: "CEO da Avantsoft",
-    descricao: "Paulo Carvalho é o atual CEO da Avantsoft. Ele se formou nos Estados Unidos em engenharia biomédica e engenharia robótica culminando em seu doutorado onde ele liderou o desenvolvimento de um robô para cirurgia de tumores cerebrais profundos. Ele co-fundou o Bigdelivery que ja entregou mais de 1 milhão de itens em Salvador e a empresa de datacenter Trygondata. As empresas dele hoje empregram mais de 100 profissionais na area de tecnologia e inovação.",
-    instagram: "",
-    imageUrl: "./palestrantes/paulo.jfif",
-  },
-  {
-    nome: "Leandro Correia",
-    cargo: "DBA, analista de BI, desenvolvedor e engenheiro de dados",
-    descricao: "Tenho longa experiência na área de dados, atuando como DBA, analista de BI, desenvolvedor e engenheiro de dados. Sou especialista em Sistemas Distribuídos e em Inteligência Artificial, mestre em Educação e professor universitário há muitos anos. Atualmente, atuo em projetos que cobrem todo o ciclo de vida da engenharia de dados, explorando como essa disciplina e a IA se complementam na criação de soluções inovadoras.",
-    instagram: "",
-    imageUrl: "./palestrantes/leandro-correia.jpg",
   }
 ]
 
