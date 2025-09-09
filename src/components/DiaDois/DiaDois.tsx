@@ -84,25 +84,24 @@ export default function DiaDois() {
           </div>
         </div>
 
-        <div className={styles.card}>
+        {/* <div className={styles.card}>
           <h1 className={styles.titulo}>14:10 - <span>PALESTRA</span></h1>
-          <h2 className={styles.subtitulo}>Da Linha de Comando à Comunidade: Construindo Softwares Melhores Juntas</h2>
+          <h2 className={styles.subtitulo}><i>Uma super palestra te espera... não perca!</i></h2>
 
           <div className={styles.cardHorizontal}>
             <div className={styles.conteudoCard}>
               <p className={styles.sobre}>
-                No universo do desenvolvimento, a jornada frequentemente se inicia na linha de comando. No entanto, a verdadeira essência do desenvolvimento não se encontra no individual, mas no poder coletivo da colaboração, do open source e da comunidade.
-                <br />
-                Esta palestra mergulhará nesta jornada transformadora, explorando como nós, pessoas desenvolvedoras podemos sair dos limites de nossas ferramentas individuais e abraçar o poder da comunidade open source para construir softwares melhores juntas.
+                <i>A SEMCOMP é feita de encontros que inspiram, e essa palestra promete ser mais um deles. Um momento para explorar ideias, compartilhar experiências e mergulhar em novas perspectivas sobre tecnologia e inovação. Seja você iniciante curioso ou veterano de código, a conversa vai trazer insights práticos, reflexões atuais e aquele empurrãozinho para pensar diferente.
+
+                  Venha de mente aberta, coração curioso e disposição para aprender junto. Afinal, é isso que faz da SEMCOMP uma semana tão especial. 🚀</i>
               </p>
 
               <h3 className={styles.palestranteP}>Palestrante</h3>
-              <p className={styles.cargoP}>Developer Advocate, Palestrante e Mentora</p>
-              <p className={styles.nomeP}>Pachi Parra</p>
+              <p className={styles.nomeP}><i>A confirmar</i></p>
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/pachi-parra.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -110,11 +109,9 @@ export default function DiaDois() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
-      </section>
 
-      <section className={styles.programacaoCard}>
 
         <div className={styles.card}>
           <h1 className={styles.titulo}>14:50 - <span>DINÂMICA</span></h1>
@@ -136,7 +133,9 @@ export default function DiaDois() {
             </div>
           </div>
         </div>
+      </section>
 
+      <section className={styles.programacaoCard}>
         <div className={styles.card}>
           <h1 className={styles.titulo}>15:00 - <span>PALESTRA</span></h1>
           <h2 className={styles.subtitulo}>Plano de Carreira para Autônomos e Empreendedores em Tecnologia</h2>
@@ -175,9 +174,7 @@ export default function DiaDois() {
           </div>
         </div>
 
-      </section>
 
-      <section className={styles.programacaoCard}>
 
         <div className={styles.card}>
           <h1 className={styles.titulo}>16:00 - <span>COFFEE BREAK</span></h1>
@@ -199,7 +196,9 @@ export default function DiaDois() {
             </div>
           </div>
         </div>
+      </section>
 
+      <section className={styles.programacaoCard}>
         <div className={styles.card}>
           <h1 className={styles.titulo}>16:40 - <span>DINÂMICA</span></h1>
 
@@ -221,9 +220,7 @@ export default function DiaDois() {
           </div>
         </div>
 
-      </section>
 
-      <section className={styles.programacaoCard}>
 
         <div className={styles.card}>
           <h1 className={styles.titulo}>17:10 - <span>PALESTRA</span></h1>
@@ -251,6 +248,10 @@ export default function DiaDois() {
           </div>
         </div>
 
+      </section>
+
+      <section className={styles.programacaoCard}>
+
         <div className={styles.card}>
           <h1 className={styles.titulo}>18:20 - <span>PALESTRA</span></h1>
           <h2 className={styles.subtitulo}>Do Júnior ao Sênior: A Evolução da Carreira de Desenvolvedor</h2>
@@ -277,9 +278,7 @@ export default function DiaDois() {
           </div>
         </div>
 
-      </section>
 
-      <section className={styles.programacaoCard}>
         <div className={`${styles.card} ${styles.unique}`}>
           <h1 className={styles.titulo}>19:10 - <span>PALESTRA</span></h1>
           <h2 className={styles.subtitulo}>IA na Prática: Como Criar um Workflow de Desenvolvimento Inteligente, Produtivo e Acelerar Seu Trabalho</h2>
