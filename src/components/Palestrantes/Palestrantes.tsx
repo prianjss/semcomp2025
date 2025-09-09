@@ -161,6 +161,13 @@ const speakers: SpeakerData[] = [
     instagram: "@alex.shyjada",
     imageUrl: "./palestrantes/alex-shyjada.webp",
   },
+  {
+    nome: "Elder Pinelli",
+    cargo: "Product Manager",
+    descricao: "Empreendedor há mais de 10 anos, pude adquirir um conhecimento interdisciplinar que vai de gestão à TI. A minha graduação me permite entender os problemas com um viés tecnológico e a minha experiência de mercado me dá visão sistêmica, que facilita uma resolução a nível de negócio.",
+    instagram: "",
+    imageUrl: "./palestrantes/elder-pinelli.jpeg",
+  },
 ]
 
 
