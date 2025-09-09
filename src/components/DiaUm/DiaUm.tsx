@@ -169,7 +169,11 @@ export default function DiaUm() {
               </p>
 
               <h3 className={styles.palestranteP}>Participantes</h3>
-              <p className={styles.cargoP}>Membros da InfoJr</p>
+              <p className={styles.cargoP}>Ex-membros da InfoJr</p>
+              <p className={styles.nomeP}>André Filho</p>
+              <p className={styles.nomeP}>Monique Silva</p>
+              <p className={styles.nomeP}>Alexandre Shyjada</p>
+              <p className={styles.nomeP}>Elder Pinelli</p>
             </div>
             <div className={styles.cardImage}>
               <Image

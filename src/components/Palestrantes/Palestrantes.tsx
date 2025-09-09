@@ -139,7 +139,28 @@ const speakers: SpeakerData[] = [
     descricao: "Gildásio Júnior é Analista Sênior de Cyber Segurança, focado em pesquisa de segurança, exercícios de equipe vermelha, testes de penetração, automação de segurança, elaboração de relatórios, consultoria em segurança da informação.",
     instagram: "",
     imageUrl: "./palestrantes/gildasio-junior.jpg",
-  }
+  },
+  {
+    nome: "André Filho",
+    cargo: "Engenheiro de software",
+    descricao: "Engenheiro de Software desde 2019, com forte foco em desenvolvimento backend e expertise em produtos financeiros. Bacharel em Ciência da Computação",
+    instagram: "",
+    imageUrl: "./palestrantes/andre-filho.jpeg",
+  },
+  {
+    nome: "Monique Silva",
+    cargo: "Engenheira de Software Júnior",
+    descricao: "Como Desenvolvedora Front-End, adquiriu experiência em projetos desafiadores na InfoJr e hoje integra a equipe de engenharia de software do Escavador, sendo responsável pelo desenvolvimento e manutenção de sistemas de larga escala. Apaixonada por transformar protótipos em interfaces interativas, seu foco é otimizar a experiência e garantir a melhor performance para o usuário final.",
+    instagram: "@moniquesdsilva",
+    imageUrl: "./palestrantes/monique-silva.jpg",
+  },
+  {
+    nome: "Alexandre Shyjada",
+    cargo: "Product designer pleno",
+    descricao: "Sou Alexandre Shyjada, formado em sistemas para internet pela FIAP. Sou apaixonado por design de interfaces e tecnologia. Tenho 25 anos e estudo Design desde os 15 anos por pura criatividade e vontade de criar soluções mais agradaveis aos olhos Humanos (mesmo que fosse um slide na escola).",
+    instagram: "@alex.shyjada",
+    imageUrl: "./palestrantes/alex-shyjada.webp",
+  },
 ]
 
 
