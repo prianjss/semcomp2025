@@ -45,7 +45,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/luiz-felipe.png"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -77,7 +77,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/irlan-e-eduarda.png"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -103,7 +103,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/caio-lopes.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -154,7 +154,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/leandro-correia.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -184,7 +184,7 @@ export default function DiaTres() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/MateusCarvalho.JPG"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}

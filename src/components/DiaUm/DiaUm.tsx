@@ -40,7 +40,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/images/apresentacao.svg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -73,7 +73,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/lucas-hagen.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -99,7 +99,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/caio-nery.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -203,7 +203,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/priscila-araujo.jpeg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -231,7 +231,7 @@ export default function DiaUm() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/gildasio-junior.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}

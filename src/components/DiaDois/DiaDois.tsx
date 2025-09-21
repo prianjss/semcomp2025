@@ -21,7 +21,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/priscila-araujo.jpeg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -84,35 +84,6 @@ export default function DiaDois() {
           </div>
         </div>
 
-        {/* <div className={styles.card}>
-          <h1 className={styles.titulo}>14:10 - <span>PALESTRA</span></h1>
-          <h2 className={styles.subtitulo}><i>Uma super palestra te espera... não perca!</i></h2>
-
-          <div className={styles.cardHorizontal}>
-            <div className={styles.conteudoCard}>
-              <p className={styles.sobre}>
-                <i>A SEMCOMP é feita de encontros que inspiram, e essa palestra promete ser mais um deles. Um momento para explorar ideias, compartilhar experiências e mergulhar em novas perspectivas sobre tecnologia e inovação. Seja você iniciante curioso ou veterano de código, a conversa vai trazer insights práticos, reflexões atuais e aquele empurrãozinho para pensar diferente.
-
-                  Venha de mente aberta, coração curioso e disposição para aprender junto. Afinal, é isso que faz da SEMCOMP uma semana tão especial. 🚀</i>
-              </p>
-
-              <h3 className={styles.palestranteP}>Palestrante</h3>
-              <p className={styles.nomeP}><i>A confirmar</i></p>
-            </div>
-            <div className={styles.cardImage}>
-              <Image
-                src="/palestrantes/perfil.png"
-                alt="Botão Fale Conosco"
-                className={styles.imagem}
-                width={500}
-                height={500}
-              />
-            </div>
-          </div>
-        </div> */}
-
-
-
         <div className={styles.card}>
           <h1 className={styles.titulo}>14:50 - <span>DINÂMICA</span></h1>
 
@@ -164,7 +135,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/iran-dias.jpg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -238,7 +209,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/leka-hattori.jpg"
+                src="/palestrantes/perfil.png"                
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -268,7 +239,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/paulo.jfif"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
@@ -302,7 +273,7 @@ export default function DiaDois() {
             </div>
             <div className={styles.cardImage}>
               <Image
-                src="/palestrantes/iasmin-oliveira.jpeg"
+                src="/palestrantes/perfil.png"
                 alt="Botão Fale Conosco"
                 className={styles.imagem}
                 width={500}
